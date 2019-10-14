@@ -1,0 +1,45 @@
+{
+  "home": {
+    "title": "Home",
+    "description": "Hi, I am Julio, a front-end developer from Curitiba, Brazil. I write code and also write/speak about technology.",
+    "image": "Julio's Memoji",
+    "social": ""
+  },
+  "about": {
+    "title": "About",
+    "1st": "My name is Julio Lozovei, aka [em]jlozovei[/em]. Nice to meet you!",
+    "2nd": "I'm a front-end developer who lives and works in Curitiba, Brazil. I started to write HTML when was 15; beyond coding, I also love sports and music - I play guitar, bass and ukulele, but just as a hobby.",
+    "3rd": "Beyond CSS and JavaScript, I also speaks Portuguese (native), English (advanced) and Spanish (almost advanced). I'm into web and mobile development, ux/ui, a bit of back-end and embedded system as well.",
+    "4th": "I'm [myAge], write and speak about technology, career and development culture. You can find my texts in those links below:"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+
+  "header": {
+    "home": "home",
+    "about": "about",
+    "projects": "projects",
+    "contact": "contact"
+  },
+
+  "footer": {
+    "built": "This site is built with",
+    "love": "love",
+    "using": "using",
+    "code": "The code is on my"
+  },
+
+  "social": {
+    "github": "See my GitHub",
+    "codepen": "See my CodePen",
+    "linkedin": "See my LinkedIn",
+    "twitter ": "See my Twitter",
+    "medium ": "See my Medium",
+    "email": "Send me an email",
+    "react": "See React page"
+  }
+}
