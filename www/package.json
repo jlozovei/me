@@ -12,7 +12,8 @@
     "build": "npm-run-all build:*",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "copy-files": "cp ./CNAME ./build && cp ./README.md ./build",
+    "predeploy": "npm-run-all build copy-files",
     "deploy": "gh-pages -d build",
     "postdeploy": "rm -rf build"
   },
