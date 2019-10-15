@@ -8,14 +8,15 @@
     "build:css": "postcss ./css/index.css -o src/assets/css/app.css",
     "start:js": "react-scripts start",
     "build:js": "react-scripts build",
+    "clean": "rm -rf ./build",
     "start": "npm-run-all -p start:*",
     "build": "npm-run-all build:*",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "copy-files": "cp ./CNAME ./build && cp ./README.md ./build",
-    "predeploy": "npm-run-all build copy-files",
+    "predeploy": "npm-run-all clean build copy-files",
     "deploy": "gh-pages -d build",
-    "postdeploy": "rm -rf build"
+    "postdeploy": "npm run clean"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.4",
@@ -51,7 +52,7 @@
   "bugs": {
     "url": "https://github.com/jlozovei/me/issues"
   },
-  "homepage": "https://github.com/jlozovei/me#readme",
+  "homepage": ".",
   "browserslist": {
     "production": [
       ">0.2%",
