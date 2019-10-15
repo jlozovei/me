@@ -5,25 +5,36 @@
     "image": "Memoji do Julio",
     "social": ""
   },
-  "about": {
-    "title": "Sobre",
+  "me": {
+    "title": "jlozovei",
     "1st": "Meu nome é Julio Lozovei, também conhecido por [em]jlozovei[/em]. Prazer em conhecer você!",
     "2nd": "Sou um desenvolvedor front-end que mora e trabalha em Curitiba, Brasil. Eu comecei a brincar com HTML quando tinha 15 anos; além de códigos, eu também amo esportes e música - toco guitarra, baixo e ukulele, mas apenas como um hobby.",
     "3rd": "Além de CSS e JavaScript, eu também falo português (nativo), inglês (avançado) e espanhol (intermediário). Me interesso por desenvolvimento web e mobile, ux/ui, um pouco de back-end e sistemas embarcados.",
-    "4th": "Eu tenho [myAge] anos de idade, escrevo e palestro sobre tecnologia, carreira e desenvolvimento. Você pode encontrar minhas publicações nos links abaixo:"
+    "4th": "Eu tenho [myAge] anos de idade, escrevo e palestro sobre tecnologia, carreira e desenvolvimento. Você pode encontrar meus textos nos links abaixo:"
   },
-  "projects": {
-    "title": "Projetos"
+  "labs": {
+    "title": "Labs",
+    "description": "Estes são alguns dos projetos em que eu tenho trabalhado recentemente. Dê uma olhada, e se você sentir no seu coração, contribua - é open source!"
   },
   "contact": {
     "title": "Contato"
   },
 
+  "404": {
+    "title": "404 - Perdemos o sinal",
+    "description": "Verifique os cabos, sua conexão com a internet, ou apenas tente um desses links abaixo; talvez eles funcionem:"
+  },
+
   "header": {
     "home": "início",
-    "about": "sobre",
-    "projects": "projetos",
-    "contact": "contato"
+    "me": "eu",
+    "labs": "labs",
+    "contact": "contato",
+
+    "english": "Translate to english",
+    "portuguese": "Traduzir para português",
+    "uk": "Bandeira do Reino Unido",
+    "br": "Bandeira do Brasil"
   },
 
   "footer": {
@@ -34,12 +45,14 @@
   },
 
   "social": {
-    "github": "Visite meu GitHub",
-    "codepen": "Visite meu CodePen",
-    "linkedin": "Visite meu LinkedIn",
-    "twitter": "Visite meu Twitter",
-    "medium": "Visite meu Medium",
+    "github": "Veja meu perfil no GitHub",
+    "codepen": "Veja meus projetos CodePen",
+    "glitch": "Veja meu perfil no Glitch",
+    "linkedin": "Veja meu perfil no LinkedIn",
+    "twitter": "Veja as bobeiras que eu falo no Twitter",
+    "medium": "Leia meus textos no Medium",
+    "dev": "Leia meus textos no The Practical Dev",
     "email": "Me mande um email",
-    "react": "Ir para a página do React"
+    "react": "Veja a documentação do React"
   }
 }
