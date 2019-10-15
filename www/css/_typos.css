@@ -1,0 +1,56 @@
+$grid_min_width: 18.75rem;
+$grid_max_width: 75rem;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  line-height: 1.32;
+}
+
+h1 {
+  font-size: responsive 2.5rem 3.5rem;
+  font-range: $grid_min_width $grid_max_width;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: responsive 2rem 2.5rem;
+  font-range: $grid_min_width $grid_max_width;
+  margin-bottom: 1.125rem;
+}
+
+h3 {
+  font-size: responsive 1.5rem 2rem;
+  font-range: $grid_min_width $grid_max_width;
+  margin-bottom: 1.125rem;
+}
+
+h4 {
+  font-size: responsive 1.125rem 1.5rem;
+  font-range: $grid_min_width $grid_max_width;
+  margin-bottom: 1.125rem;
+}
+
+h5 {
+  font-size: responsive 1rem 1.125rem;
+  font-range: $grid_min_width $grid_max_width;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p,
+li {
+  font-size: responsive 0.875rem 1.125rem;
+  font-range: $grid_min_width $grid_max_width;
+  line-height: 1.56;
+}
+
+small {
+  font-size: 80%;
+}
