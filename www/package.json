@@ -4,11 +4,11 @@
   "description": "jlozovei personal website",
   "main": "src/index.js",
   "scripts": {
-    "build:css": "cat ./css/*.css > ./src/assets/css/app.css | postcss ./src/assets/css/app.css --replace",
-    "watch:css": "cat ./css/*.css > ./src/assets/css/app.css | postcss ./src/assets/css/app.css --replace -w",
-    "start": "npm-run-all -p watch:*",
+    "start:css": "postcss ./css/index.css -o src/assets/css/app.css -w",
+    "build:css": "postcss ./css/index.css -o src/assets/css/app.css",
     "start:js": "react-scripts start",
     "build:js": "react-scripts build",
+    "start": "npm-run-all -p start:*",
     "build": "npm-run-all build:*",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
