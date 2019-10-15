@@ -1,7 +1,7 @@
 # jlozovei
 
 Hi there! Nice to see you here.  
-This repo is dedicated to my personal website, my resumee and some cool info about me :smile:
+This repo is dedicated to my personal website, my resume and some cool info about me :smile:
 
 > [Se você preferir, esse conteúdo também está disponível em português](https://github.com/jlozovei/me/blob/master/README-pt.md) 🇧🇷
 
