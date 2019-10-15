@@ -6,7 +6,7 @@ import Loader from 'components/Loader';
 
 const App = () => {
   return (
-    <Suspense fallback={<Loader global={true} />} maxDuration={2000}>
+    <Suspense fallback={<Loader global={true} />}>
       <Routes />
     </Suspense>
   );
