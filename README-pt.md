@@ -1,11 +1,10 @@
 # jlozovei
 
-Olar! Bom ver você por aqui.  
+Olá! Bom ver você por aqui.  
 Nesse repo você vai encontrar o código-fonte do meu site pessoal, meu curríuclo e algumas informações legais :smile:
 
 
 ## :squirrel: Sobre mim
-
 Desenvolvedor front-end, escritor, palestrante e músico amador nas horas vagas.  
 
 Eu comecei no mundo do desenvolvimento com, mais ou menos, 15/16 anos - meu primeiro contato foi em um curso de _Web 
@@ -14,7 +13,6 @@ Na época do curso, eu estava no 1º ano do ensino médio. Após terminar o col�
 
 
 ## :mortar_board: Graduação
-
 - Graduação: FARESC - Tecnologia em Gestão de T.I. (2016)
 - Pós-graduação: Universidade Positivo - Sistemas Embarcados e Internet das Coisas (2019)
 
@@ -34,7 +32,7 @@ Meu primeiro estágio e também meu primeiro emprego.
 A Livetouch é uma _software house_ (fábrica de software) de São Paulo, com uma filial em Curitiba. O foco da empresa é o desenvolvimento de aplicativos móveis (Android e iOS), e na época em que eu entrei lá as operações para sistemas/paineis web estava crescendo.
 
 Comecei como estagiário ainda no 3º período da faculdade, em setembro de 2015, e fazia de tudo um pouco - apesar de ter entrado como estagiário de front-end, eu também ajudava nas compras para o escritório (na época o escritório aqui de Curitiba tinha menos de 20 pessoas), ajudava na seleção de novos devs front-end...  
-Após 9 meses de estágio, fui efetivado e estava em uma situação peculiar - dos 3 devs front-end, 2 tinham saído e eu fiquei "sozinho". Nesse período eu já tinha treinado dois estagiários, mas que infelizmente haviam saído da empresa.  
+Após 9 meses de estágio, fui efetivado e estava em uma situação peculiar - dos 3 devs front-end, 2 tinham saído e eu fiquei "sozinho". Nesse período eu já tinha treinado dois estagiários, mas que infelizmente haviam saído da empresa.
 
 Alguns meses depois de ser efetivado, ajudei na contratação de mais um dev front e também um estagiário - o qual eu ajudei a treinar.
 
@@ -63,9 +61,21 @@ A Bcredi é uma startup focada em crédito saudável e em trazer uma gigantesca 
 Estou no time de engenharia e produto, e atualmente trabalho com alguns produtos que são utilizados tanto pela operação (internos) quanto pelos nossos parceiros e usuários finais.  
 O momento atual da Bcredi é muito especial - a empresa está crescendo e passando por um período de se provar, mostrar para o que veio e mostrar que o serviço prestado pode (e vai) mudar a vida de milhões de pessoas.
 
+
 ## :rocket: Projetos
-Além de escrever código profissionalmente, também tenho alguns projetos pessoais e tento contribuir de forma relevante para a comunidade open source.  
-Logo irei alimentar melhor essa sessão! :smile:
+Além de escrever código profissionalmente, também tenho alguns projetos pessoais que servem tanto como uma forma de estudo quanto como uma maneira de fazer aquilo que eu não consigo dentro do trabalho. Além desses projetos, também tento contribuir de forma relevante para a comunidade open source.
+
+Os projetos mais recentes em que trabalhei foram:
+
+#### Developer Titles - [site](https://developertitles.com/) | [github](https://github.com/jlozovei/developer-titles)
+Esse é um projeto que mostra títulos de desenvolvedores em uma forma cômica, derivado de algumas pérolas que vi aqui pelo GitHub ou lá no LinkedIn.
+
+#### Flavored Markdown - [site](https://jlozovei.github.io/flavored-markdown/) | [github](https://github.com/jlozovei/flavored-markdown)
+Live editor para Markdown, onde você digita o markdown e a página faz o preview do HTML com o estilo do GitHub. Ajuda bastante na hora de criar arquivos como `README`, `CONTRIBUTING` e afins.
+
+#### O front-end acabou? - [site](https://ofrontendacabou.com/) | [github](https://github.com/jlozovei/ofrontendacabou.com)
+Esse projeto tem um cunho mais de protesto, visto que todo ano aparece alguém na internet falando que _"o front-end vai acabar"_ - e todos nós sabemos que não vai.
+
 
 ## :necktie: Publicações e Palestras
 
@@ -85,7 +95,6 @@ Nos 2 eventos, falei sobre _Acessibilidade na Web_, e você pode encontrar os sl
 
 
 ## :globe_with_meridians: Social
-
 Você vai me achar no:
 
 - [LinkedIn](https://linkedin.com/in/jlozovei)
@@ -95,8 +104,8 @@ E vai achar meus códigos/projetos em:
 
 - [GitHub](https://github.com/jlozovei)
 - [Codepen](https://codepen.io/jlozovei)
+- [Glitch](https://glitch.com/@jlozovei)
 
 
 ## :closed_lock_with_key: Licença
-
 Todo o conteúdo desse repositório é licenciado através da [MIT License](https://github.com/jlozovei/me/blob/master/LICENSE).

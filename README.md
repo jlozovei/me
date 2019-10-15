@@ -13,7 +13,6 @@ By the time, I was in high school. After finishing it, I picked up a place at Co
 
 
 ## :mortar_board: Graduation
-
 - Graduation: FARESC - I.T. Management (2016)
 - Post-graduation: Universidade Positivo - Embedded Systems and IoT (2019)
 
@@ -24,7 +23,6 @@ During the 3rd period of colleg I got an internship - although tried before, cou
 After graduating in Jun/2016, took the rest of the year to focus on my work - I had already completed my internship - and study on my field (front-end development).
 
 At the beginning of 2017 I decided to get back to study in a "serious" way - joined the _Embedded Systems and IoT_ postgraduation at Positivo. It was a big change for me as I started to get into another kind of development - the famous low level. In this course I had contact with analog electronic, microcontrollers development (Arduino, Tiva C, Raspberry...), mobile development (Android, with Java); in addiction to seeing subjects about smart cities, big data...
-
 
 
 ## :office: Professional experiences
@@ -39,8 +37,18 @@ At the beginning of 2017 I decided to get back to study in a "serious" way - joi
 
 
 ## :rocket: Projects
-Besides writing code professionally, also maintain some personal projects and (try to) contribute to the open source community.
-Soon I'll feed this session better! :smile:
+In addiction to code professionally, I also have some personal projects that serves both as study and a way of doing what I can't do at work. It's also a way to make a significant contribution to the open source community.
+
+The most recent works are:
+
+#### Developer Titles - [site](https://developertitles.com/) | [github](https://github.com/jlozovei/developer-titles)
+This is a project that shows developer's titles in a funny way, derived from some of the finest things I saw on GitHub and LinkedIn.
+
+#### Flavored Markdown - [site](https://jlozovei.github.io/flavored-markdown/) | [github](https://github.com/jlozovei/flavored-markdown)
+Markdown live editor, where you input the markdown and the page parses to HTML, showing it with GitHub style. It helps to create `README` or `CONTRIBUTING` files.
+
+#### Has front-end ended yet? - [site](https://hasfrontendendedyet.com/) | [github](https://github.com/jlozovei/hasfrontendendedyet.com)
+This is a more protest-driven project, as every year someone comes up on the internet saying that _"the front-end is going to end"_ - and we all know it won't.
 
 
 ## :necktie: Articles and Lectures
@@ -63,7 +71,6 @@ At both events I talked about _Web Accessibility_, and you can find the slides a
 
 
 ## :globe_with_meridians: Social
-
 You can find me at:
 
 - [LinkedIn](https://linkedin.com/in/jlozovei)
@@ -73,8 +80,8 @@ And find my codes/projects at:
 
 - [GitHub](https://github.com/jlozovei)
 - [Codepen](https://codepen.io/jlozovei)
+- [Glitch](https://glitch.com/@jlozovei)
 
 
 ## :closed_lock_with_key: License
-
 This repo and its content is licensed under the [MIT License](https://github.com/jlozovei/me/blob/master/LICENSE).
