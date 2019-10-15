@@ -8,7 +8,7 @@ import Me from 'pages/Me';
 import NotFound from 'pages/NotFound';
 
 const Routes = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Router history={history}>
       <Switch>
         <Route exact path="/" component={Home} />
