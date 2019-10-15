@@ -1,0 +1,57 @@
+{
+  "home": {
+    "title": "Home",
+    "description": "Hi, I am Julio, a front-end developer from Curitiba, Brazil. I write code and also write/speak about technology.",
+    "image": "Julio's Memoji"
+  },
+  "me": {
+    "title": "jlozovei",
+    "1st": "My name is Julio Lozovei, aka [em]jlozovei[/em]. Nice to meet you!",
+    "2nd": "I'm a front-end developer who lives and works in Curitiba, Brazil. I started to write HTML when was 15; beyond coding, I also love sports and music - I play guitar, bass and ukulele, but just as a hobby.",
+    "3rd": "Beyond CSS and JavaScript, I also speaks Portuguese (native), English (advanced) and Spanish (almost advanced). I'm into web and mobile development, ux/ui, a bit of back-end and embedded system as well.",
+    "4th": "I'm [myAge], write and speak about technology, career and development culture. You can find my texts in those links below:"
+  },
+  "labs": {
+    "title": "Labs",
+    "description": "Here are some of my recent works. Take a look, and if you feel in your heart, contribute - it's open source!"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+
+  "404": {
+    "title": "404 - Signal Lost",
+    "description": "Check your cables, your internet connection, or try one of those links below; maybe they'll work:"
+  },
+
+  "header": {
+    "home": "home",
+    "me": "me",
+    "labs": "labs",
+    "contact": "contact",
+
+    "english": "Translate to english",
+    "portuguese": "Traduzir para português",
+    "uk": "UK Flag",
+    "br": "Brazilian Flag"
+  },
+
+  "footer": {
+    "built": "This site is built with",
+    "love": "love",
+    "using": "using",
+    "code": "The code is on my"
+  },
+
+  "social": {
+    "github": "See my profile on GitHub",
+    "codepen": "See my pens on CodePen",
+    "glitch": "See my profile on Glitch",
+    "linkedin": "See my profile on LinkedIn",
+    "twitter": "See my random bullshit at Twitter",
+    "medium": "Read my texts on Medium",
+    "dev": "Read my texts on The Practical Dev",
+    "email": "Send me an email",
+    "react": "See the React documentation"
+  }
+}

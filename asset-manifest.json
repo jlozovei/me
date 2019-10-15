@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/jlozovei/me/static/css/main.3b87e51e.chunk.css",
+    "main.js": "/jlozovei/me/static/js/main.bc1ba027.chunk.js",
+    "main.js.map": "/jlozovei/me/static/js/main.bc1ba027.chunk.js.map",
+    "runtime-main.js": "/jlozovei/me/static/js/runtime-main.07e39576.js",
+    "runtime-main.js.map": "/jlozovei/me/static/js/runtime-main.07e39576.js.map",
+    "static/js/2.f96e9ec3.chunk.js": "/jlozovei/me/static/js/2.f96e9ec3.chunk.js",
+    "static/js/2.f96e9ec3.chunk.js.map": "/jlozovei/me/static/js/2.f96e9ec3.chunk.js.map",
+    "index.html": "/jlozovei/me/index.html",
+    "precache-manifest.3315dc35cdb6f6cc9f5b4b59a491c316.js": "/jlozovei/me/precache-manifest.3315dc35cdb6f6cc9f5b4b59a491c316.js",
+    "service-worker.js": "/jlozovei/me/service-worker.js",
+    "static/css/main.3b87e51e.chunk.css.map": "/jlozovei/me/static/css/main.3b87e51e.chunk.css.map",
+    "static/media/hello.png": "/jlozovei/me/static/media/hello.59d965e6.png",
+    "static/media/noise.gif": "/jlozovei/me/static/media/noise.7f6fbfd7.gif",
+    "static/media/thinking.png": "/jlozovei/me/static/media/thinking.e237f06f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07e39576.js",
+    "static/js/2.f96e9ec3.chunk.js",
+    "static/css/main.3b87e51e.chunk.css",
+    "static/js/main.bc1ba027.chunk.js"
+  ]
+}
