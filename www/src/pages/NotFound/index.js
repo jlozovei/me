@@ -22,13 +22,13 @@ const NotFound = () => {
         <ListInline>
           <li>
             <Link exact to="/">
-              {t('header.home')}
+              {t('menu.home')}
             </Link>
           </li>
 
           <li>
             <Link exact to="/me">
-              {t('header.me')}
+              {t('menu.me')}
             </Link>
           </li>
         </ListInline>
