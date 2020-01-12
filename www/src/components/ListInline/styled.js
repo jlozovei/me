@@ -5,6 +5,7 @@ export const StyledListInline = styled.ul`
     !props.header &&
     css`
       margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
     `}
 
   margin-left: -0.5rem;
