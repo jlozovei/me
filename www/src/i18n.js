@@ -4,7 +4,7 @@ import Backend from 'i18next-xhr-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 const fallbackLng = ['en'],
-  availableLanguages = ['en', 'pt'];
+  whitelist = ['en', 'pt'];
 
 i18n
   .use(Backend)
@@ -12,10 +12,11 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng,
-    whitelist: availableLanguages,
+    whitelist,
     interpolation: {
       escapeValue: false
-    }
+    },
+    returnObjects: true
   });
 
 export default i18n;
