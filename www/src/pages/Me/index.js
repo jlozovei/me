@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import differenceInYears from 'date-fns/differenceInYears';
+import { NavLink as Link } from 'react-router-dom';
+// import differenceInYears from 'date-fns/differenceInYears';
 
 import PageTitle from 'components/PageTitle';
 import ListInline from 'components/ListInline';
@@ -12,34 +13,17 @@ import texts from 'data/texts';
 const Me = props => {
   const { t } = useTranslation();
 
-  const birthDate = new Date(1997, 2, 24),
-    myAge = differenceInYears(new Date(), birthDate);
+  // const birthDate = new Date(1997, 2, 24),
+  // myAge = differenceInYears(new Date(), birthDate);
 
   return (
     <Template>
       <PageTitle>{t('me.title')}</PageTitle>
-      <p>
-        <span
-          dangerouslySetInnerHTML={{
-            __html: t('me.1st')
-              .replace('[em]', '<em>')
-              .replace('[/em]', '</em>')
-          }}
-        />{' '}
-        <span role="img" aria-label="Hand with horns signal">
-          🤘
-        </span>
-      </p>
 
-      <p>{t('me.2nd')}</p>
-
-      <p>{t('me.3rd')}</p>
-
-      <p
-        dangerouslySetInnerHTML={{
-          __html: t('me.4th').replace('[myAge]', myAge)
-        }}
-      />
+      <p dangerouslySetInnerHTML={{ __html: t('me.about.0') }} />
+      <p dangerouslySetInnerHTML={{ __html: t('me.about.1') }} />
+      <p dangerouslySetInnerHTML={{ __html: t('me.about.2') }} />
+      <p dangerouslySetInnerHTML={{ __html: t('me.about.3') }} />
 
       <ListInline>
         {texts.map(source => {
@@ -53,6 +37,21 @@ const Me = props => {
             </li>
           );
         })}
+      </ListInline>
+
+      <hr />
+
+      <ListInline>
+        <li>
+          <Link exact to="/">
+            {t('menu.resume')}
+          </Link>
+        </li>
+        <li>
+          <Link exact to="/uses">
+            {t('menu.uses')}
+          </Link>
+        </li>
       </ListInline>
     </Template>
   );
