@@ -1,16 +1,41 @@
 {
   "home": {
     "title": "Página Inicial",
-    "description": "Olá, eu sou o Julio, desenvolvedor front-end de Curitiba. Eu escrevo códigos e também escrevo/palestro sobre tecnologia.",
+    "description": "Olá, eu sou o Julio. Aqui você irá encontrar um pouco do meu trabalho como desenvolvedor front-end!",
     "image": "Memoji do Julio",
     "social": ""
   },
   "me": {
     "title": "jlozovei",
-    "1st": "Meu nome é Julio Lozovei, também conhecido por [em]jlozovei[/em]. Prazer em conhecer você!",
-    "2nd": "Sou um desenvolvedor front-end que mora e trabalha em Curitiba, Brasil. Eu comecei a brincar com HTML quando tinha 15 anos; além de códigos, eu também amo esportes e música - toco guitarra, baixo e ukulele, mas apenas como um hobby.",
-    "3rd": "Além de CSS e JavaScript, eu também falo português (nativo), inglês (avançado) e espanhol (intermediário). Me interesso por desenvolvimento web e mobile, ux/ui, um pouco de back-end e sistemas embarcados.",
-    "4th": "Eu tenho [myAge] anos de idade, escrevo e palestro sobre tecnologia, carreira e desenvolvimento. Você pode encontrar meus textos nos links abaixo:"
+    "about": [
+      "Olá, seja bem-vindo! Meu nome é Julio Lozovei, e eu trabalho como desenvolvedor front-end.",
+      "Nascido e criado em Curitiba, atualmente trabalhando na Bcreid; comecei a escrever HTML quando tinha 15 anos de idade, e desde então nunca mais parei. Além de escrever códigos, eu também escrevo e falo sobre tecnologia, cultura de desenvolvimento e carreira.",
+      "No meu tempo livre eu gosto de jogar vídeo games, tocar música, escrever sobre a vida e também criar playlists no <a target=\"_blank\" rel=\"noopener\" href=\"https://open.spotify.com/user/12186916663?si=2lvbgz3PQPSduWmDMeQBBQ\">Spotify</a> (dá uma olhada lá!).",
+      "Você pode encontrar meus textos nos links abaixo:"
+    ]
+  },
+  "uses": {
+    "title": "Coisas que eu uso",
+    "description": "Aqui você vai encontrar todas as ferramentas que eu utilizo para desenvolvimento, aparelhos e afins.",
+    "home": {
+      "title": "Em Casa 🏠"
+    },
+    "work": {
+      "title": "No Trabalho 🏢"
+    },
+    "personal": {
+      "title": "Pessoais 👨‍💻"
+    },
+    "stuff": {
+      "computer": "Computador",
+      "editor": "Editor de Texto",
+      "terminal": "Terminal",
+      "browser": "Navegador",
+      "headphones": "Headphones",
+      "earphones": "Fones de ouvido",
+      "phone": "Telefone",
+      "notes": "App para notas"
+    }
   },
   "labs": {
     "title": "Labs",
@@ -25,11 +50,14 @@
     "description": "Verifique os cabos, sua conexão com a internet, ou apenas tente um desses links abaixo; talvez eles funcionem:"
   },
 
-  "header": {
-    "home": "início",
-    "me": "eu",
-    "labs": "labs",
-    "contact": "contato",
+  "menu": {
+    "home": "Início",
+    "me": "Eu",
+    "labs": "Labs",
+    "contact": "Contato",
+
+    "resume": "Currículo",
+    "uses": "Eu uso",
 
     "english": "Translate to english",
     "portuguese": "Traduzir para português",

@@ -1,15 +1,40 @@
 {
   "home": {
     "title": "Home",
-    "description": "Hi, I am Julio, a front-end developer from Curitiba, Brazil. I write code and also write/speak about technology.",
+    "description": "Hi, I am Julio. Here you'll find a bit about my job as a front-end developer!",
     "image": "Julio's Memoji"
   },
   "me": {
     "title": "jlozovei",
-    "1st": "My name is Julio Lozovei, aka [em]jlozovei[/em]. Nice to meet you!",
-    "2nd": "I'm a front-end developer who lives and works in Curitiba, Brazil. I started to write HTML when was 15; beyond coding, I also love sports and music - I play guitar, bass and ukulele, but just as a hobby.",
-    "3rd": "Beyond CSS and JavaScript, I also speaks Portuguese (native), English (advanced) and Spanish (almost advanced). I'm into web and mobile development, ux/ui, a bit of back-end and embedded system as well.",
-    "4th": "I'm [myAge], write and speak about technology, career and development culture. You can find my texts in those links below:"
+    "about": [
+      "Hello, welcome! My name is Julio Lozovei, and I work as a front-end developer.",
+      "Born and raised in Curitiba, Brazil, currently working for Bcredi; I started to write HTML when was 15 y/o and never stopped since there. Besides writing code, I also write and talk about general technology, development culture and career.",
+      "In my spare time I love to play video games, play some music, write about life and create playlists on <a target=\"_blank\" rel=\"noopener\" href=\"https://open.spotify.com/user/12186916663?si=2lvbgz3PQPSduWmDMeQBBQ\">Spotify</a> (check'em out!).",
+      "You can find my texts in those links below:"
+    ]
+  },
+  "uses": {
+    "title": "Things I Use",
+    "description": "Below are the list of stuff I use to develop, devices and gadgets.",
+    "home": {
+      "title": "At Home 🏠"
+    },
+    "work": {
+      "title": "At Work 🏢"
+    },
+    "personal": {
+      "title": "Personal Stuff 👨‍💻"
+    },
+    "stuff": {
+      "computer": "Computer",
+      "editor": "Text Editor",
+      "terminal": "Terminal",
+      "browser": "Browser",
+      "headphones": "Headphones",
+      "earphones": "Earphones",
+      "phone": "Phone",
+      "notes": "Notes App"
+    }
   },
   "labs": {
     "title": "Labs",
@@ -24,11 +49,14 @@
     "description": "Check your cables, your internet connection, or try one of those links below; maybe they'll work:"
   },
 
-  "header": {
-    "home": "home",
-    "me": "me",
-    "labs": "labs",
-    "contact": "contact",
+  "menu": {
+    "home": "Home",
+    "me": "Me",
+    "labs": "Labs",
+    "contact": "Contact",
+
+    "resume": "Resume",
+    "uses": "Uses",
 
     "english": "Translate to english",
     "portuguese": "Traduzir para português",
