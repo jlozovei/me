@@ -4,7 +4,7 @@ import { NavLink as Link } from 'react-router-dom';
 
 import ListInline from 'components/ListInline';
 
-import { StyledHeader, StyledFlexContainer, StyledOptions } from './styled';
+import { StyledHeader, StyledNav, StyledFlexContainer, StyledOptions } from './styled';
 
 const Header = ({ children }) => {
   const { t, i18n } = useTranslation();
@@ -16,7 +16,7 @@ const Header = ({ children }) => {
   return (
     <StyledHeader className="header">
       <StyledFlexContainer>
-        <nav>
+        <StyledNav>
           <ListInline header>
             <li>
               <Link exact to="/">
@@ -35,8 +35,14 @@ const Header = ({ children }) => {
                 {t('menu.uses')}
               </Link>
             </li>
+
+            <li>
+              <Link exact to="/work">
+                {t('menu.work')}
+              </Link>
+            </li>
           </ListInline>
-        </nav>
+        </StyledNav>
 
         <StyledOptions>
           <ListInline header>
