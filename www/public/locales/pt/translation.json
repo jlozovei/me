@@ -1,7 +1,7 @@
 {
   "home": {
     "title": "Página Inicial",
-    "description": "Olá, eu sou o Julio. Aqui você irá encontrar um pouco do meu trabalho como desenvolvedor front-end!",
+    "description": "Olá, eu sou o Julio. Eu gosto de criar soluções utilizando HTML, CSS e JavaScript!",
     "image": "Memoji do Julio",
     "social": ""
   },
@@ -9,8 +9,8 @@
     "title": "jlozovei",
     "about": [
       "Olá, seja bem-vindo! Meu nome é Julio Lozovei, e eu trabalho como desenvolvedor front-end.",
-      "Nascido e criado em Curitiba, atualmente trabalhando na Bcreid; comecei a escrever HTML quando tinha 15 anos de idade, e desde então nunca mais parei. Além de escrever códigos, eu também escrevo e falo sobre tecnologia, cultura de desenvolvimento e carreira.",
-      "No meu tempo livre eu gosto de jogar vídeo games, tocar música, escrever sobre a vida e também criar playlists no <a target=\"_blank\" rel=\"noopener\" href=\"https://open.spotify.com/user/12186916663?si=2lvbgz3PQPSduWmDMeQBBQ\">Spotify</a> (dá uma olhada lá!).",
+      "Nascido e criado em Curitiba, comecei a escrever HTML quando tinha 15 anos de idade, e desde então nunca mais parei. Além de escrever códigos, eu também escrevo e falo sobre tecnologia, cultura de desenvolvimento e carreira.",
+      "No meu tempo livre eu gosto de jogar vídeo games, tocar música, escrever sobre a vida e também criar (muitas) playlists no <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://open.spotify.com/user/12186916663?si=2lvbgz3PQPSduWmDMeQBBQ\">Spotify</a> (dá uma olhada lá!).",
       "Você pode encontrar meus textos nos links abaixo:"
     ]
   },
@@ -34,12 +34,37 @@
       "headphones": "Headphones",
       "earphones": "Fones de ouvido",
       "phone": "Telefone",
-      "notes": "App para notas"
+      "notes": "App para notas",
+      "communication": "Comunicação/Chat",
+      "design": "Design and Prototipagem",
+      "music": "Música",
+      "podcasts": "Podcasts",
+      "passwords": "Para (evitar) lembrar das minhas senhas",
+      "email": "Email"
     }
   },
-  "labs": {
-    "title": "Labs",
-    "description": "Estes são alguns dos projetos em que eu tenho trabalhado recentemente. Dê uma olhada, e se você sentir no seu coração, contribua - é open source!"
+  "work": {
+    "title": "Portfolio",
+    "description": "Além de trabalhar profissionalmente como desenvolvedor e também fazer alguns freelances, gosto muito de contribuir com a comunidade open source. Abaixo estão alguns dos meus projetos mais recentes:",
+    "portfolio": {
+      "title": "Freelancer",
+      "jobs": {
+        "tropico": "Junto com meu amigo <a href=\"https://koganas.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Daniel Koganas</a>, nós desenvolvemos o novo site da Trópico utilizando WordPress, Sass e ES6."
+      }
+    },
+    "projects": {
+      "title": "Projetos open source",
+      "jobs": {
+        "developer_titles": "Após algumas pesquisas no GitHub e no LinkedIn, eu notei alguns títulos/status engraçados e decidi criar uma espécie de gerador.",
+        "flavored_markdown": "Um editor live de markdown com os estilos de visualização do GitHub, Bitbucket, Azure e GitLab.",
+        "frontend_ended": "A gente escuta isso quase todos os dias - e nós sabemos bem qual é a resposta."
+      },
+      "call": "Fique ligado para novos projetos! 🚀"
+    },
+    "links": {
+      "github": "Ver no GitHub",
+      "live": "Ver projeto"
+    }
   },
   "contact": {
     "title": "Contato"
@@ -53,7 +78,7 @@
   "menu": {
     "home": "Início",
     "me": "Eu",
-    "labs": "Labs",
+    "work": "Portfolio",
     "contact": "Contato",
 
     "resume": "Currículo",

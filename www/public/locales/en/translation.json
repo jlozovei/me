@@ -1,14 +1,14 @@
 {
   "home": {
     "title": "Home",
-    "description": "Hi, I am Julio. Here you'll find a bit about my job as a front-end developer!",
+    "description": "Hi, I am Julio. I love to create solutions based on HTML, CSS and JavaScript!",
     "image": "Julio's Memoji"
   },
   "me": {
     "title": "jlozovei",
     "about": [
       "Hello, welcome! My name is Julio Lozovei, and I work as a front-end developer.",
-      "Born and raised in Curitiba, Brazil, currently working for Bcredi; I started to write HTML when was 15 y/o and never stopped since there. Besides writing code, I also write and talk about general technology, development culture and career.",
+      "Born and raised in Curitiba, Brazil, I started to write HTML when was 15 y/o and never stopped since there. Besides writing code, I also write and talk about general technology, development culture and career.",
       "In my spare time I love to play video games, play some music, write about life and create playlists on <a target=\"_blank\" rel=\"noopener\" href=\"https://open.spotify.com/user/12186916663?si=2lvbgz3PQPSduWmDMeQBBQ\">Spotify</a> (check'em out!).",
       "You can find my texts in those links below:"
     ]
@@ -33,12 +33,37 @@
       "headphones": "Headphones",
       "earphones": "Earphones",
       "phone": "Phone",
-      "notes": "Notes App"
+      "notes": "Notes App",
+      "communication": "Communication/Chat",
+      "design": "Design and Prototyping",
+      "music": "Música",
+      "podcasts": "Podcasts",
+      "passwords": "To (avoid) remember my passwords",
+      "email": "Email"
     }
   },
-  "labs": {
-    "title": "Labs",
-    "description": "Here are some of my recent works. Take a look, and if you feel in your heart, contribute - it's open source!"
+  "work": {
+    "title": "Work",
+    "description": "Besides working professionally as a front-end developer and as a freelancer, I love to contribute with open source community. Check below my recent projects:",
+    "portfolio": {
+      "title": "Portfolio",
+      "jobs": {
+        "tropico": "Alongside my friend <a href=\"https://koganas.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Daniel Koganas</a>, we developed the Trópico new website using WordPress, Sass and ES6."
+      }
+    },
+    "projects": {
+      "title": "Open source projects",
+      "jobs": {
+        "developer_titles": "After some research on GitHub and LinkedIn, I've seen some crazy titles/status and decided to create a kind of generator.",
+        "flavored_markdown": "A nice markdown in-browser editor featuring GitHub, Bitbucket, Azure and GitLab markdown styles preview.",
+        "frontend_ended": "We've been hearing it for a long time now - and we all know the answer."
+      },
+      "call": "Stay tuned for new projects! 🚀"
+    },
+    "links": {
+      "github": "See on GitHub",
+      "live": "See live"
+    }
   },
   "contact": {
     "title": "Contact"
@@ -52,7 +77,7 @@
   "menu": {
     "home": "Home",
     "me": "Me",
-    "labs": "Labs",
+    "work": "Work",
     "contact": "Contact",
 
     "resume": "Resume",
