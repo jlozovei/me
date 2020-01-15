@@ -19,7 +19,7 @@ const Uses = props => {
 
       <Section>
         <h2>{t('uses.home.title')}</h2>
-        <ul>
+        <ul className="decorated">
           {Object.keys(uses.home).map(key => (
             <li key={key}>
               {t(`uses.stuff.${key}`)}: <b dangerouslySetInnerHTML={{ __html: uses.home[key] }} />
@@ -32,7 +32,7 @@ const Uses = props => {
 
       <Section>
         <h2>{t('uses.work.title')}</h2>
-        <ul>
+        <ul className="decorated">
           {Object.keys(uses.work).map(key => (
             <li key={key}>
               {t(`uses.stuff.${key}`)}: <b dangerouslySetInnerHTML={{ __html: uses.work[key] }} />
@@ -45,7 +45,7 @@ const Uses = props => {
 
       <Section>
         <h2>{t('uses.personal.title')}</h2>
-        <ul>
+        <ul className="decorated">
           {Object.keys(uses.personal).map(key => (
             <li key={key}>
               {t(`uses.stuff.${key}`)}:{' '}
