@@ -4,6 +4,7 @@ export const StyledTitle = styled.h1`
   position: relative;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
+  text-transform: lowercase;
 
   &:after {
     display: block;
