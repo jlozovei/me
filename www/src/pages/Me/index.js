@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { NavLink as Link } from 'react-router-dom';
 // import differenceInYears from 'date-fns/differenceInYears';
 
 import PageTitle from 'components/PageTitle';
@@ -37,21 +36,6 @@ const Me = props => {
             </li>
           );
         })}
-      </ListInline>
-
-      <hr />
-
-      <ListInline>
-        <li>
-          <Link exact to="/">
-            {t('menu.resume')}
-          </Link>
-        </li>
-        <li>
-          <Link exact to="/uses">
-            {t('menu.uses')}
-          </Link>
-        </li>
       </ListInline>
     </Template>
   );
