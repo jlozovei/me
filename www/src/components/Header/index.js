@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { useTranslation } from 'react-i18next';
 import { NavLink as Link } from 'react-router-dom';
 
@@ -10,6 +11,13 @@ const Header = ({ children }) => {
   const { t, i18n } = useTranslation();
 
   const changeLanguage = lng => {
+    const event = {
+      category: 'Language',
+      action: 'Changed language',
+      label: lng.toUpperCase()
+    };
+
+    ReactGA.event(event);
     i18n.changeLanguage(lng);
   };
 
