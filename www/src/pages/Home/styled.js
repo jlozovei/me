@@ -26,8 +26,4 @@ export const StyledHeadline = styled.div`
   h1 {
     margin-bottom: 0.5rem;
   }
-
-  small {
-    margin-bottom: 1rem;
-  }
 `;

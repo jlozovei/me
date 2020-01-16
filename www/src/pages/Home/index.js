@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import ReactGA from 'react-ga';
 import { useTranslation } from 'react-i18next';
 
 import ListInline from 'components/ListInline';
@@ -7,22 +8,10 @@ import Template from '../template';
 import { StyledHeadline } from './styled';
 
 import social from 'data/social';
-import titles from 'data/titles';
 import hello from 'assets/images/hello.png';
 
 const Home = props => {
   const { t } = useTranslation();
-  const [activeIndex, setActiveIndex] = useState(0);
-  const animationInterval = 8000;
-
-  useEffect(() => {
-    const limit = titles.length - 1;
-
-    setTimeout(() => {
-      if (activeIndex < limit) setActiveIndex(activeIndex + 1);
-      else setActiveIndex(0);
-    }, animationInterval);
-  }, [activeIndex]);
 
   return (
     <Template>
@@ -33,7 +22,6 @@ const Home = props => {
           onLoad={event => event.target.classList.add('loaded')}
         />
         <h1>jlozovei.dev</h1>
-        <small>{titles[activeIndex]}</small>
 
         <p>
           {t('home.description')}{' '}
@@ -48,14 +36,15 @@ const Home = props => {
 
             return (
               <li key={slug}>
-                <a
-                  href={link}
+                <ReactGA.OutboundLink
+                  eventLabel={`Home - social - ${name}`}
+                  to={link}
                   target="_blank"
                   rel="noopener noreferrer"
                   title={t(`social.${slug}`)}
                 >
                   {name}
-                </a>
+                </ReactGA.OutboundLink>
               </li>
             );
           })}

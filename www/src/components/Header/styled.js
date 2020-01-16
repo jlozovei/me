@@ -7,6 +7,10 @@ export const StyledHeader = styled.header`
   padding: 1rem 0;
 `;
 
+export const StyledNav = styled.nav`
+  position: relative;
+`;
+
 export const StyledOptions = styled.div`
   position: relative;
 `;
@@ -44,6 +48,10 @@ export const StyledFlexContainer = styled(StyledContainer)`
       border-bottom: 1px solid #c1c1c1;
       margin-bottom: 0.25rem;
       padding-bottom: 0.25rem;
+    }
+
+    ${StyledNav} {
+      padding-top: 0.375rem;
     }
   }
 `;

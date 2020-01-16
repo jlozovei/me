@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { useTranslation } from 'react-i18next';
 
 import { StyledFooter, StyledFlexContainer } from './styled';
@@ -16,23 +17,25 @@ const Footer = ({ children }) => {
             ❤️
           </span>
           {t('footer.using')}{' '}
-          <a
-            href="https://www.reactjs.org/"
+          <ReactGA.OutboundLink
+            eventLabel="Footer - react"
+            to="https://www.reactjs.org/"
             target="_blank"
             rel="noopener noreferrer"
             title={t('social.react')}
           >
             react
-          </a>
+          </ReactGA.OutboundLink>
           . {t('footer.code')}{' '}
-          <a
-            href="https://github.com/jlozovei/me"
+          <ReactGA.OutboundLink
+            eventLabel="Footer - github"
+            to="https://github.com/jlozovei/me"
             target="_blank"
             rel="noopener noreferrer"
             title={t('social.github')}
           >
             github
-          </a>
+          </ReactGA.OutboundLink>
           .
         </p>
         <p>
