@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { useTranslation } from 'react-i18next';
 
 import PageTitle from 'components/PageTitle';
@@ -30,14 +31,15 @@ const Work = props => {
               <li key={slug}>
                 <Card title={name} text={t(`work.portfolio.jobs.${slug}`)}>
                   {live && (
-                    <a
-                      href={live}
+                    <ReactGA.OutboundLink
+                      eventLabel={`Portfolio (Live) - ${name}`}
+                      to={live}
                       target="_blank"
                       rel="noopener noreferrer"
                       title={t('work.links.live')}
                     >
                       {t('work.links.live')}
-                    </a>
+                    </ReactGA.OutboundLink>
                   )}
                 </Card>
               </li>
@@ -58,24 +60,26 @@ const Work = props => {
               <li key={slug}>
                 <Card title={name} text={t(`work.projects.jobs.${slug}`)}>
                   {live && (
-                    <a
-                      href={live}
+                    <ReactGA.OutboundLink
+                      eventLabel={`Projects (Live) - ${name}`}
+                      to={live}
                       target="_blank"
                       rel="noopener noreferrer"
                       title={t('work.links.live')}
                     >
                       {t('work.links.live')}
-                    </a>
+                    </ReactGA.OutboundLink>
                   )}
                   {github && (
-                    <a
-                      href={github}
+                    <ReactGA.OutboundLink
+                      eventLabel={`Projects (GitHub) - ${name}`}
+                      to={github}
                       target="_blank"
                       rel="noopener noreferrer"
                       title={t('work.links.github')}
                     >
                       {t('work.links.github')}
-                    </a>
+                    </ReactGA.OutboundLink>
                   )}
                 </Card>
               </li>
