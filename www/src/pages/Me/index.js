@@ -1,6 +1,6 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { useTranslation } from 'react-i18next';
-// import differenceInYears from 'date-fns/differenceInYears';
 
 import PageTitle from 'components/PageTitle';
 import ListInline from 'components/ListInline';
@@ -11,9 +11,6 @@ import texts from 'data/texts';
 
 const Me = props => {
   const { t } = useTranslation();
-
-  // const birthDate = new Date(1997, 2, 24),
-  // myAge = differenceInYears(new Date(), birthDate);
 
   return (
     <Template>
@@ -30,9 +27,15 @@ const Me = props => {
 
           return (
             <li key={slug}>
-              <a href={link} target="_blank" rel="noopener noreferrer" title={t(`social.${slug}`)}>
+              <ReactGA.OutboundLink
+                eventLabel={`Me - texts - ${name}`}
+                to={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={t(`social.${slug}`)}
+              >
                 {name}
-              </a>
+              </ReactGA.OutboundLink>
             </li>
           );
         })}
