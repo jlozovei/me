@@ -56,7 +56,7 @@
   "bugs": {
     "url": "https://github.com/jlozovei/me/issues"
   },
-  "homepage": ".",
+  "homepage": "https://jlozovei.dev",
   "browserslist": {
     "production": [
       ">0.2%",
