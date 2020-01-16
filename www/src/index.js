@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { hydrate, render } from 'react-dom';
 import { Router } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
@@ -13,9 +13,15 @@ import 'assets/css/app.css';
 
 !isLocal() && ReactGA.initialize(process.env.REACT_APP_ANALYTICS_ID);
 
-ReactDOM.render(
+const Root = () => (
   <Router history={history}>
     <App />
-  </Router>,
-  document.getElementById('root')
+  </Router>
 );
+
+const rootElement = document.getElementById('root');
+if (rootElement.hasChildNodes()) {
+  hydrate(<Root />, rootElement);
+} else {
+  render(<Root />, rootElement);
+}
