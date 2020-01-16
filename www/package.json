@@ -11,6 +11,7 @@
     "clean": "rm -rf ./build",
     "start": "npm-run-all -p start:*",
     "build": "npm-run-all build:*",
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "copy-files": "cp ./CNAME ./build && cp ./README.md ./build",
@@ -28,6 +29,7 @@
     "postcss-preset-env": "^6.7.0",
     "precss": "^4.0.0",
     "prettier": "^1.18.2",
+    "react-snap": "^1.23.0",
     "rucksack-css": "^1.0.2"
   },
   "dependencies": {
