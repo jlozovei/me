@@ -23,13 +23,6 @@ For global styles (reset and custom definitions) I'm using [PostCSS](https://pos
 As the package manager, I like to use [yarn](https://yarnpkg.com/).
 
 
-### :station: Routing References
-GitHub Pages has some issues with client-side routing - you probably had this kind of issue before. After hours researching about it I found those two links below that provided a workaround to solve it:
-
-- [So you want to host your Single Page React App on GitHub Pages? - ITNEXT](https://itnext.io/so-you-want-to-host-your-single-age-react-app-on-github-pages-a826ab01e48)
-- [@rafrex/spa-github-pages](https://github.com/rafrex/spa-github-pages)
-
-
 ## :pencil: Templating
 If you want to use this project as a template, feel free to do so and also to modify anything.
 
