@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { useTranslation } from 'react-i18next';
 
 import ListInline from 'components/ListInline';
@@ -35,14 +36,15 @@ const Home = props => {
 
             return (
               <li key={slug}>
-                <a
-                  href={link}
+                <ReactGA.OutboundLink
+                  eventLabel={`Home - social - ${name}`}
+                  to={link}
                   target="_blank"
                   rel="noopener noreferrer"
                   title={t(`social.${slug}`)}
                 >
                   {name}
-                </a>
+                </ReactGA.OutboundLink>
               </li>
             );
           })}
