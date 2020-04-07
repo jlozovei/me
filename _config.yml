@@ -1,0 +1,60 @@
+# Site
+title: jlozovei.dev
+email: jlozovei@gmail.com
+description: >-
+  Front-end development taken seriously.
+baseurl: ''
+url: 'https://jlozovei.dev'
+
+# Constants
+twitter_username: juliolozovei
+github_username: jlozovei
+google_analytics_key: 'UA-116650364-1'
+
+# SEO
+logo: /img/favicon.ico
+description: Front-end development taken seriously
+author:
+  name: Julio Lozovei
+  email: jlozovei@gmail.com
+  twitter: juliolozovei
+twitter:
+  username: juliolozovei
+  card: summary
+social:
+  name: Julio Lozovei
+  links:
+    - https://github.com/jlozovei
+    - https://twitter.com/juliolozovei
+
+# Archives
+# jekyll-archives:
+  # enabled: ['categories']
+
+# Plugin + build settings
+timezone: Etc/UTC
+permalink: /blog/:title/
+theme: minima
+plugins:
+  - jekyll-archives
+  - jekyll-commonmark
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+markdown: CommonMark
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+  - .jekyll-cache
+  - react
