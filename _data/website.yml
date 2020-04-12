@@ -1,32 +1,35 @@
+---
 - name: Tools
   items:
-    - name: Jekyll
-      for: as platform
-      link: https://jekyllrb.com/
-    - name: GitHub
-      for: as host and CI
-      link: https://github.com
-    - name: Unsplash
-      for: for cool photos
-      link: https://unsplash.com/
-    - name: Google Domains
-      for: for the <em>.dev</em> custom domain
-      link: https://domains.google
-    - name: Google Fonts
-      for: as the font CDN
-      link: https://fonts.google.com/
-    - name: PrismJS
-      for: as the syntax highlighter on blog posts
-      link: https://prismjs.com/
+  - name: Jekyll
+    for: as platform
+    link: https://jekyllrb.com/
+  - name: GitHub
+    for: as host and CI
+    link: https://github.com
+  - name: Forestry
+    for: as CMS
+    link: https://forestry.io/
+  - name: Unsplash
+    for: for cool photos
+    link: https://unsplash.com/
+  - name: Google Domains
+    for: for the <em>.dev</em> custom domain
+    link: https://domains.google
+  - name: Google Fonts
+    for: as the font CDN
+    link: https://fonts.google.com/
+  - name: PrismJS
+    for: as the syntax highlighter on blog posts
+    link: https://prismjs.com/
 - name: 'Special thanks to:'
   items:
-    - name: Charles Deluvio
-      for: for the great photo I've used as post thumbnail
-      link: https://unsplash.com/photos/Yjys2AN6v0I
-    - name: Florian Olivo
-      for: for the great photo I've used in the <em>/portfolio</em> page
-      link: https://unsplash.com/photos/Ek9Znm8lQ1U
-    - name: Markus Spiske
-      for: or the great photo I've used in the <em>/about</em> page
-      link: https://unsplash.com/photos/qjnAnF0jIGk
-    
+  - name: Charles Deluvio
+    for: for the great photo I've used as post thumbnail
+    link: https://unsplash.com/photos/Yjys2AN6v0I
+  - name: Florian Olivo
+    for: for the great photo I've used in the <em>/portfolio</em> page
+    link: https://unsplash.com/photos/Ek9Znm8lQ1U
+  - name: Markus Spiske
+    for: or the great photo I've used in the <em>/about</em> page
+    link: https://unsplash.com/photos/qjnAnF0jIGk
