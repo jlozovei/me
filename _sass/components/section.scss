@@ -1,0 +1,17 @@
+.section {
+  position: relative;
+  padding: 4rem 0;
+
+  &--headline {
+    padding-bottom: 2rem;
+    background-color: $white;
+
+    p {
+      max-width: 85%;
+    }
+  }
+
+  &--list {
+    padding: 2rem 0 6rem;
+  }
+}

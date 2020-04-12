@@ -1,0 +1,51 @@
+.block-heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 18rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  color: $white;
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &:before {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:after {
+    background-color: rgba(20, 20, 20, 0.4);
+  }
+
+  @media #{$medium} {
+    &:before,
+    &:after {
+      width: 100vw;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media #{$m_medium} {
+    margin-bottom: 3rem;
+    padding: 2rem 6rem;
+
+    &:before,
+    &:after {
+      border-radius: 2px;
+    }
+  }
+}

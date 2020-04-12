@@ -1,0 +1,14 @@
+@mixin responsive-font-size($font-min, $font-max) {
+  font-size: $font-min;
+
+  @media #{$m_phone} {
+    font-size: calc(
+      #{$font-min} + #{strip-unit($font-max - $font-min)} *
+        ((100vw - #{$m_phone_width}) / #{strip-unit($m_desktop_width - $m_phone_width)})
+    );
+  }
+
+  @media #{$m_desktop} {
+    font-size: $font-max;
+  }
+}

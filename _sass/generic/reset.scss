@@ -1,0 +1,114 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  display: none;
+  content: '';
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+body,
+button {
+  font-family: $font_text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font_title;
+}
+
+pre,
+code,
+kbd {
+  font-family: $font_code;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-size: 0.875rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  width: 100%;
+
+  &.emoji {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+table {
+  margin: 1rem 0 2rem;
+  border-collapse: collapse;
+
+  &,
+  td,
+  th {
+    border: 1px solid $grey;
+  }
+
+  td,
+  th {
+    padding: 0.5rem;
+  }
+
+  tr {
+    &:nth-child(even) {
+      background-color: $grey--light;
+    }
+  }
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  height: 1px;
+  background-color: $grey;
+}
