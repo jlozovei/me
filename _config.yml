@@ -43,7 +43,6 @@ compress_html:
   # enabled: ['categories']
 
 # Plugin + build settings
-destination: ./build
 timezone: Etc/UTC
 permalink: /blog/:title/
 theme: minima
@@ -76,6 +75,5 @@ exclude:
   - README.md
   - LICENCE
   - .jekyll-cache
-  - react
   - _drafts
   - .github
