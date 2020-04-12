@@ -1,0 +1,54 @@
+---
+layout: default
+title: Uses
+permalink: /uses
+slug: uses
+---
+
+<div class="section section--headline">
+  <div class="container">
+    <h1>Uses.</h1>
+    <p>There are a lot of stuff - tools, devices, gadgets - I use daily to create and share. Here are some of them:</p>
+  </div>
+</div>
+
+<div class="section section--list">
+  <div class="container">
+    {% for category in site.data.uses %}
+    <div class="section__topic">
+      <h3>{{ category.name }}</h3>
+
+      <ul>
+        {% for item in category.items %}
+        <li>
+          <span><b>{{ item.key }}</b>: {{ item.value }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="section section--this">
+  <div class="container">
+    <div class="section__text">
+      <h2>This website.</h2>
+      <p>To build this website and blog, I've used the following:</p>
+    </div>
+
+    {% for category in site.data.website %}
+    <div class="section__topic">
+      <h3>{{ category.name }}</h3>
+
+      {% for item in category.items %}
+      <ul>
+        <li>
+          <span><a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a> {{ item.for }}</span>
+        </li>
+      </ul>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
