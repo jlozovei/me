@@ -1,0 +1,87 @@
+---
+layout: default
+title: About me
+permalink: /about
+slug: about
+---
+
+<div class="section section--headline">
+  <div class="container">
+    <h1>About me.</h1>
+    <p>Born and raised in Curitiba, Brazil, I started to write HTML with 15 years old, and never stopped since then. Always working as a front-end developer, I’m also on to mobile development, ux/ui designing, IoT and gadgets.</p>
+
+    <a href="{{ site.resume_link }}" target="_blank" rel="noopener noreferrer" class="button">Download Full Resume</a>
+  </div>
+</div>
+
+<div class="section section--list">
+  <div class="container">
+    <div class="section__topic">
+      <h2>Work experience.</h2>
+
+      <ul class="list">
+        {% for item in site.data['work-experience'] %}
+          <li class="list__item">
+            <div class="info">
+              <div class="info__header">
+                <img src="/img/work-experience/{{ item.img }}.svg" alt="{{ item.name }}">
+
+                <div class="info__title">
+                  <h4 class="info__name">{{ item.name }}</h4>
+                  <p class="info__date">{{ item.role }} | {{ item.date }}</p>
+                </div>
+              </div>
+
+              <div class="info__body">
+                <div class="info__text">
+                  {{ item.text }}
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="section__topic">
+      <h2>Academics.</h2>
+
+      <ul class="list">
+        {% for item in site.data['academics'] %}
+          <li class="list__item">
+            <div class="info">
+              <div class="info__header">
+                <img src="/img/academics/{{ item.img }}.svg" alt="{{ item.name }}">
+
+                <div class="info__title">
+                  <h4 class="info__name">{{ item.name }}</h4>
+                  <p class="info__date">{{ item.institution }} | {{ item.date }}</p>
+                </div>
+              </div>
+
+              <div class="info__body">
+                <div class="info__text">
+                  {{ item.text }}
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section section--cml">
+  <div class="container">
+    <h2 class="block-heading">Coding,<br/>mentoring,<br/>learning.</h2>
+
+    <div class="section__content">
+      <p>Since 2018 I’ve started to write and speak about technology, development culture and career; from tips, tutorials to reviews and opinions. Also, started to speak about those topics in meet-ups and technology events. You can find my articles on my <a href="https://medium.com/@jlozovei" target="_blank" rel="noopener noreferrer">Medium</a>, <a href="https://dev.to/jlozovei" target="_blank" rel="noopener noreferrer">dev.to</a> and <a href="/blog">my personal blog</a>.</p>
+
+      <p>Besides speaking, I’m also working as a volunteer tutor and mentor. In 2019 and 2020 I was invited by Gama Academy to teach about front-end development in their <a href="https://pages.gama.academy/experience/" target="_blank" rel="noopener noreferrer">Gama XP</a>, a program which help people to develop their abilities on development, design, sales and marketing.</p>
+
+      <p>I work as a front-end developer, current on Paraná Banco - a Brazilian bank focused on payroll loans - and I love open source. In the last years I’m trying to contribute everyday more to the community. You can find some of my projects on my <a href="https://github.com/jlozovei" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://glitch.com/@jlozovei" target="_blank" rel="noopener noreferrer">Glitch</a> and <a href="http://codepen.io/jlozovei" target="_blank" rel="noopener noreferrer">Codepen</a>.</p>
+    </div>
+  </div>
+</div>

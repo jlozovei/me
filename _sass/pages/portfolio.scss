@@ -1,0 +1,181 @@
+@import '../index';
+
+.section--list,
+.section--os,
+.footer {
+  background-color: $grey--light;
+}
+
+.section {
+  &--list {
+    &:before {
+      position: absolute;
+      top: -2rem;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: calc(100% + 10rem);
+      background-color: $white;
+      transform: skewY(-2deg);
+      z-index: 1;
+    }
+  }
+
+  &--os {
+    padding-top: 0;
+
+    .block-heading {
+      &:before {
+        background-image: url('../img/heroes/os.jpg');
+      }
+    }
+
+    @media #{$m_tablet} {
+      .section__content {
+        max-width: 83.3333333333%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.jobs-list {
+  &__item {
+    display: block;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $black;
+    transition: all ease-in-out 210ms;
+
+    &:hover {
+      transform: translateX(0.5rem);
+    }
+
+    & + .jobs-list__item {
+      margin-top: 2rem;
+    }
+  }
+
+  @media #{$m_tablet} {
+    width: 83.3333333333%;
+    margin: 0 auto;
+  }
+}
+
+.portfolio {
+  a {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+
+  &__name,
+  &__description {
+    color: $black;
+  }
+
+  &__anchor {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    @extend %anchor--spaced;
+  }
+
+  &__image {
+    margin-bottom: 1rem;
+
+    img {
+      max-height: 18rem;
+      border-radius: 2px;
+      object-fit: cover;
+    }
+  }
+
+  @media #{$m_phone} {
+    a {
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__content {
+      flex-basis: 40%;
+      width: 40%;
+      padding-right: 1rem;
+    }
+
+    &__image {
+      flex-basis: 60%;
+      width: 60%;
+      margin-bottom: 0;
+      padding-left: 1rem;
+    }
+  }
+}
+
+.os-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 -0.5rem;
+
+  &__item {
+    flex-basis: 100%;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  @media #{$m_tablet} {
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+
+    &__item {
+      flex-basis: 50%;
+      width: 50%;
+
+      &:nth-child(4n + 1),
+      &:nth-child(4n + 2) {
+        transform: translateX(-1rem);
+      }
+
+      &:nth-child(4n + 3),
+      &:nth-child(4n + 4) {
+        transform: translateX(1rem);
+      }
+    }
+  }
+}
+
+.os-project {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+
+  &__name,
+  &__description {
+    margin-bottom: 0.625rem;
+    color: $black;
+  }
+
+  p {
+    max-width: 100%;
+  }
+
+  &__anchor {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    @extend %anchor--spaced;
+  }
+
+  &__image {
+    margin-bottom: 1rem;
+
+    img {
+      max-height: 12rem;
+      border-radius: 2px;
+      object-fit: cover;
+    }
+  }
+}

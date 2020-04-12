@@ -1,0 +1,110 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  {% include meta/head.html %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/post.css">
+</head>
+<body>
+  {% include layout/header.html %}
+
+  <div class="page">
+    <div class="section section--content">
+      <div class="container">
+        <a href="/blog" class="section__backlink">&larr; See all posts</a>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+          <header class="post__header">
+            <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
+
+            {% include post/meta.html case="post" %}
+
+            {% if page.image_src %}
+            <div class="post__image">
+              <figure>
+                <img src="{{ page.image_src }}">
+                
+                {% if page.image_author %}
+                <figcaption>
+                  Photo by {{ page.image_author }} on
+                  <a href="{{ page.image_from_url }}" target="_blank" rel="noopener noreferrer">{{ page.image_from }}</a>
+                </figcaption>
+                {% endif %}
+              </figure>
+            </div>
+            {% endif %}
+          </header>
+
+          <div class="post__content" itemprop="articleBody">
+            {{ content | remove: page.excerpt }}
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="section section--share">
+      <div class="container">
+        <div class="social-share">
+          <h6 class="social-share__title">Share this article</h6>
+
+          {% assign post_url = page.url | absolute_url %}
+
+          <ul class="social-share__list">
+            <li>
+              <a href="https://www.facebook.com/sharer/sharer.php?u={{ post_url }}&title={{ page.title }}&description={{ page.excerpt }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ post_url }}&related={{ site.twitter.username }}" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ post_url }}&title={{ page.title }}&summary={{ page.excerpt }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {% unless page.category == null %}
+      {% capture pageCategory %}{{ page.category }}{% endcapture %}
+      {% unless site.categories[pageCategory].size == 1 %}
+        <div class="section section--related">
+          <div class="container">
+            <h2>You may also like</h2>
+            <ul class="post-list">
+              {% for post in site.categories[pageCategory] limit:6 %}
+                {% unless post.title == page.title %}
+                <li class="post-list__item">
+                  <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
+                    <div class="card post-card">
+                      <h4 class="post-card__title">{{ post.title | escape }}</h4>
+
+                      {% include post/meta.html case="post" %}
+
+                      {% if site.show_excerpts %}
+                      <div class="post-card__excerpt">
+                        {{ post.excerpt }}
+                      </div>
+                      {% endif %}
+
+                      <button class="anchor">Read more &rarr;</button>
+                    </div>
+                  </a>
+                </li>
+                {% endunless %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        
+      {% endunless %}
+    {% endunless %}
+  </div>
+
+  {% include layout/footer.html %}
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js" defer></script>
+</body>
+</html>

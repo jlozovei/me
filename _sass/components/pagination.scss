@@ -1,0 +1,59 @@
+.pagination {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 30rem;
+  margin: 4rem auto 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid $black;
+
+  &__link,
+  &__current {
+    flex-basis: 33.3333333333%;
+    padding: 0.5rem;
+    font-weight: 800;
+    @include responsive-font-size(0.75rem, 1rem);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__current {
+    text-align: center;
+  }
+
+  &__link {
+    &--prev {
+      text-align: left;
+    }
+
+    &--next {
+      text-align: right;
+    }
+
+    &--disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  @media #{$phone} {
+    justify-content: space-between;
+
+    &__link {
+      &--prev {
+        order: 2;
+      }
+
+      &--next {
+        order: 3;
+      }
+    }
+
+    &__current {
+      flex-basis: 100%;
+      order: 1;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.card {
+  position: relative;
+  height: 100%;
+  padding: 2rem 1rem;
+  border: 1px solid $grey;
+  border-radius: 2px;
+  background-color: $white;
+  transition: all ease-in-out 210ms;
+
+  &:hover {
+    box-shadow: 0 0 30px -15px $shadow;
+  }
+}
+
+.post-card {
+  color: $black;
+
+  &__image {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.25rem;
+  }
+
+  &__meta {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0.25rem;
+
+    p {
+      margin: 0;
+      font-size: 0.75rem;
+
+      &:before {
+        position: relative;
+        left: -0.375rem;
+        top: 0;
+        content: '|';
+        color: $sunset;
+      }
+
+      & + p {
+        margin-left: 0.5rem;
+        padding-left: 0.5rem;
+
+        &:before {
+          display: inline;
+        }
+      }
+    }
+  }
+}

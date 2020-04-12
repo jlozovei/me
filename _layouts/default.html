@@ -1,0 +1,20 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  {% include meta/head.html %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ page.slug }}.css">
+</head>
+<body>
+  {% include layout/header.html %}
+
+  <div class="page">
+    {{ content }}
+  </div>
+
+  {% include layout/footer.html %}
+</body>
+</html>

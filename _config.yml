@@ -1,0 +1,81 @@
+# Site
+title: jlozovei.dev
+email: jlozovei@gmail.com
+description: >-
+  Front-end development taken seriously.
+baseurl: ''
+url: 'https://jlozovei.dev'
+
+# Constants
+resume_link: 'https://drive.google.com/open?id=1u_b0Uhol6qSqhRQV6_4v4OZsgLAr8Iwt'
+google_analytics_key: 'UA-116650364-1'
+
+# SEO
+title: jlozovei.dev
+logo: /favicon.ico
+description: Front-end development taken seriously.
+author:
+  name: Julio Lozovei
+  email: jlozovei@gmail.com
+  twitter: juliolozovei
+twitter:
+  username: juliolozovei
+  card: summary
+social:
+  name: Julio Lozovei
+  links:
+    - https://github.com/jlozovei
+    - https://twitter.com/juliolozovei
+
+# Compress HTML
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+# Archives
+# jekyll-archives:
+  # enabled: ['categories']
+
+# Plugin + build settings
+destination: ./build
+timezone: Etc/UTC
+permalink: /blog/:title/
+theme: minima
+plugins:
+  - jekyll-archives
+  - jekyll-commonmark
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+paginate: 4
+paginate_path: "/blog/page-:num/"
+
+sass:
+  style: compressed
+
+markdown: CommonMark
+commonmark:
+  options: ["SMART", "FOOTNOTES", "UNSAFE"]
+  extensions: ["strikethrough", "autolink", "table"]
+
+excerpt_separator: <!--more-->
+show_excerpts: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+  - .jekyll-cache
+  - react
+  - _drafts
+  - .github

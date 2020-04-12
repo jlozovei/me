@@ -1,0 +1,22 @@
+- name: Web Design
+  institution: Microcamp Tecnologia
+  date: '2011 - 2013'
+  img: microcamp
+  text: >-
+    <p>At a local fair, I was given lots of discounts to start a course at Microcamp. At that time I still had no idea what career to pursue, and I liked the name <em>Web Design</em>; so I decided to take this course.</p>
+    <p>In this course I had my first contact with technology and development. There I learned HTML, CSS and JavaScript (jQuery actually), I learned to work with design softwares (at the time, CorelDraw and Photoshop), I learned to make websites with Flash, and I also had a brief introduction to PHP.</p>
+    <p>When I finished the course, I was still finishing high school and already had decided what I wanted to do with my life - work with software development.</p>
+- name: IT Management - graduation
+  institution: Faculdades Santa Cruz
+  date: '2014 - 2016'
+  img: santa-cruz
+  text: >-
+    <p>My uncle and my cousin took this graduation, and they highly recommended the course. I was in doubt between doing this or going with Information Systems course. The great advantage of this course was that the level of graduation was "technologist", and the duration was shorter - 2.5 years.</p>
+    <p>In this course I had contact with C development, people and resource management, database management, strategic planning and entrepreneurship.</p>
+- name: IoT and Embededd Systems - post-graduation
+  institution: Universidade Positivo
+  date: '2017 - 2019'
+  img: up
+  text: >-
+    <p>Right after graduating, I didn't want to stop and threw myself headlong into graduate school. I was immersed in the bubble of web development, and literally wanted to get out of the box and learn something totally different.</p>
+    <p>In this course I had contact with C, PHP, Android (Java) development, cloud servers development and management, electronic prototyping (using Arduino, Raspberry and Tiva C), artificial intelligence using IBM Watson, big data and development for smart cities.</p>

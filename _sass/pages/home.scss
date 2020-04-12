@@ -1,0 +1,145 @@
+@import '../index';
+
+.section,
+.footer {
+  background-color: $grey--light;
+}
+
+.section {
+  &--intro {
+    padding: 6rem 0;
+
+    &:before {
+      position: absolute;
+      top: -6rem;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: calc(100% + 4rem);
+      background-color: $white;
+      transform: skewY(-2deg);
+      z-index: 1;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .section {
+      &__profile {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 2rem;
+
+        h1 {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          max-width: 12rem;
+          margin-bottom: 0;
+          z-index: 1;
+          transform: translate(10%, -50%);
+        }
+      }
+
+      &__image {
+        position: relative;
+        flex-basis: 70%;
+        width: 70%;
+        padding: 2rem;
+        border-radius: 2px;
+        background-color: $grey--light;
+        box-shadow: 10px 10px 30px -15px $shadow;
+
+        &:before {
+          position: absolute;
+          top: 5%;
+          left: 5%;
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: 2px solid $sunset;
+          border-radius: 2px;
+          background-color: transparent;
+          z-index: -1;
+        }
+
+        img {
+          max-width: 24rem;
+          margin: 0 auto;
+        }
+      }
+
+      &__text {
+        margin-top: 6rem;
+      }
+    }
+
+    @media #{$m_tablet} {
+      .section {
+        &__profile {
+          h1 {
+            max-width: 24rem;
+          }
+        }
+
+        &__image {
+          flex-basis: 30rem;
+          width: 30rem;
+        }
+
+        &__text {
+          margin-top: 4rem;
+        }
+      }
+    }
+
+    @media #{$m_medium} {
+      .section {
+        &__profile {
+          max-width: 75%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  &--recent {
+    .section {
+      &__topic {
+        text-align: center;
+
+        & + .section__topic {
+          margin-top: 4rem;
+        }
+
+        h2 {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 32rem;
+          @include responsive-font-size(1.125rem, 1.5rem);
+        }
+
+        ul {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: center;
+
+          li {
+            padding: 0.5rem;
+
+            a {
+              font-size: 0.75rem;
+              font-weight: bold;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

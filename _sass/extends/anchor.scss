@@ -1,0 +1,10 @@
+%anchor {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+%anchor--spaced {
+  @extend %anchor;
+  letter-spacing: 1px;
+}

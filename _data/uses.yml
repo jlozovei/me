@@ -1,0 +1,36 @@
+- name: Designing
+  items:
+    - key: Prototyping
+      value: Adobe XD and Sketch (when available)
+    - key: Handoff
+      value: Zeplin
+    - key: Hand drawing
+      value: Cicero Papelaria's booklets
+- name: Developing
+  items:
+    - key: Computer
+      value: Apple MacBook Pro 13-inch, 2017, 2,3 GHz Dual-Core Intel Core i5, 8 GB
+    - key: Text Editor
+      value: Sublime Text 3 + Seti_UI theme
+    - key: Terminal
+      value: iTerm2, Oh My Zsh + robbyrussell theme
+    - key: Browser
+      value: Google Chrome/Google Chrome Canary
+    - key: Headphones
+      value: Marshall Monitor Bluetooth and harman/kardon IE NC (in-ear)
+- name: Personal Stuff
+  items:
+    - key: Phone
+      value: Apple iPhone 11 Pro
+    - key: Notes
+      value: Bear, Apple Notes, Google Keep
+    - key: Podcasts
+      value: Spotify, Apple Podcasts
+    - key: Music
+      value: Spotify, Tidal
+    - key: To (avoid) remember my passwords
+      value: LastPass
+    - key: Email
+      value: Gmail, Outlook
+    - key: Communication
+      value: Slack

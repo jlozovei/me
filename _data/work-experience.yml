@@ -1,0 +1,22 @@
+- name: Livetouch
+  role: 'Intern / Web Developer'
+  date: '09/2015 - 12/2017'
+  img: livetouch
+  text: >-
+    <p>My first job experience, I started at Livetouch as a front-end intern. There I've worked on several projects - from websites, dashboards and digital products - and also helped the team interviewing new interns. After 10 months, and most part of this time as the only front-end developer in the house, I was promoted to a JR front-end developer position.</p>
+    <p>In almost 2,5 years at Livetouch, I worked with jQuery, Angular, React, Vue, Ionic and also learned a little about Android development.</p>
+- name: EBANX
+  role: 'Front-end Developer'
+  date: '01/2018 - 07/2019'
+  img: ebanx
+  text: >-
+    <p>During my time at EBANX I was the front-end developer inside marketing area. There I helped to develop a new version of the company's business website - as part of Performance team - and also could help a lot of other teams - like Culture, The Shoppers (which has a blog), and the Content team.</p>
+    <p>Besides having to learn how to deal with HubSpot, which required me to use a lot of vanilla JS, there I used Vue to create new hotsites - like the careers page - and WordPress for blogs.</p>
+- name: Bcredi
+  role: 'Front-end Developer'
+  date: '07/2019 - 03/2020'
+  img: bcredi
+  text: >-
+    <p>I've joined Bcredi to help them grow their products. After a while working with the product team, I moved to work with Growth team to help solve some technology issues within the marketing.</p>
+    <p>There I helped to develop a new version of the company's design system - using PostCSS and vanilla JS - and developed a lot of new components for the React version; also helped the front-end chapter to standartize some patterns and tools for development.</p>
+    <p>As part of the marketing team, I helped to develop a new interest calculator and rewrote the institutional site, from Gatsby to HubSpot with vanilla JS.</p>

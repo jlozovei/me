@@ -1,0 +1,21 @@
+.footer {
+  position: relative;
+  padding: 1rem 0;
+  text-align: center;
+
+  p {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 4rem;
+    height: 1px;
+    background-color: $black;
+    transform: translateX(-50%);
+  }
+}
