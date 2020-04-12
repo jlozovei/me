@@ -1,0 +1,15 @@
+<nav>
+  <ul class="menu">
+    {% for item in site.data.pages %}
+      {% assign isActive = '' %}
+
+      {% if item.link == page.url or page.url contains '/blog' and item.link == '/blog' %}
+        {% assign isActive = class | append: 'menu__item--active' %}
+      {% endif %}
+
+      <li class="menu__item {{ isActive }}">
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

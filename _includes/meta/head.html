@@ -1,0 +1,22 @@
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;800&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="theme-color" content="#26282b">
+<meta name="msapplication-navbutton-color" content="#26282b">
+<meta name="apple-mobile-web-app-status-bar-style" content="#26282b">
+<meta name="pinterest" content="nopin">
+{% seo %}
+<meta property="og:image" content="https://jlozovei.dev/img/jlozovei.jpg">
+<meta name="twitter:image" content="https://jlozovei.dev/img/jlozovei.jpg">
+{% if site.google_analytics_key != '' %}
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '{{ site.google_analytics_key }}', {
+      storage: 'none',
+      storeGac: false
+    });
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+{% endif %}
