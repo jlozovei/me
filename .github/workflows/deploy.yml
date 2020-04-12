@@ -4,13 +4,20 @@ on:
     branches:
       - master
 jobs:
-  build_and_deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - name: Cache gems
+        uses: actions/cache@v1
+        with:
+          path: vendor/gems
+          key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
       - name: Build & Deploy to GitHub Pages
+        uses: DavidS/jekyll-deploy@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-        uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+          JEKYLL_ENV: production
+          GH_PAGES_TOKEN: ${{ secrets.GH_TOKEN }}
