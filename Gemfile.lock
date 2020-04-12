@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jekyll/jekyll.git
-  revision: 5c24527457ccccbc02441be6c3a0bd56d5f3207e
+  revision: 90f6d171d4a94420e80e3a63633a5bf7ed07149c
   specs:
     jekyll (4.0.0)
       addressable (~> 2.4)
@@ -45,6 +45,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-include-cache (0.2.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-paginate (1.1.0)
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-seo-tag (2.6.1)
@@ -98,6 +99,7 @@ DEPENDENCIES
   jekyll-commonmark
   jekyll-feed
   jekyll-include-cache
+  jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
   liquid-c

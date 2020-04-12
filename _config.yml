@@ -7,14 +7,13 @@ baseurl: ''
 url: 'https://jlozovei.dev'
 
 # Constants
-twitter_username: juliolozovei
-github_username: jlozovei
-google_analytics_key: 'UA-116650364-1'
 resume_link: 'https://drive.google.com/open?id=1u_b0Uhol6qSqhRQV6_4v4OZsgLAr8Iwt'
+google_analytics_key: 'UA-116650364-1'
 
 # SEO
+title: jlozovei.dev
 logo: /favicon.ico
-description: Front-end development taken seriously
+description: Front-end development taken seriously.
 author:
   name: Julio Lozovei
   email: jlozovei@gmail.com
@@ -28,11 +27,23 @@ social:
     - https://github.com/jlozovei
     - https://twitter.com/juliolozovei
 
+# Compress HTML
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
 # Archives
 # jekyll-archives:
   # enabled: ['categories']
 
 # Plugin + build settings
+destination: ./build
 timezone: Etc/UTC
 permalink: /blog/:title/
 theme: minima
@@ -66,3 +77,5 @@ exclude:
   - LICENCE
   - .jekyll-cache
   - react
+  - _drafts
+  - .github
