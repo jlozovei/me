@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "The secret of node_modules"
-date:   2020-04-09 18:15:00 -0300
+title: The secret of node_modules
+date: 2020-04-09T21:15:00.000+00:00
 category: study
-author: "Julio Lozovei"
-image_src: "https://images.unsplash.com/photo-1511075675422-c8e008f749d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2254&q=80"
-image_author: "Stefan Steinbauer"
-image_from: "Unsplash"
-image_from_url: "https://unsplash.com/photos/HK8IoD-5zpg"
+author: Julio Lozovei
+image_src: https://images.unsplash.com/photo-1511075675422-c8e008f749d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2254&q=80
+image_author: Stefan Steinbauer
+image_from: Unsplash
+image_from_url: https://unsplash.com/photos/HK8IoD-5zpg
+
 ---
 Have you ever asked why node_modules is so big?
 <!--more-->
@@ -21,8 +22,8 @@ When you publish a package on npm registry, the content of your repository will 
 
 But, as I said, the content of your repo will be published - and here lies a secret; well, it's not a secret, but people don't pay attention to it.
 
-
 ### The Secret
+
 Between 11/2019 and 02/2020 I made a study case to understand why node_modules is so big. I made the test with my website's old version, which was a React app boostraped with [create-react-app](https://github.com/facebook/create-react-app), and I was using [styled-components](https://github.com/styled-components/styled-components) - you can take a look on the [`package.json`](https://github.com/jlozovei/me/blob/dea2c41107d67e53cafc8b1d03715e59d5e4eff4/www/package.json) used.
 
 To do the test I made three initial thigs:
@@ -35,29 +36,27 @@ After doing it, I registered the `node_modules` size on disk and how many files 
 
 My first results were:
 
-| dir                    | size      | file count | description                        |
-| ---------------------- | --------- | ---------- | ---------------------------------- |
-| `/me`                  | 170,7MB   | 46.749     | my project's root folder           |
-| `/me/www`              | 167MB     | 46.743     | the folder where the react app was |
-| `/me/www/node_modules` | 164,6MB   | 46.658     | the node_modules for my app        |
-
+| dir | size | file count | description |
+| --- | --- | --- | --- |
+| /me | 170,7MB | 46.749 | my project's root folder |
+| /me/www | 167MB | 46.743 | the folder where the react app was |
+| /me/www/node_modules | 164,6MB | 46.658 | the node_modules for my app |
 
 If I consider only my project's files, they were about 85 and 2,4MB of disk size. And about the random files I found inside `node_modules`:
 
-| name/extension            | type      | count     |
-| ------------------------- | --------- | --------- |
-| `.md`                     | file      | 2766      |
-| `.txt`                    | file      | 88        |
-| `README`                  | file      | 1734      |
-| `CHANGELOG`               | file      | 420       |
-| `gulpfile.js`             | file      | 303       |
-| `gruntfile.js`            | file      | 113       |
-| `/test`                   | folder    | 177       |
-| `/example`                | folder    | 36        |
-| `.github`                 | dotfolder | 36        |
+| name/extension | type | count |
+| --- | --- | --- |
+| .md | file | 2766 |
+| .txt | file | 88 |
+| README | file | 1734 |
+| CHANGELOG | file | 420 |
+| gulpfile.js | file | 303 |
+| gruntfile.js | file | 113 |
+| /test | folder | 177 |
+| /example | folder | 36 |
+| .github | dotfolder | 36 |
 
 Those were the highlights - I've also found a lot of `Makefile`, linting config files (eslin, prettier), test coverage and sets config file, dotfiles and dotfolders...
-
 
 It's a lot of useless stuff. Don't you think? And, what scared me the most is: when you install a package, or when you install the whole dependencies of your project, you're donwload a bunch of files you won't use and you're spending your connection to download them.
 
@@ -75,11 +74,11 @@ I've kept all `*.js/ts`, `*.json`, `*.lock`, `*.npmignore`, `*,yml/yaml`, `*.bin
 
 The results I've got after the cleaning were:
 
-| dir                    | size        | file count |
-| ---------------------- | ----------- | ---------- |
-| `/me`                  | 142,9MB     | 37.979     |
-| `/me/www`              | 139,2MB     | 37.973     |
-| `/me/www/node_modules` | 136,8MB     | 37.888     |
+| dir | size | file count |
+| --- | --- | --- |
+| /me | 142,9MB | 37.979 |
+| /me/www | 139,2MB | 37.973 |
+| /me/www/node_modules | 136,8MB | 37.888 |
 
 From `164,6MB` to `136,8MB` disk size: almost 28MB; and more than 8k useless files removed. Considering the app's files were about 2,4MB of disk size, 28MB is almost 10x my project.
 
@@ -95,8 +94,6 @@ I can only speak of myself about it, but, when I finish a project which I know t
 
 But, the point I want to explore here is the amount of connection we're wasting to publish and download those files.
 
-
 ### The Problem
+
 Searching for npm download rates, I've found [npm-stat](https://npm-stat.com/), an open source download statistics for npm registry. There you can filter the download rate for a specific package within a time period.
-
-
