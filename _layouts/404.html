@@ -1,0 +1,16 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  {% include meta/head.html %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/404.css">
+</head>
+<body>
+  <div class="page">
+    {{ content }}
+  </div>
+</body>
+</html>
