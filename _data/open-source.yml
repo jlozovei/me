@@ -1,0 +1,20 @@
+- name: Developer Titles 💥
+  link: https://developertitles.com/
+  description: Awesome developer titles for bios, descriptions and statuses.
+  github: false
+- name: Flavored Markdown 🍦
+  link: https://jlozovei.github.io/flavored-markdown
+  description: In-browser markdown editor with flavors.
+  github: false
+- name: '@jlozovei/trim-currency'
+  link: https://github.com/jlozovei/trim-currency
+  description: A cool JS helper to trim/clean currency values.
+  github: true
+- name: '@jlozovei/format-money'
+  link: https://github.com/jlozovei/format-money
+  description: The coolest money formatting helper for JavaScript!
+  github: true
+- name: Has front-end ended yet? 💀
+  link: https://hasfrontendendedyet.com/
+  description: We've been hearing it for a long time now - and we all know the answer.
+  github: false
