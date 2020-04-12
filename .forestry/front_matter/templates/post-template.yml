@@ -1,0 +1,31 @@
+---
+label: Post template
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: category
+  label: category
+- type: text
+  name: author
+  label: author
+- type: textarea
+  name: image_src
+  label: image_src
+- type: text
+  name: image_author
+  label: image_author
+- type: text
+  name: image_from
+  label: image_from
+- type: text
+  name: image_from_url
+  label: image_from_url
