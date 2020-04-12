@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://jlozovei.dev/blog/is-it-worthy-to-have-a-blog/</loc>
+<lastmod>2020-04-06T22:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jlozovei.dev/blog/how-to-use-emojis-in-html/</loc>
+<lastmod>2020-04-07T16:30:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jlozovei.dev/blog/publishing-packages-to-npm/</loc>
+<lastmod>2020-04-08T22:20:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jlozovei.dev/blog/my-developer-setup-for-2020/</loc>
+<lastmod>2020-04-10T16:30:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jlozovei.dev/about</loc>
+</url>
+<url>
+<loc>https://jlozovei.dev/blog/</loc>
+</url>
+<url>
+<loc>https://jlozovei.dev/</loc>
+</url>
+<url>
+<loc>https://jlozovei.dev/portfolio</loc>
+</url>
+<url>
+<loc>https://jlozovei.dev/uses</loc>
+</url>
+</urlset>
