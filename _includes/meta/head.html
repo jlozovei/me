@@ -9,7 +9,14 @@
 {% seo %}
 <meta property="og:image" content="https://jlozovei.dev/img/jlozovei.jpg">
 <meta name="twitter:image" content="https://jlozovei.dev/img/jlozovei.jpg">
-{% if site.google_analytics_key != '' %}
+{% assign absolute_url = page.url | absolute_url %}
+{% assign is_prod = true %}
+
+{% if absolute_url contains 'localhost' %}
+  {% assign is_prod = false %}
+{% endif %}
+
+{% if site.google_analytics_key != '' and is_prod %}
   <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', '{{ site.google_analytics_key }}', {

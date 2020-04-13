@@ -88,6 +88,12 @@
       max-height: 18rem;
       border-radius: 2px;
       object-fit: cover;
+      filter: blur(2px);
+      transition: filter ease-in-out 210ms;
+
+      &.loaded {
+        filter: blur(0);
+      }
     }
   }
 
