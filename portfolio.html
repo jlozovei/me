@@ -27,7 +27,7 @@ slug: portfolio
               </div>
 
               <div class="portfolio__image">
-                <img src="/img/portfolio/{{ item.image }}.jpg" srcset="/img/portfolio/{{ item.image }}.jpg 1x, /img/portfolio/{{ item.image }}@2x.jpg 2x" alt="{{ item.name }}">
+                <img src="/img/portfolio/{{ item.image }}.jpg" srcset="/img/portfolio/{{ item.image }}.jpg 1x, /img/portfolio/{{ item.image }}@2x.jpg 2x" alt="{{ item.name }}" onload="this.classList.add('loaded');">
               </div>
             </a>
           </div>

@@ -23,7 +23,7 @@ slug: blog
             <div class="post-card">
               <div class="post-card__image">
                 {% assign post_image = post.image_src | default: "/img/heroes/moleskine.jpg" %}
-                <img src="{{ post_image }}" alt="">
+                <img src="{{ post_image }}" alt="{{ post.title | escape }}" onload="this.classList.add('loaded');">
               </div>
 
               <div class="post-card__info">

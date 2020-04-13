@@ -129,7 +129,13 @@ article {
       max-height: 50rem;
       margin-left: 50%;
       object-fit: cover;
+      filter: blur(2px);
       transform: translateX(-50%);
+      transition: filter ease-in-out 210ms;
+
+      &.loaded {
+        filter: blur(0);
+      }
     }
 
     figcaption {

@@ -25,7 +25,7 @@ layout: compress
             {% if page.image_src %}
             <div class="post__image">
               <figure>
-                <img src="{{ page.image_src }}">
+                <img src="{{ page.image_src }}" alt="{{ page.title | escape }}" onload="this.classList.add('loaded');">
                 
                 {% if page.image_author %}
                 <figcaption>
