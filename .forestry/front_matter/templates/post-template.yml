@@ -30,3 +30,5 @@ fields:
 - type: text
   name: image_from_url
   label: image_from_url
+pages:
+- _posts/advice-for-the-young-at-code.md
