@@ -1,9 +1,14 @@
-# jlozovei.dev
-My personal website source. :rocket:
+# jlozovei dot dev
+My personal website and blog source code. :rocket:  
+As the name says, it's avaliable at [jlozovei dot dev](https://jlozovei.dev).
 
 
 ## :gem: Stack
-This website is build on top of [Jekyll](https://jekyllrb.com/) with nice plugins.
+This website is built on top of [Jekyll](https://jekyllrb.com/) with nice plugins - and [Sass](https://sass-lang.com/), since Jekyll natively supports it.
+
+For now, not using any JS - soon it'll be changed! :boom:
+
+I'm using [GitHub Actions](https://github.com/features/actions) as my CI/CD and [GitHub Pages](https://pages.github.com/) as the host (with a custom domain).
 
 
 ## :closed_lock_with_key: License
