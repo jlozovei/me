@@ -1,42 +1,6 @@
 @import '../index';
 
-.section--list,
-.section--os,
-.footer {
-  background-color: $grey--light;
-}
-
 .section {
-  &--list {
-    &:before {
-      position: absolute;
-      top: -2rem;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: calc(100% + 10rem);
-      background-color: $white;
-      transform: skewY(-2deg);
-      z-index: 1;
-    }
-  }
-
-  &--os {
-    padding-top: 0;
-
-    .block-heading {
-      &:before {
-        background-image: url('../img/heroes/os.jpg');
-      }
-    }
-
-    @media #{$m_tablet} {
-      .section__content {
-        max-width: 83.3333333333%;
-        margin: 0 auto;
-      }
-    }
-  }
 }
 
 .jobs-list {
