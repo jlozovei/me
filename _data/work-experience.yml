@@ -20,3 +20,10 @@
     <p>I've joined Bcredi to help them grow their products. After a while working with the product team, I moved to work with Growth team to help solve some technology issues within the marketing.</p>
     <p>There I helped to develop a new version of the company's design system - using PostCSS and vanilla JS - and developed a lot of new components for the React version; also helped the front-end chapter to standartize some patterns and tools for development.</p>
     <p>As part of the marketing team, I helped to develop a new interest calculator and rewrote the institutional site, from Gatsby to HubSpot with vanilla JS.</p>
+- name: Paraná Banco
+  role: 'Front-end Developer'
+  date: '04/2020 - now'
+  img: pb
+  text: >-
+    <p>My current full-time job, Paraná Banco is a brazilian private bank focused on payroll loans for retirees, state pensioners, civil servants and the armed forces' members.</p>
+    <p>I've joined them in the challenge of creating a new outstanding product to help civil servants get a nice credit with an utterly easy process - using Next, React and styled-components.</p>

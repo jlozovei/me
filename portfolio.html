@@ -8,7 +8,7 @@ slug: portfolio
 <div class="section section--headline">
   <div class="container">
     <h1>Portfolio.</h1>
-    <p>This is my personal portfolio. Here you can find some of my recent works:</p>
+    <p>Below are some of my recent works as a freelancer front-end developer:</p>
   </div>
 </div>
 
@@ -34,36 +34,5 @@ slug: portfolio
         </li>
       {% endfor %}
     </ul>
-  </div>
-</div>
-
-<div class="section section--os">
-  <div class="container">
-    <h2 class="block-heading">Open<br/>Source</h2>
-
-    <div class="section__content">
-      <p>Over the last years I’ve trying to help the community by contributing to open source projects and developing new stuff as well. From translations, npm packages to community-driven websites, here are some of my open source projects:</p>
-
-      <ul class="os-list">
-        {% for item in site.data['open-source'] %}
-          <li class="os-list__item">
-            <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer" class="os-project">
-              <div class="card">
-                <div class="os-project__content">
-                  <h4 class="os-project__name">{{ item.name }}</h4>
-                  <p class="os-project__description">{{ item.description }}</p>
-
-                  <p class="os-project__anchor anchor">See
-                    {% if item.github %} On GitHub
-                    {% else %} It Live
-                    {% endif %}
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
   </div>
 </div>
