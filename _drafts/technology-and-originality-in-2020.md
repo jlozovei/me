@@ -54,16 +54,16 @@ Simple, isn't it? And way much funny.
 
 I'll give you two personal examples about how it (reference x plagiarism) works in practice:
 
-
 ### Design Titles x Developer Titles
+
 I visted the site [design titles](https://designtitles.com/) and found it super cool. This site shows, in a humorous way, satirical titles for designers.
 
 Then, I went to look for a website that would do it for develoeprs - and, directly, I didn't found one. It was when I "created" [developer titles](https://developertitles.com/), which basically does the same thing but is aimed for developers.
 
 I wanted to make it very similar, on purpose. Even today I'm thinking on how to change this _cake recipe_, because I literally changed only one ingredient - at the end of the day, the creativity effort was extremely low, as well as the learning I had doing it.
 
-
 ### full-numbers
+
 "full-numbers" is the name of a more recent project. I improved an existing code and added new features - it converts numbers written with digits (100) into the long form (or full form) (one hundred); with multilanguage and currency support.
 
 This project emerged as an anwser to a problem that was found in my current full-time job, thinking about accessibility, since in some cases the sentence "U$ 200" were transcribed to "U DOLLAR SIGN TWO HUNDRED".
@@ -74,7 +74,6 @@ The effort was greater - both in creativity and in writing the code. The learnin
 
 **Both projects are open source, feel free to contribute!**
 
-
 Anyway, what I want to show here is that we need constantly to get out of our comfort zone, get ouf of the easy and take a chance - get out of the copy and create new references.
 
 Througout the history, technology and entrepreunership greatest names have came out from this bubble of copying, or from doing the same things over and over again; they took a risk. At the end of this text, the advice I can give you, regardless of your area and your expertise level, is **"take a chance"**.
@@ -84,3 +83,7 @@ Take the risk of creating something on your own, of changing the outdated shape 
 There's a metaphor that compares us, people, with salt - salt makes all the difference in a dish, be it haute cuisine or our daily beans.
 
 If you put it too little, the food is "bland"; if you put it too much, the food just tastes like it - and if the salt loses its flavor, it serves no more than being thrown away. (You can find this metaphor on Matthew 5:13)
+
+***
+
+I originally wrote this text on [LinkedIn, in portuguese](https://www.linkedin.com/pulse/tecnologia-e-originalidade-em-2020-julio-lozovei/). You can read it there too!
