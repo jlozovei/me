@@ -2,7 +2,7 @@
 layout: post
 title: Technology and originality in 2020
 date: 2020-05-06 13:10:00 +0000
-category: Thoughts
+category: thoughts
 author: Julio Lozovei
 image_src: https://images.unsplash.com/photo-1490212008842-c25e7a88a4e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2024&q=80
 image_author: Dawid Zawiła

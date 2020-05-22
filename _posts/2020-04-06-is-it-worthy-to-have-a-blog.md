@@ -2,7 +2,7 @@
 layout: post
 title:  "Is it worthy to have a blog in 2020?"
 date:   2020-04-06 19:00:00 -0300
-category: opinion
+category: thoughts
 author: "Julio Lozovei"
 image_src: "https://images.unsplash.com/photo-1556968262-9014ddf533c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
 image_author: "camilo jimenez"

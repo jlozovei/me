@@ -2,7 +2,7 @@
 layout: post
 title: Advice for the young at code
 date: 2020-04-12 22:45:00 +0000
-category: opinion
+category: thoughts
 author: Julio Lozovei
 image_src: https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80
 image_author: Charles Deluvio

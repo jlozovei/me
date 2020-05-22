@@ -2,7 +2,7 @@
 layout: post
 title: Front-end development and endurance races
 date: 2020-04-26 00:00:00 +0000
-category: opinion
+category: thoughts
 author: Julio Lozovei
 image_src: https://images.unsplash.com/photo-1560692830-04adc2f31119?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 image_author: Max Böttinger
