@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Advice for the young at code
-date: 2020-04-12 22:45:00 +0000
+title:  "Advice for the young at code"
+date:   2020-04-12 22:45:00 -0300
 category: thoughts
-author: Julio Lozovei
-image_src: https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80
-image_author: Charles Deluvio
-image_from: Unsplash
-image_from_url: https://unsplash.com/photos/Lks7vei-eAg
-
+author: "Julio Lozovei"
+image_src: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+image_author: "Charles Deluvio"
+image_from: "Unsplash"
+image_from_url: "https://unsplash.com/photos/Lks7vei-eAg"
 ---
 Soon we will be older...  
 <!--more-->  

@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Technology and originality in 2020
-date: 2020-05-06 13:10:00 +0000
+title:  "Technology and originality in 2020"
+date:   2020-05-06 13:10:00 -0300
 category: thoughts
-author: Julio Lozovei
-image_src: https://images.unsplash.com/photo-1490212008842-c25e7a88a4e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2024&q=80
-image_author: Dawid Zawiła
-image_from: Unsplash
-image_from_url: https://unsplash.com/photos/T2apDcwWGLA
-
+author: "Julio Lozovei"
+image_src: "https://images.unsplash.com/photo-1490212008842-c25e7a88a4e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2024&q=80"
+image_author: "Dawid Zawiła"
+image_from: "Unsplash"
+image_from_url: "https://unsplash.com/photos/T2apDcwWGLA"
 ---
 A cult of originality
 <!--more-->
