@@ -26,19 +26,19 @@ a,
 
   &:after {
     position: absolute;
-    bottom: -1rem;
+    bottom: -2rem;
     right: 0;
     display: block;
-    width: 15rem;
+    width: 10rem;
     height: 15rem;
-    background: url('/img/97.svg') no-repeat 0 0 / cover;
+    background: url('/img/97.svg') no-repeat 0 0 / contain;
   }
 
   @media #{$m_tablet} {
     &:after {
-      bottom: -5rem;
-      width: 40rem;
-      height: 40rem;
+      bottom: -4rem;
+      width: 20rem;
+      height: 30rem;
     }
   }
 }
