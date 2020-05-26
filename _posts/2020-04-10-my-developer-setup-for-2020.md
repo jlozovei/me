@@ -4,7 +4,7 @@ title:  "My developer setup for 2020"
 date:   2020-04-10 13:30:00 -0300
 category: personal
 author: "Julio Lozovei"
-image_src: "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+image_src: "/img/blog/my-developer-setup-for-2020/cover.jpeg"
 image_author: "ian dooley"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/DJ7bWa-Gwks"

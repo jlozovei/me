@@ -4,7 +4,7 @@ title:  "How to use emojis in HTML?"
 date:   2020-04-07 13:30:00 -0300
 category: tutorial
 author: "Julio Lozovei"
-image_src: "https://images.unsplash.com/photo-1562037283-5346e96c7ee9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2010&q=80"
+image_src: "/img/blog/how-to-use-emojis-in-html/cover.jpeg"
 image_author: "James Lee"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/R9rFKy_AVbw"

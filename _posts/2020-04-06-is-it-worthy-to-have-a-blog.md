@@ -4,7 +4,7 @@ title:  "Is it worthy to have a blog in 2020?"
 date:   2020-04-06 19:00:00 -0300
 category: thoughts
 author: "Julio Lozovei"
-image_src: "https://images.unsplash.com/photo-1556968262-9014ddf533c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+image_src: "/img/blog/is-it-worthy-to-have-a-blog/cover.jpeg"
 image_author: "camilo jimenez"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/Pll7AP6NFpY"

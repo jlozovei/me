@@ -4,7 +4,7 @@ title:  "Publishing packages to npm"
 date:   2020-04-08 19:20:00 -0300
 category: tutorial
 author: "Julio Lozovei"
-image_src: "https://images.unsplash.com/photo-1513672494107-cd9d848a383e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+image_src: "/img/blog/publishing-packages-to-npm/cover.jpeg"
 image_author: "chuttersnap"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/fyaTq-fIlro"

@@ -15,3 +15,7 @@ Daniel worked on the new UX/UI, and together we developed the new website using 
 This project required a lot of attention on SEO, accessibility and performance - the site must be fast while beautiful, and interaction-rich.
 
 We developed a _one page_ styled website, with internal pages from each section. This way, the navigation is guaranteed without any break for the user; and the user can also view their blog posts without leaving the home page.
+
+![Tropico.tv screenshot](/img/portfolio/tropico/tropico1.png)
+![Tropico.tv screenshot](/img/portfolio/tropico/tropico2.png)
+![Tropico.tv screenshot](/img/portfolio/tropico/tropico3.png)

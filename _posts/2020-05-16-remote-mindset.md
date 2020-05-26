@@ -4,7 +4,7 @@ title:  "Remote Mindset"
 date:   2020-05-16 23:00:00 -0300
 category: thoughts
 author: "Julio Lozovei"
-image_src: "https://images.unsplash.com/photo-1585060697712-d9e550dc9e23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2259&q=80"
+image_src: "/img/blog/remote-mindset/cover.jpeg"
 image_author: "Charles Deluvio"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/3fLywd_jkfU"

@@ -4,7 +4,7 @@ title:  "We are learning VCS wrong"
 date:   2020-05-22 12:10:00 -0300
 category: thoughts
 author: "Julio Lozovei"
-image_src: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80"
+image_src: "/img/blog/we-are-learning-vcs-wrong/cover.jpeg"
 image_author: "Yancy Min"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/842ofHC6MaI"

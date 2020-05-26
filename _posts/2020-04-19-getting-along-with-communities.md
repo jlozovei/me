@@ -4,7 +4,7 @@ title:  "Getting along with communities"
 date:   2020-04-19 19:00:00 -0300
 category: people
 author: "Julio Lozovei"
-image_src: "https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixlib=rb-1.2.1&auto=format&fit=crop&w=3052&q=80"
+image_src: "/img/blog/getting-along-with-communities/cover.jpeg"
 image_author: '"My Life Through A Lens"'
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/bq31L0jQAjU"

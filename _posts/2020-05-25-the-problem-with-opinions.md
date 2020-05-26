@@ -4,7 +4,7 @@ title:  "The problem with opinions"
 date:   2020-05-25 13:45:00 -0300
 category: thoughts
 author: "Julio Lozovei"
-image_src: "https://images.unsplash.com/photo-1574081675634-4f043f2e85ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80"
+image_src: "/img/blog/the-problem-with-opinions/cover.jpeg"
 image_author: "Ana Flávia"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/kR5VQr3-L9w"
@@ -29,7 +29,9 @@ Because when we expose an opinion, people will absorb and use it as a base on th
 
 > For some people, if they read some bad stuff about React scripting time, React will be bad forever - the problem is being closed to new opinions!
 
-Developers are such unique people - they defend with tooth and nails the things they love, and throw into fire those they hate. I was one of those people, and then I realized that [Dunning-Krueger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) was taking its toll on me. When I changed my mind from _"code as the main thing"_ to _"value as the main thing"_, I stopped to bother about some stupid stuff like _"people don't like WordPress"_ - if WordPress is delivering value, damn let's go with WP!
+Developers are such unique people - they defend with tooth and nails the things they love, and throw into fire those they hate. I was one of those people, and then I realized that [Dunning-Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) was taking its toll on me. When I changed my mind from _"code as the main thing"_ to _"value as the main thing"_, I stopped to bother about some stupid stuff like _"people don't like WordPress"_ - if WordPress is delivering value, damn let's go with WP!
+
+![Dunning Kruger effect illustation](/img/blog/the-problem-with-opinions/dunning–kruger-effect.png)
 
 Each project will have its own characteristics, its own implementations and its own maintainers. Of course it's nice to have a pattern, a _boilerplate_; but you'll find this pattern won't suit all of your projects. Some projects will need more abstraction layers, some of them will have only one - you'll lose time trying to put the 2 examples in the same _"boilerplate box"_, and time is something we can't afford to lose.
 
