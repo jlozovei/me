@@ -3,7 +3,7 @@
     - key: Prototyping
       value: Adobe XD and Sketch (when available)
     - key: Handoff
-      value: Zeplin
+      value: Zeplin and Figma
     - key: Hand drawing
       value: Cicero Papelaria's booklets
 - name: Developing
@@ -22,8 +22,8 @@
   items:
     - key: Phone
       value: Apple iPhone 11 Pro
-    - key: Notes
-      value: Bear, Apple Notes, Google Keep
+    - key: Workspace
+      value: Notion
     - key: Podcasts
       value: Spotify, Apple Podcasts
     - key: Music
@@ -31,6 +31,6 @@
     - key: To (avoid) remember my passwords
       value: LastPass
     - key: Email
-      value: Gmail, Outlook
+      value: Gmail
     - key: Communication
       value: Slack
