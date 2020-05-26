@@ -18,7 +18,7 @@
 
         img {
           width: 100vw;
-          max-height: 32rem;
+          max-height: 38rem;
           margin-left: 50%;
           transform: translateX(-50%);
         }
@@ -39,15 +39,32 @@ article {
   }
 
   main {
-    flex-basis: 65%;
-    width: 65%;
-    padding-right: 2rem;
+    flex-basis: 100%;
+    width: 100%;
   }
 
   aside {
-    flex-basis: 35%;
-    width: 35%;
-    padding-left: 2rem;
-    border-left: 1px solid $sunset;
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid $sunset;
+  }
+
+  @media #{$m_tablet} {
+    main {
+      flex-basis: 65%;
+      width: 65%;
+      padding-right: 2rem;
+    }
+
+    aside {
+      flex-basis: 35%;
+      width: 35%;
+      margin: 0;
+      padding: 0 0 0 2rem;
+      border-top: none;
+      border-left: 1px solid $sunset;
+    }
   }
 }

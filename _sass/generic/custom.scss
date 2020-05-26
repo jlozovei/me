@@ -47,4 +47,12 @@ article {
   header {
     margin-bottom: 2rem;
   }
+
+  main {
+    img {
+      width: auto;
+      max-width: 100%;
+      margin: 2rem auto;
+    }
+  }
 }
