@@ -21,7 +21,7 @@ slug: uses
       <ul>
         {% for item in category.items %}
         <li>
-          <span><b>{{ item.key }}</b>: {{ item.value }}</span>
+          <span>{{ item.key }}</span>: {{ item.value }}
         </li>
         {% endfor %}
       </ul>
@@ -44,7 +44,7 @@ slug: uses
       {% for item in category.items %}
       <ul>
         <li>
-          <span><a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a> {{ item.for }}</span>
+          <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a> {{ item.for }}
         </li>
       </ul>
       {% endfor %}
