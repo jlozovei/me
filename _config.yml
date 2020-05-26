@@ -55,6 +55,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+collections:
+  portfolio:
+    output: true
+
 paginate: 4
 paginate_path: "/blog/page-:num/"
 
