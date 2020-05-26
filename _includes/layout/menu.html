@@ -1,14 +1,24 @@
 <nav>
-  <ul class="menu">
+  <ul class="menu list">
     {% for item in site.data.pages %}
       {% assign isActive = '' %}
 
-      {% if item.link == page.url or page.url contains '/blog' and item.link == '/blog' %}
-        {% assign isActive = class | append: 'menu__item--active' %}
+      {% if item.link == page.url %}
+        {% assign isActive = class | append: 'active' %}
       {% endif %}
 
-      <li class="menu__item {{ isActive }}">
-        <a href="{{ item.link }}">{{ item.name }}</a>
+      {% if page.url contains '/portfolio' and item.link == '/portfolio' %}
+        {% assign isActive = class | append: 'active' %}
+      {% endif %}
+
+      {% if page.url contains '/blog' and item.link == '/blog' %}
+        {% assign isActive = class | append: 'active' %}
+      {% endif %}
+
+      {% assign url = page.url contains '/portfolio' %}
+
+      <li>
+        <a class="{{ isActive }}" href="{{ item.link }}">{{ item.name }}</a>
       </li>
     {% endfor %}
   </ul>

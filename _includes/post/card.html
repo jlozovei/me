@@ -1,0 +1,21 @@
+<div class="post">
+  <div class="post__image">
+    {% assign post_image = post.image_src | default: "/img/heroes/moleskine.jpg" %}
+    <img src="{{ post_image }}" alt="{{ post.title | escape }}" onload="this.classList.add('loaded');">
+  </div>
+
+  <div class="post__info">
+    <h3 class="post__title">{{ post.title | escape }}</h3>
+
+    {% assign postContent=post.content %}
+    {% include post/meta.html post=post postContent=postContent %}
+
+    {% if site.show_excerpts %}
+    <div class="post__excerpt">
+      {{ post.excerpt }}
+    </div>
+    {% endif %}
+
+    <button class="anchor">Read more &rarr;</button>
+  </div>
+</div>
