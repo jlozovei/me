@@ -1,0 +1,30 @@
+.portfolio {
+  position: relative;
+
+  &__image {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__anchor {
+    font-family: $font_title;
+  }
+
+  &__meta {
+    ul {
+      li {
+        list-style: disc inside;
+
+        span {
+          font-family: $font_title;
+          font-weight: bold;
+        }
+      }
+    }
+
+    a {
+      font-family: $font_title;
+    }
+  }
+}

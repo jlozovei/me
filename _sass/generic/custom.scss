@@ -1,8 +1,14 @@
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
+  background-color: $woodsmoke;
+  color: $white;
+
+  &,
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
 
   .page {
     flex: 1;
@@ -12,4 +18,33 @@ body {
 a,
 .anchor {
   color: $sunset;
+}
+
+.page {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    background: url('/img/97.svg') no-repeat 0 0 / cover;
+  }
+
+  @media #{$m_tablet} {
+    &:after {
+      bottom: -5rem;
+      width: 40rem;
+      height: 40rem;
+    }
+  }
+}
+
+article {
+  header {
+    margin-bottom: 2rem;
+  }
 }
