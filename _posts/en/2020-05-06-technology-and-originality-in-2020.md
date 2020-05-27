@@ -12,7 +12,7 @@ lang: "en"
 language: "en"
 ref: "technology-and-originality-in-2020"
 ---
-A cult of originality
+A cult of originality.
 <!--more-->
 Over the last week, this topic has been very recurrent in my life - in the LinkedIn newsfeed, in conversations that I've heard and even several close people are speaking about it.
 
@@ -56,19 +56,19 @@ Simple, isn't it? And way much funny.
 
 I'll give you two personal examples about how it (reference x plagiarism) works in practice:
 
-### Design Titles x Developer Titles
 
+### Design Titles x Developer Titles
 I visted the site [design titles](https://designtitles.com/) and found it super cool. This site shows, in a humorous way, satirical titles for designers.
 
 Then, I went to look for a website that would do it for develoeprs - and, directly, I didn't found one. It was when I "created" [developer titles](https://developertitles.com/), which basically does the same thing but is aimed for developers.
 
 I wanted to make it very similar, on purpose. Even today I'm thinking on how to change this _cake recipe_, because I literally changed only one ingredient - at the end of the day, the creativity effort was extremely low, as well as the learning I had doing it.
 
+
 ### full-numbers
+_"full-numbers"_ is the name of a more recent project. I improved an existing code and added new features - it converts numbers written with digits (100) into the long form (or full form) (one hundred); with multilanguage and currency support.
 
-"full-numbers" is the name of a more recent project. I improved an existing code and added new features - it converts numbers written with digits (100) into the long form (or full form) (one hundred); with multilanguage and currency support.
-
-This project emerged as an anwser to a problem that was found in my current full-time job, thinking about accessibility, since in some cases the sentence "U$ 200" were transcribed to "U DOLLAR SIGN TWO HUNDRED".
+This project emerged as an anwser to a problem that was found in my current full-time job, thinking about accessibility, since in some cases the sentence "U$ 200" were transcribed to _"U DOLLAR SIGN TWO HUNDRED"_.
 
 It's available on npm: [https://www.npmjs.com/package/full-numbers](https://www.npmjs.com/package/full-numbers).
 

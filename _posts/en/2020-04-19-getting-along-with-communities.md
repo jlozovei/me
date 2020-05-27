@@ -12,7 +12,7 @@ lang: "en"
 language: "en"
 ref: "getting-along-with-communities"
 ---
-Because two (or more) heads think more and better than one
+Because two (or more) heads think more and better than one!
 <!--more-->
 As you start to get into the development world, you'll find a lot of people who likes the same stuff you do, who does the same work you do and also you'll find people with passion. I believe that's the core of every software community - you love what you do, and you want to help other people to accomplish great things.
 

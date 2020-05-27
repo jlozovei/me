@@ -82,7 +82,7 @@ paginate_multiple:
     sub_dir: '/en'
   - paginate: 4
     paginate_path: "/pt-br/blog/page-:num/"
-    sub_dir: '/pt-br/blog'
+    sub_dir: '/pt-br'
 
 sass:
   style: compressed

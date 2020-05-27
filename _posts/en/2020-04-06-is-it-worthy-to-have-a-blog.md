@@ -14,7 +14,7 @@ ref: "is-it-worthy-to-have-a-blog"
 ---
 Is even worthy to have a blog at all?
 <!--more-->
-If you search for something on Google, it surely will give you a lot of content. But, is all of this content relevant? Probably the results on the first page are; and I bet you'll find what you're searching is within the first 3 or 4 results.
+If you search for something on Google, it surely will give you a lot of content. But, is all of this content relevant? Probably the results on the first page are; and I bet you'll find what you're searching is within the first 3 or 4 results (in the real world, you won't search after the second).
 
 If you search for a topic or an error on StackOverflow, the same will happen - a lot of stuff will be in the results. But, how many results will be relevant for you? How many results you will need to solve the error?
 
