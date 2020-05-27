@@ -8,6 +8,9 @@ image_src: "/img/blog/front-end-development-and-endurance-races/cover.jpeg"
 image_author: "Max Böttinger"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/0k_dCKxyIHc"
+lang: "en"
+language: "en"
+ref: "front-end-development-and-endurance-races"
 ---
 Front-end development is almost the same as a car race; let me show you why.
 <!--more-->

@@ -8,6 +8,9 @@ image_src: "/img/blog/my-developer-setup-for-2020/cover.jpeg"
 image_author: "ian dooley"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/DJ7bWa-Gwks"
+lang: "en"
+language: "en"
+ref: "my-developer-setup-for-2020"
 ---
 My personal developer setup for 2020.
 <!--more-->

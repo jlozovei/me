@@ -8,6 +8,9 @@ image_src: "/img/blog/the-problem-with-opinions/cover.jpeg"
 image_author: "Ana Flávia"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/kR5VQr3-L9w"
+lang: "en"
+language: "en"
+ref: "the-problem-with-opinions"
 ---
 Everyone has their own.
 <!--more-->

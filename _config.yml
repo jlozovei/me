@@ -14,6 +14,8 @@ google_analytics_key: 'UA-116650364-1'
 title: jlozovei.dev
 logo: /favicon.ico
 description: Front-end development taken seriously.
+lang: en
+languages: ["en", "pt-br"]
 author:
   name: Julio Lozovei
   email: jlozovei@gmail.com
@@ -59,8 +61,28 @@ collections:
   portfolio:
     output: true
 
-paginate: 4
-paginate_path: "/blog/page-:num/"
+defaults:
+- scope:
+    type: posts
+  values:
+    layout: post
+- scope:
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: _posts/pt-br
+    type: posts
+  values:
+    permalink: /pt-br/blog/:title/
+
+paginate_multiple:
+  - paginate: 4
+    paginate_path: "/blog/page-:num/"
+    sub_dir: '/en'
+  - paginate: 4
+    paginate_path: "/pt-br/blog/page-:num/"
+    sub_dir: '/pt-br/blog'
 
 sass:
   style: compressed
@@ -73,6 +95,7 @@ commonmark:
 excerpt_separator: <!--more-->
 show_excerpts: true
 
+include: [pt-br]
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -81,3 +104,5 @@ exclude:
   - .jekyll-cache
   - _drafts
   - .github
+  - package.json
+  - node_modules

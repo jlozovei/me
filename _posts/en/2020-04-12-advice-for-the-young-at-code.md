@@ -8,6 +8,9 @@ image_src: "/img/blog/advice-for-the-young-at-code/cover.jpeg"
 image_author: "Charles Deluvio"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/Lks7vei-eAg"
+lang: "en"
+language: "en"
+ref: "advice-for-the-young-at-code"
 ---
 Soon we will be older...  
 <!--more-->  

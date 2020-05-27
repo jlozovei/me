@@ -8,6 +8,9 @@ image_src: "/img/blog/we-are-learning-vcs-wrong/cover.jpeg"
 image_author: "Yancy Min"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/842ofHC6MaI"
+lang: "en"
+language: "en"
+ref: "we-are-learning-vcs-wrong"
 ---
 Have you ever thought about it?
 <!--more-->

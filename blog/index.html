@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 slug: blog
+language: en
 ---
 
 <div class="section section--headline">
@@ -16,6 +17,7 @@ slug: blog
 <div class="section section--list">
   <div class="container">
     {% if site.posts.size > 0 %}
+      
       <ul class="post-list">
         {% for post in paginator.posts %}
         <li class="post-list__item">

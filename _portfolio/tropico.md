@@ -5,6 +5,7 @@ name:   "tropico"
 year:   2019
 stack:  "WordPress, ES5, Sass"
 link:   "https://tropico.tv"
+language: "en"
 ---
 Trópico is an audiovisual agency from Curitiba, Brazil. Their main focus is _real histories_, and their content are drived for social businesses and causes.
 
