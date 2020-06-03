@@ -18,6 +18,14 @@
     p {
       text-align: justify;
     }
+
+    hr {
+      width: 0.75rem;
+      height: 0.75rem;
+      margin: 2rem auto;
+      border-radius: 50%;
+      box-shadow: 1.5rem 0 0 $tundora, -1.5rem 0 0 $tundora;
+    }
   }
 
   &__meta {
@@ -135,7 +143,7 @@
 
     &,
     code {
-      background-color: $shark;
+      background-color: $shark !important;
     }
 
     code {
