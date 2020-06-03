@@ -38,4 +38,10 @@ Desenvolvedores, no geral, são pessoas ímpares - eles defendem com unhas e den
 
 Cada projeto tem suas próprias características, suas implementações e seus mantenedores. Claro que é legal ter um padrão, um _boilerplate_; mas, você vai perceber que esse padrão não vai contemplar todos os seus projetos. Alguns projetos tem apenas uma camada de abstração, outros precisarão de mais camadas - e você só vai perder tempo tentando colocar esses 2 exempos dentro da mesma caixinha chamada _boilerplate_; e tempo é algo que não podemos perder!
 
+Eu não sou muito fã di _ágil_. Mas, se você é um seguidor, você provavelmente vai lembrar do primeiro valor que a metodologia pega:
+
+> **Indivíduos e interações** mais que processos e ferramentas
+>
+> [agilemanifesto.org](https://agilemanifesto.org/iso/ptbr/manifesto.html)
+
 A maioria das pessoas são ansiosas em discutir padrões, tecnologias, ferramentas, estruturas, e o quão boa/ruim uma coisa pode ser - mas eu não vejo a mesma quantidade de pessoas ansiosas em discutir como um padrão _"aumentou o faturamento da empresa em 25%, comparado com o anterior"_. Discutir código por código é bobagem, tente discutir código como uma ferramenta para alcançar um objetivo maior e sua mente vai abrir.
