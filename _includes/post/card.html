@@ -16,6 +16,12 @@
     </div>
     {% endif %}
 
-    <button class="anchor">Read more &rarr;</button>
+    <button class="anchor">
+      {% if page.language != 'pt-br' %}
+      Read more
+      {% else %}
+      Leia mais
+      {% endif %}
+    &rarr;</button>
   </div>
 </div>

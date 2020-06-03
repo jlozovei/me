@@ -1,0 +1,58 @@
+---
+layout: default
+title: Blog
+slug: blog
+language: pt-br
+---
+
+<div class="section section--headline">
+  <div class="container">
+    <h1>Blog.</h1>
+    <p>Dicas sobre carreira, tecnologia, tendências, tutorials e pensamentos - aqui você vai achar vários!</p>
+
+    <!-- <a href="{{ "/feed.xml" | relative_url }}" class="button">RSS Feed</a> -->
+  </div>
+</div>
+
+<div class="section section--list">
+  <div class="container">
+    {% if site.posts.size > 0 %}
+      
+      <ul class="post-list">
+        {% for post in paginator.posts %}
+        <li class="post-list__item">
+          <a href="{{ post.url | relative_url }}">
+            {% include post/card.html post=post %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <div class="pagination">
+        {% if paginator.previous_page %}
+        <a class="pagination__link pagination__link--prev" href="{{ paginator.previous_page_path }}">
+          Anterior
+        </a>
+        {% else %}
+        <span class="pagination__link pagination__link--disabled pagination__link--prev">
+          Anterior
+        </span>
+        {% endif %}
+
+        <span class="pagination__current">
+          Página: {{ paginator.page }} de {{ paginator.total_pages }}
+        </span>
+
+        {% if paginator.next_page %}
+        <a class="pagination__link pagination__link--next" href="{{ paginator.next_page_path }}">
+          Próxima
+        </a>
+        {% else %}
+        <span class="pagination__link pagination__link--disabled pagination__link--next">
+          Próxima
+        </span>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>

@@ -14,7 +14,11 @@ layout: compress
   <div class="page">
     <div class="section section--headline">
       <div class="container">
+        {% if page.language == 'pt-br' %}
+        <a href="/pt-br/blog" class="section__backlink">&larr; Ver todos os textos</a>
+        {% else %}
         <a href="/blog" class="section__backlink">&larr; See all posts</a>
+        {% endif %}
       </div>
     </div>
 
@@ -58,7 +62,13 @@ layout: compress
       {% if posts.size > 1 %}
         <div class="section section--translations">
           <div class="container">
-            <h6>Available translations:</h6>
+            <h6>
+            {% if page.language == 'pt-br' %}
+            Traduções disponíveis:
+            {% else %}
+            Available translations:
+            {% endif %}
+            </h6>
 
             <ul class="list">
             {% for post in posts %}
@@ -75,7 +85,13 @@ layout: compress
 
     <div class="section section--share">
       <div class="container">
-        <h6>Share this article</h6>
+        <h6>
+        {% if page.language == 'pt-br' %}
+        Compartilhe este artigo:
+        {% else %}
+        Share this article
+        {% endif %}
+        </h6>
 
         {% assign post_url = page.url | absolute_url %}
 
@@ -105,7 +121,13 @@ layout: compress
       {% unless sameLanguagePosts.size == 0 %}
         <div class="section section--related">
           <div class="container">
-            <h2>Worth reading too</h2>
+            <h2>
+            {% if page.language == 'pt-br' %}
+            Vale a pena ler também
+            {% else %}
+            Worth reading too
+            {% endif %}
+            </h2>
 
             <ul class="post-list">
               {% for post in sameLanguagePosts limit:3 %}
