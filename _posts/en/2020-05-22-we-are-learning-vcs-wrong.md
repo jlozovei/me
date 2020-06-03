@@ -28,7 +28,7 @@ VCS stands for _Version Control System_, and it's used to create versions of you
 
 > As a curiosity, GitHub was launched 2008.
 
-Git is the most used VCS with no doubts; nowadays it's very uncommon to see a project using a different VCS. And we also have nice Git-based platforms, such as GitHub, GitLab and BitBucket.
+Git is the most used VCS with no doubts; nowadays it's very uncommon to see a project using a different VCS. And we also have nice Git-based platforms, such as [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/) and [Bitbucket](https://bitbucket.org/product).
 
 
 ### How to use Git?
@@ -38,17 +38,19 @@ I mean, people know how to use Git - they know the commands; how to stash, push 
 
 Well, let me explain...
 
-If we understand the VSC as the whole package - the tool (Git) and the process (PR, merges, issues, releases), people are doing it very wrong; and I faced it in two different job experiences: bad-reviewed pull requests, the lack of commitment on code quality and branch organisation, bad nomenclature for stuff... We're all humans, liable to error; but we we can't go wrong for lack of knowledge or for a misguided culture.
+If we understand the VSC as the whole package - the tool (Git) and the process (PR, merges, issues, releases), people are doing it very wrong in my opinion - and I faced this reality in two different job experiences.
+
+Bad-reviewed pull requests, the lack of commitment on code quality and branch organisation, bad nomenclature for stuff... We're all humans, liable to error; but we we can't go wrong for lack of knowledge or for a misguided culture.
 
 > And, why does it happens?
 
 
 ### Misguided culture
-The only answer that comes to my mind when I wonder it is: _"people are focusing on the wrong spot"_. You can find lots of developers which claims themselves "more developers than others" because they know how to deal with Git on the terminal, without using an app like [GitHub Desktop](https://desktop.github.com/), [Sourcetree](https://www.sourcetreeapp.com/) or [Sublime Merge](https://www.sublimemerge.com/) - these apps are visual abstractions of Git's commands, where you can commit files without opening a terminal.
+The only answer that comes to my mind when I wonder about it is: _"people are focusing on the wrong spot"_. You can find lots of developers which claims themselves "more developers than others" because they know how to deal with Git on the terminal, without using an app like [GitHub Desktop](https://desktop.github.com/), [Sourcetree](https://www.sourcetreeapp.com/) or [Sublime Merge](https://www.sublimemerge.com/) - these apps are visual abstractions of Git's commands, where you can commit files without opening a terminal.
 
 I use those apps a lot (specially GitHub Desktop), since they bring me dominance over what I'm doing - you can see clearer which files were added/removed/changed, which files you're commiting, the _diff_ between the versions... And they don't make me less developer than my colleagues; in fact, those apps make me faster than my colleagues.
 
-It's nice to know Git commands, I surely agree - but, more important than knowing the commands is to know the concepts. What is a commit, a branch a PR, an issue, a fork... What's the deal on knowing how to merge branches within the terminal and taking more than 4 days to reviewing (and I'm not asking for approves, just a review) a simple PR?
+It's nice to know Git commands, I surely agree - but, more important than knowing the commands is to know the concepts. What is a commit, a branch, a PR, an issue, a fork... What's the deal on knowing how to merge branches within the terminal and taking more than 4 days to reviewing (and I'm not asking for approves, just a review) a simple PR?
 
 People focus a lot on Git, as the tool; and not on the VCS, as the system. For me, it may be the wrong spot. And it can only be fixed with culture (and a great amount of time).
 

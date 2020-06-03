@@ -14,13 +14,13 @@ ref: "remote-mindset"
 ---
 Because work can't be put inside a box.
 <!--more-->
-Due to Covid-19 outbreak, remote work has been almost a new _buzzword_, and a lot of people are talking about it.
+Due to Covid-19 outbreak, _"remote work_ has been almost a new _buzzword_, and a lot of people are talking about it.
 
 Companies from around the world are applying new policies about remote work for their employees, and great part of the people who can work from home are doing so.
 
-Meetings, video conferences, overcommunication... A lot of stuff changed on how we work today, and on how we interact with our colleagues. Also, the trust given from managers to employees is reaching new levels. It's no news for people who works with technology and development.
+Meetings, video conferences, overcommunication... A lot of stuff changed on how we work today, and on how we interact with our teammates. Also, the trust given from managers to employees is reaching new levels. But, it's no news to those people who works with technology and development - remote work is on our sights quite for a while.
 
-Since I've started working as a front-end developer I hear about remote work, and how it's nice - you can save more money because you don't have to take the bus or the car to go to your job, you can save time because you're not going to be 2 hours in the traffic... The gains are many, countless - you can spend more time at home, with your family, you can eat better and healthier, but there are also negative points that you should keep in mind too.
+Since I've started working as a developer I hear about remote work, and how it's nice - you can save more money because you don't have to take the bus or the car to go to your job, you can save time because you're not going to be stuck 2 hours in the traffic... The gains are many, countless - you can spend more time at home, with your family, you can eat better and healthier; but there are also negative points we all should keep in mind too.
 
 I'm working full-time from home since March 2020, when Covid-19 reached southern Brazil and the government declared the quarantine period. Almost 2 months later, I noticed that I'm working better, but also working more. And this is one of the points I'm going to talk.
 

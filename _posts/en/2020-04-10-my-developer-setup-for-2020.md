@@ -14,14 +14,16 @@ ref: "my-developer-setup-for-2020"
 ---
 My personal developer setup for 2020.
 <!--more-->
-We're already on april (damn, where the last 3 months went?), and it may be late to show my personal setup for this year. Here is my personal setup for developing and designing this year.
+We're already on april (damn, where the last 3 months went?), and it may be late to show my personal setup for this year. So, here is my personal setup for developing and designing this year.
 
 ### Hardware
-At home, I'm using my personal 2017 MacBook Pro, 13-inch, 2,3 GHz Dual-Core Intel Core i5 and 8 GB. No extra screens, no extra mouses nor keyboards.
+At home, I'm using my personal 2017 MacBook Pro, 13-inch, 2,3 GHz Dual-Core Intel Core i5 with 8GB of RAM. No extra screens, no extra mouses nor keyboards.
+
+At work, I'm using a Dell Latitude 3400, 13-inch, Intel Core i5 with 16GB of RAM (with Windows). Also, no extra screens, no extra mouses nor keyboards.
 
 
 ### Text Editor
-For a while, I'm suing [Sublime Text 3](https://www.sublimetext.com/) as my text editor. It's clean, pretty and fast. And it also has lots of nice extensions. I'm currently using:
+I've been using [Sublime Text 3](https://www.sublimetext.com/) as my text editor for a while. It's clean, pretty and fast. And it also has lots of nice extensions. I'm currently using:
 
 - Alignment
 - Babel
@@ -52,7 +54,9 @@ I'm considering to try a new text editor. In the last years I've used [WebStorm]
 
 
 ### Terminal
-I use [iTerm2](https://www.iterm2.com/) as my default terminal, with [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) and `robbyrussell` theme.
+At home I use [iTerm2](https://www.iterm2.com/) as my default terminal, with [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) and `robbyrussell` theme.
+
+At work, I'm using Git Bash as my terminal - since it supports UNIX-like commands.
 
 
 ### Browser
@@ -66,7 +70,7 @@ This year I've been using Adobe XD a lot, more than Sketch; I'm getting the way 
 
 
 ### Stack
-I've started the year using React at my full-time job at Bcredi. This month (april) I moved on to a new challenge at Paraná Banco, and there they also use React; this year is my "React year" so far.
+I've started the year using React at my full-time job at Bcredi. This month (april) I moved on to a new challenge at Paraná Banco, and there they also use React with Next; this year is my _"React year"_ so far.
 
 On my personal jobs I'm betting on vanilla stuff, to avoid keeping only with React or Vue as the last years.
 

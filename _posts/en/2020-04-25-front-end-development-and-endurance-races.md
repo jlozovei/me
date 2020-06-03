@@ -24,7 +24,7 @@ If we continue thinking about it (the metaphor), we can see several similarities
 
 Front-end frameworks are almost like racing cars - we have a lot of them, each one with its own technical features, communities and documentations. Some of them are strong, easy to use, and we can do almost everything using it - some others are heavy, slow and hard to use; and we can do little using them.
 
-Since the emergence of ES2015 we've seen a lot of nice JS frameworks coming around - React, Vue, Angular, Svelte, Ember, Polymer, Meteor, Node... There's a lot of them, and every day we can find a new one (which claims to be the solution to all problems). We also have seen a lot of great stuff done with those tools; and a lot of shitty stuff done as well. So, what's the difference between the nice and the crappy things?
+Since the emergence of ES2015 (ES5, ES6 - I always lose myself) we've seen a lot of nice JS frameworks coming around - React, Vue, Angular, Svelte, Ember, Polymer, Meteor, Node... There's a lot of them, and every day we can find a new one (which claims to be the solution to all problems). We also have seen a lot of great stuff done with those tools; and a lot of shitty stuff done as well. So, what's the difference between the nice and the crappy things?
 
 We can spot a lot of differences - UX, the architecture, the bundler, performance issues, browsers support, even the developers (which I avoid to compare). But, I believe the main difference we can (and we need to) spot is the value delivered - the problem solved.
 
@@ -40,7 +40,7 @@ You won't win the race when you want, but only when it's over. And you won't rea
 
 I've seen a lot of "fights" among developers, claiming that _React is better than Vue_, or _WordPress is shitty, I won't use it_... Every developer has their own preferences - some people like React, some others like Angular; but the correct discussion would be _"can you deliver value using any of these?"_.
 
-I have my personal preferences, and they change (a lot) over the time; I'm always trying to not get stuck with technology, or to get too much accommodated with a special tool. Over the last years my _mantra_ is: _"the simpler, the better"_.
+I have my personal preferences, and they change (a lot) over the time; I'm always trying not to get stuck with technology, or not to get too much accommodated with a special tool. Over the last years my _mantra_ is: _"the simpler, the better"_.
 
 Software development is meant to be simple - if it isn't, there's something wrong. I'm not talking about the complexity over a language, or over a specific architecture - I'm talking about doing nice stuff, which solves problems.
 
@@ -48,8 +48,8 @@ So, talking about tools, a great tip I can give you is to _choose what better fi
 
 When a pilot needs to know a car, he will test it; when you're buying a new car, you will test them; and when you're choosing a tool to use, you need to test it too.
 
-A nice way to test tools is to create _POC_s - or _Prove of Concept_. If you're not familiar with it, basically by doing a POC you'll try to create the critical part of your project, using a great amount of possibilities. After doing so, you'll reach a final verdict about what is the better path to go.
+A nice way to test tools is to create _POCs_ - or _Prove of Concept_. If you're not familiar with it, basically by doing a POC you'll try to create the critical part of your project, using a great amount of possibilities. After doing so, you'll reach a final verdict about what is the better path to go.
 
-When you're doing a POC, take notes on what everything you've observed - performance, scripting time, building time, the difficulty over the tasks, how the configuration goes... And, in the end, see which alternative better fits on what you need to do. There's no secret.
+When you're doing a POC, take notes on what everything you've noticed - performance, scripting time, building time, the difficulty over the tasks, how the configuration goes... And, in the end, see which alternative better fits on what you need to do. There's no secret.
 
 By doing so you'll ensure that you're following the right path, doing the right things and you'll have a great possibility to win the race by yourside.
