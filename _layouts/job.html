@@ -1,0 +1,96 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: "en" }}">
+<head>
+  {% include meta/head.html %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/job.css">
+</head>
+<body>
+  {% include layout/header.html %}
+
+  <div class="page">
+    <div class="section section--headline">
+      <div class="container">
+        {% if page.language == 'pt-br' %}
+        <a href="/pt-br/portfolio" class="section__backlink">&larr; Ver todo o portfolio</a>
+        {% else %}
+        <a href="/portfolio" class="section__backlink">&larr; See all portfolio</a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="section section--content">
+      <div class="container">
+        <article class="portfolio">
+          <header class="portfolio__header">
+            <h1 class="portfolio__title">{{ page.title }}</h1>
+            <div class="portfolio__image">
+              <img
+                src="/img/portfolio/{{ page.name }}/cover.jpg"
+                srcset="/img/portfolio/{{ page.name }}/cover.jpg 1x, /img/portfolio/{{ page.name }}/cover@2x.jpg 2x" alt="{{ page.name }}"
+                onload="this.classList.add('loaded');"
+              >
+            </div>
+          </header>
+
+          <main class="portfolio__content">
+            {{ content }}
+          </main>
+
+          <aside class="portfolio__meta">
+            <ul class="list">
+              {% if page.year %}
+                <li>
+                  <span>
+                  {% if page.language == 'pt-br' %}
+                  Ano
+                  {% else %}
+                  Year
+                  {% endif %}
+                  </span>: {{ page.year }}
+                </li>
+              {% endif %}
+
+              {% if page.stack %}
+                <li><span>Stack</span>: {{ page.stack }}</li>
+              {% endif %}
+            </ul>
+
+            <ul class="list">
+              {% if page.link %}
+              <li>
+                <a href="{{ page.link }}" target="_blank" rel="noopener noreferrer">
+                {% if page.language == 'pt-br' %}
+                Ver projeto
+                {% else %}
+                See it live
+                {% endif %}
+                </a>
+              </li>
+              {% endif %}
+
+              {% if page.github %}
+              <li>
+                <a href="{{ page.github }}" target="_blank" rel="noopener noreferrer">
+                {% if page.language == 'pt-br' %}
+                Ver no GitHub
+                {% else %}
+                See it on GitHub
+                {% endif %}
+                </a>
+              </li>
+              {% endif %}
+            </ul>
+          </aside>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  {% include layout/footer.html %}
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js" defer></script>
+</body>
+</html>

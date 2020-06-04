@@ -2,6 +2,8 @@
 layout: default
 title: Blog
 slug: blog
+language: en
+pt-br: /pt-br/blog
 ---
 
 <div class="section section--headline">
@@ -9,37 +11,19 @@ slug: blog
     <h1>Blog.</h1>
     <p>Technology, career tips, development trends, tutorials - here you’ll find a lot of these!</p>
 
-    <a href="{{ "/feed.xml" | relative_url }}" class="button">RSS Feed</a>
+    <!-- <a href="{{ "/feed.xml" | relative_url }}" class="button">RSS Feed</a> -->
   </div>
 </div>
 
 <div class="section section--list">
   <div class="container">
     {% if site.posts.size > 0 %}
+      
       <ul class="post-list">
         {% for post in paginator.posts %}
         <li class="post-list__item">
           <a href="{{ post.url | relative_url }}">
-            <div class="post-card">
-              <div class="post-card__image">
-                {% assign post_image = post.image_src | default: "/img/heroes/moleskine.jpg" %}
-                <img src="{{ post_image }}" alt="{{ post.title | escape }}" onload="this.classList.add('loaded');">
-              </div>
-
-              <div class="post-card__info">
-                <h4 class="post-card__title">{{ post.title | escape }}</h4>
-
-                {% include post/meta.html case="blog" %}
-
-                {% if site.show_excerpts %}
-                <div class="post-card__excerpt">
-                  {{ post.excerpt }}
-                </div>
-                {% endif %}
-
-                <button class="anchor">Read more &rarr;</button>
-              </div>
-            </div>
+            {% include post/card.html post=post %}
           </a>
         </li>
         {% endfor %}

@@ -3,42 +3,16 @@ layout: default
 title: jlozovei.dev
 permalink: /
 slug: home
+language: en
+pt-br: /pt-br
 ---
 
 <div class="section section--intro">
   <div class="container">
-    <div class="section__profile">
-      <h1>Hello, I'm <u>Julio Lozovei</u>.</h1>
+    <h1>jlozovei <img src="/img/logo-white.svg" alt="jlozovei" /></h1>
 
-      <div class="section__image">
-        <img src="/img/memoji/hello.png" alt="Julio Lozovei memoji">
-      </div>
-    </div>
+    <p>Front-end development taken seriously.</p>
 
-    <div class="section__text">
-      <p>I love to create solutions based on <u>HTML</u>, <u>CSS</u> and <u>JavaScript</u>!</p>
-    </div>
-  </div>
-</div>
-
-<div class="section section--recent">
-  <div class="container">
-    <div class="section__topic">
-      <h2>I'm always coding, writing and speaking. You can find me on those links below:</h2>
-
-      {% include social/links.html %}
-    </div>
-
-    <div class="section__topic">
-      <h2>Check the latest open source projects I've been working on:</h2>
-
-      <ul class="projects-list">
-        {% for item in site.data['latest-projects'] %}
-          <li class="projects-list__item">
-            <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+    {% include social/links.html %}
   </div>
 </div>

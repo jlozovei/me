@@ -91,7 +91,7 @@ table {
   &,
   td,
   th {
-    border: 1px solid $grey;
+    border: 1px solid $shark;
   }
 
   td,
@@ -101,7 +101,7 @@ table {
 
   tr {
     &:nth-child(even) {
-      background-color: $grey--light;
+      background-color: $tundora;
     }
   }
 }
@@ -110,5 +110,5 @@ hr {
   margin: 2rem 0;
   border: none;
   height: 1px;
-  background-color: $grey;
+  background-color: $tundora;
 }

@@ -7,12 +7,13 @@
   max-width: 30rem;
   margin: 4rem auto 0;
   padding-top: 0.5rem;
-  border-top: 1px solid $black;
+  border-top: 1px solid $shark;
 
   &__link,
   &__current {
     flex-basis: 33.3333333333%;
     padding: 0.5rem;
+    font-family: $font_title;
     font-weight: 800;
     @include responsive-font-size(0.75rem, 1rem);
     text-transform: uppercase;

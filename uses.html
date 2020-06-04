@@ -3,6 +3,8 @@ layout: default
 title: Uses
 permalink: /uses
 slug: uses
+language: en
+pt-br: /pt-br/uses
 ---
 
 <div class="section section--headline">
@@ -16,12 +18,12 @@ slug: uses
   <div class="container">
     {% for category in site.data.uses %}
     <div class="section__topic">
-      <h3>{{ category.name }}</h3>
+      <h3>{{ category.en }}</h3>
 
       <ul>
         {% for item in category.items %}
         <li>
-          <span><b>{{ item.key }}</b>: {{ item.value }}</span>
+          <span>{{ item.key.en }}</span>: {{ item.value.en }}
         </li>
         {% endfor %}
       </ul>
@@ -39,12 +41,12 @@ slug: uses
 
     {% for category in site.data.website %}
     <div class="section__topic">
-      <h3>{{ category.name }}</h3>
+      <h3>{{ category.en }}</h3>
 
       {% for item in category.items %}
       <ul>
         <li>
-          <span><a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a> {{ item.for }}</span>
+          <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a> {{ item.for.en }}
         </li>
       </ul>
       {% endfor %}

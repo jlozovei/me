@@ -1,42 +1,38 @@
-<div class="post__meta post-card__meta">
-  <p class="post__date post-card__date">
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+<div class="post__meta">
+  <p class="post__date">
+    {% if page.language != 'pt-br' %}
+    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-      {% case include.case %}
-       {% when "blog" %}
-          {{ post.date | date: date_format }}
-        {% when "post" %}
-          {{ page.date | date: date_format }}
-      {% endcase %}
+      {{ post.date | date: date_format }}
     </time>
+    {% else %}
+    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+      {%- assign date_format = site.minima.date_format | default: "%d/%m/%Y" -%}
+
+      {{ post.date | date: date_format }}
+    </time>
+    {% endif %}
   </p>
 
-  {% case include.case %}
-     {% when "blog" %}
-        {% capture words %}
-          {{ post.content | number_of_words | minus: 180 }}
-        {% endcapture %}
-      {% when "post" %}
-        {% capture words %}
-          {{ content | number_of_words | minus: 180 }}
-        {% endcapture %}
-    {% endcase %}
+  {% capture words %}
+    {{ postContent | number_of_words | minus: 180 }}
+  {% endcapture %}
 
-    <p class="post__read-time post-card__read-time">
-      {% if words contains '-' %}
-        1 min read
-      {% else %}
-        {{ words | plus: 150 | divided_by: 150 | append: ' min read' }}
-      {% endif %}  
-    </p>
-
-  <p class="post__category post-card__category">
-    {% case include.case %}
-     {% when "blog" %}
-        {{ post.category | capitalize }}
-      {% when "post" %}
-        {{ page.category | capitalize }}
-    {% endcase %}
+  {% if words contains '-' %}
+    {% assign time="1" %}
+  {% else %}
+    {% assign time=words | plus: 150 | divided_by: 150 %}
+  {% endif %}
+  <p class="post__read-time">
+    {% if page.language == 'pt-br' %}
+      leitura de 
+    {% endif %}
+    {{ time }} min
+    {% if page.language != 'pt-br' %}
+       read
+    {% endif %}
   </p>
+
+  <p class="post__category">{{ post.category | capitalize }}</p>
 </div>

@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 6rem;
-  background-color: $white;
+  background-color: $woodsmoke;
 
   .container {
     display: flex;
@@ -9,15 +9,6 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-  }
-
-  ul {
-    li {
-      a {
-        font-size: 0.75rem;
-        color: $black;
-      }
-    }
   }
 
   @media #{$tablet} {
@@ -35,20 +26,6 @@
 
     .container {
       flex-flow: row wrap;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    ul {
-      li {
-        & + li {
-          margin-left: 2rem;
-        }
-
-        a {
-          font-size: 0.875rem;
-        }
-      }
     }
   }
 }

@@ -1,10 +1,35 @@
-- name: Home
-  link: /
-- name: About me
-  link: /about
-- name: Portfolio
-  link: /portfolio
-- name: Uses
-  link: /uses
-- name: Blog
-  link: /blog
+- label: home
+  en:
+    url: /
+    name: Home
+  pt-br:
+    url: /pt-br
+    name: Início
+- label: about
+  en:
+    url: /about
+    name: About me
+  pt-br:
+    url: /pt-br/sobre
+    name: Sobre mim
+- label: portfolio
+  en:
+    url: /portfolio
+    name: Portfolio
+  pt-br:
+    url: /pt-br/portfolio
+    name: Portfolio
+- label: uses
+  en:
+    url: /uses
+    name: Uses
+  pt-br:
+    url: /pt-br/uses
+    name: Uses
+- label: blog
+  en:
+    url: /blog
+    name: Blog
+  pt-br:
+    url: /pt-br/blog
+    name: Blog

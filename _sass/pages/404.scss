@@ -2,10 +2,16 @@
 
 body {
   background-color: $black;
-  background-image: url('../img/noise.gif');
+  background-image: url('/img/headroom.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.page {
+  &:after {
+    display: none;
+  }
 }
 
 .section {
@@ -17,11 +23,7 @@ body {
     min-height: 100vh;
     background-color: rgba($black, 0.8);
     text-align: center;
-
-    &,
-    .menu a {
-      color: $white;
-    }
+    color: $white;
 
     .menu {
       margin-top: 2rem;
@@ -29,7 +31,7 @@ body {
 
     img {
       max-width: 18rem;
-      margin: 0 auto;
+      margin: 0 auto 4rem;
     }
   }
 }

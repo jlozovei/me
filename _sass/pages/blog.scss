@@ -4,91 +4,63 @@
 
 .post-list {
   width: 100vw;
-  max-width: $blog_list_width;
   margin-left: 50%;
   transform: translateX(-50%);
 
-  &__item {
-    flex-basis: 100%;
-    width: 100%;
-  }
-
-  @media #{$medium} {
+  @media #{$tablet} {
     &__item {
-      & + .post-list__item {
-        margin-top: 4rem;
+      .post {
+        &__image {
+          margin-bottom: 1rem;
+
+          img {
+            width: 100vw;
+            max-height: 12rem;
+            margin-left: 50%;
+            transform: translate(-50%);
+          }
+        }
+      }
+
+      & + li {
+        margin-top: 2rem;
       }
     }
   }
 
-  @media #{$m_medium} {
+  @media screen and (min-width: $m_tablet_width) {
     &__item {
+      padding: 0;
+      height: 100vh;
+
+      .post {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        &__image,
+        &__info {
+          flex-basis: 50%;
+          width: 50%;
+        }
+
+        &__info {
+          padding: 0 4rem;
+        }
+
+        &,
+        &__image,
+        img {
+          height: 100%;
+        }
+      }
+
       &:nth-child(even) {
-        .post-card {
+        .post {
           flex-flow: row-reverse wrap;
         }
       }
-    }
-  }
-}
-
-.post-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  &__image,
-  &__info {
-    flex-basis: 100%;
-    width: 100%;
-  }
-
-  &__image {
-    overflow: hidden;
-
-    img {
-      height: 100%;
-      filter: brightness(0.8) blur(2px);
-      transition: filter ease-in-out 210ms, transform linear 20s;
-
-      &.loaded {
-        filter: brightness(0.8) blur(0);
-      }
-    }
-  }
-
-  &__info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 1rem;
-  }
-
-  &:hover {
-    .post-card__image {
-      img {
-        filter: brightness(1.1) blur(0);
-        transform: scale(1.2);
-      }
-    }
-  }
-
-  @media #{$m_medium} {
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    min-height: 100vh;
-
-    &__image,
-    &__info {
-      flex-basis: 50%;
-      width: 50%;
-    }
-
-    &__info {
-      padding: 4rem;
     }
   }
 }

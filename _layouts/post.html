@@ -1,9 +1,8 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.language | default: site.language | default: "en" }}">
 <head>
   {% include meta/head.html %}
   <link rel="stylesheet" href="{{ site.baseurl }}/css/post.css">
@@ -12,15 +11,24 @@ layout: compress
   {% include layout/header.html %}
 
   <div class="page">
+    <div class="section section--headline">
+      <div class="container">
+        {% if page.language == 'pt-br' %}
+        <a href="/pt-br/blog" class="section__backlink">&larr; Ver todos os textos</a>
+        {% else %}
+        <a href="/blog" class="section__backlink">&larr; See all posts</a>
+        {% endif %}
+      </div>
+    </div>
+
     <div class="section section--content">
       <div class="container">
-        <a href="/blog" class="section__backlink">&larr; See all posts</a>
-
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
           <header class="post__header">
             <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
-
-            {% include post/meta.html case="post" %}
+            {% assign post=page %}
+            {% assign postContent=content %}
+            {% include post/meta.html post=post postContent=postContent %}
 
             {% if page.image_src %}
             <div class="post__image">
@@ -38,67 +46,99 @@ layout: compress
             {% endif %}
           </header>
 
-          <div class="post__content" itemprop="articleBody">
+          <main class="post__content" itemprop="articleBody">
             {{ content | remove: page.excerpt }}
-          </div>
+          </main>
         </article>
       </div>
     </div>
 
+    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+      {% if posts.size == 0 %}
+        {% assign posts=site.pages | where:"ref", page.ref | sort: 'lang' %}
+      {% endif %}
+
+      {% if posts.size > 1 %}
+        <div class="section section--translations">
+          <div class="container">
+            <h6>
+            {% if page.language == 'pt-br' %}
+            Traduções disponíveis:
+            {% else %}
+            Available translations:
+            {% endif %}
+            </h6>
+
+            <ul class="list">
+            {% for post in posts %}
+              {% unless post.language == page.language %}
+                <li>
+                  <a href="{{ site.base-url }}{{ post.url }}" title="View in {{post.language}}">{{ post.language }}</a>
+                </li>
+              {% endunless %}
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+
     <div class="section section--share">
       <div class="container">
-        <div class="social-share">
-          <h6 class="social-share__title">Share this article</h6>
+        <h6>
+        {% if page.language == 'pt-br' %}
+        Compartilhe este artigo:
+        {% else %}
+        Share this article
+        {% endif %}
+        </h6>
 
-          {% assign post_url = page.url | absolute_url %}
+        {% assign post_url = page.url | absolute_url %}
 
-          <ul class="social-share__list">
-            <li>
-              <a href="https://www.facebook.com/sharer/sharer.php?u={{ post_url }}&title={{ page.title }}&description={{ page.excerpt }}" target="_blank" rel="noopener noreferrer">Facebook</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ post_url }}&related={{ site.twitter.username }}" target="_blank" rel="noopener noreferrer">Twitter</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ post_url }}&title={{ page.title }}&summary={{ page.excerpt }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="list">
+          <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ post_url }}&title={{ page.title }}&description={{ page.excerpt }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ post_url }}&related={{ site.twitter.username }}" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ post_url }}&title={{ page.title }}&summary={{ page.excerpt }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
 
     {% unless page.category == null %}
-      {% capture pageCategory %}{{ page.category }}{% endcapture %}
-      {% unless site.categories[pageCategory].size == 1 %}
+      {% capture pageCategory %}
+        {{ page.category }}
+      {% endcapture %}
+
+      {% assign postsList = site.posts | where_exp:"post","post.url != page.url" %}
+      {% assign relatedPosts = postsList | where_exp:"post","post.category == page.category" %}
+      {% assign sameLanguagePosts = postsList | where_exp:"post","post.language == page.language" %}
+
+      {% unless sameLanguagePosts.size == 0 %}
         <div class="section section--related">
           <div class="container">
-            <h2>You may also like</h2>
+            <h2>
+            {% if page.language == 'pt-br' %}
+            Vale a pena ler também
+            {% else %}
+            Worth reading too
+            {% endif %}
+            </h2>
+
             <ul class="post-list">
-              {% for post in site.categories[pageCategory] limit:6 %}
-                {% unless post.title == page.title %}
+              {% for post in sameLanguagePosts limit:3 %}
                 <li class="post-list__item">
                   <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
-                    <div class="card post-card">
-                      <h4 class="post-card__title">{{ post.title | escape }}</h4>
-
-                      {% include post/meta.html case="post" %}
-
-                      {% if site.show_excerpts %}
-                      <div class="post-card__excerpt">
-                        {{ post.excerpt }}
-                      </div>
-                      {% endif %}
-
-                      <button class="anchor">Read more &rarr;</button>
-                    </div>
+                    {% include post/card.html post=post %}
                   </a>
                 </li>
-                {% endunless %}
               {% endfor %}
             </ul>
           </div>
         </div>
-        
       {% endunless %}
     {% endunless %}
   </div>

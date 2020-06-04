@@ -1,7 +1,10 @@
 .social-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
   li {
-    a {
-      text-transform: uppercase;
-    }
+    padding: 0.5rem;
   }
 }

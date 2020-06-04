@@ -1,17 +1,35 @@
 .section {
   position: relative;
-  padding: 4rem 0;
+  padding: 2rem 0;
 
   &--headline {
-    padding-bottom: 2rem;
-    background-color: $white;
+    padding-top: 8rem;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -1rem;
+      display: block;
+      width: 18rem;
+      height: 5rem;
+      background: url('/img/logo-grey.svg') no-repeat center/contain;
+    }
 
     p {
       max-width: 85%;
     }
   }
 
-  &--list {
-    padding: 2rem 0 6rem;
+  @media #{$m_tablet} {
+    &--headline {
+      padding-top: 16rem;
+
+      &:before {
+        top: 2rem;
+        left: 8rem;
+        width: 26rem;
+        height: 10rem;
+      }
+    }
   }
 }

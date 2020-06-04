@@ -1,36 +1,102 @@
-- name: Designing
+- label: design
+  en: Designing
+  pt-br: Design
   items:
-    - key: Prototyping
-      value: Adobe XD and Sketch (when available)
-    - key: Handoff
-      value: Zeplin
-    - key: Hand drawing
-      value: Cicero Papelaria's booklets
-- name: Developing
+    - key:
+        en: Prototyping
+        pt-br: Prototipagem
+      value:
+        en: Adobe XD and Sketch
+        pt-br: Adobe XD e Sketch
+    - key:
+        en: Handoff
+        pt-br: Handoff
+      value:
+        en: Zeplin or Figma
+        pt-br: Zeplin ou Figma
+    - key:
+        en: Hand drawing and notes
+        pt-br: Desenhos e anotacões
+      value:
+        en: Cicero Papelaria's booklets
+        pt-br: Cadernetas da Cicero Papelaria
+- label: develop
+  en: Developing
+  pt-br: Desenvolvendo
   items:
-    - key: Computer
-      value: Apple MacBook Pro 13-inch, 2017, 2,3 GHz Dual-Core Intel Core i5, 8 GB
-    - key: Text Editor
-      value: Sublime Text 3 + Seti_UI theme
-    - key: Terminal
-      value: iTerm2, Oh My Zsh + robbyrussell theme
-    - key: Browser
-      value: Google Chrome/Google Chrome Canary
-    - key: Headphones
-      value: Marshall Monitor Bluetooth and harman/kardon IE NC (in-ear)
-- name: Personal Stuff
+    - key:
+        en: Computer
+        pt-br: Computador
+      value:
+        en: Apple MacBook Pro 2017, 13-inch, 2,3 GHz Dual-Core Intel Core i5, 8GB RAM
+        pt-br: Apple MacBook Pro 2017, 13 polegadas, 2,3 GHz Dual-Core Intel Core i5, 8GB de RAM
+    - key:
+        en: Text Editor
+        pt-br: Editor de texto
+      value:
+        en: Sublime Text 3 + Seti_UI theme
+        pt-br: Sublime Text 3 + tema Seti_UI
+    - key:
+        en: Terminal
+        pt-br: Terminal
+      value:
+        en: iTerm2, Oh My Zsh + robbyrussell theme
+        pt-br: iTerm2, Oh My Zsh + tema robbyrussell
+    - key:
+        en: Browser
+        pt-br: Navegador
+      value:
+        en: Google Chrome for developing, Apple Safari for browsing
+        pt-br: Google Chrome para desenvolver, Apple Safari para navegar
+    - key:
+        en: Headphones
+        pt-br: Fones de ouvido
+      value:
+        en: Marshall Monitor Bluetooth and harman/kardon IE NC (in-ear)
+        pt-br: Marshall Monitor Bluetooth e harman/kardon IE NC (in-ear)
+- label: personal
+  en: Personal Stuff
+  pt-br: Coisas Pessoais
   items:
-    - key: Phone
-      value: Apple iPhone 11 Pro
-    - key: Notes
-      value: Bear, Apple Notes, Google Keep
-    - key: Podcasts
-      value: Spotify, Apple Podcasts
-    - key: Music
-      value: Spotify, Tidal
-    - key: To (avoid) remember my passwords
-      value: LastPass
-    - key: Email
-      value: Gmail, Outlook
-    - key: Communication
-      value: Slack
+    - key:
+        en: Phone
+        pt-br: Celular
+      value:
+        en: Apple iPhone 11 Pro
+        pt-br: Apple iPhone 11 Pro
+    - key:
+        en: Workspace
+        pt-br: Workspace
+      value:
+        en: Notion (notes, to-do lists, backlog...)
+        pt-br: Notion (notas, lista de afazeres, backlog...)
+    - key:
+        en: Podcasts
+        pt-br: Podcasts
+      value:
+        en: Spotify, Apple Podcasts
+        pt-br: Spotify, Apple Podcasts
+    - key:
+        en: Music
+        pt-br: Música
+      value:
+        en: Spotify, Tidal
+        pt-br: Spotify, Tidal
+    - key:
+        en: To (avoid) remember my passwords
+        pt-br: Cofre de senhas
+      value:
+        en: LastPass
+        pt-br: LastPass
+    - key:
+        en: Email
+        pt-br: Email
+      value:
+        en: Gmail
+        pt-br: Gmail
+    - key:
+        en: Communication
+        pt-br: Comunicação
+      value:
+        en: Slack
+        pt-br: Slack
