@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://jlozovei.dev/pt-br/portfolio/tropico</loc>
-<lastmod>2020-06-04T16:14:52+00:00</lastmod>
+<lastmod>2020-06-04T16:42:09+00:00</lastmod>
 </url>
 <url>
 <loc>https://jlozovei.dev/portfolio/tropico/</loc>
-<lastmod>2020-06-04T16:14:52+00:00</lastmod>
+<lastmod>2020-06-04T16:42:09+00:00</lastmod>
 </url>
 <url>
 <loc>https://jlozovei.dev/blog/is-it-worthy-to-have-a-blog/</loc>
@@ -95,14 +95,6 @@
 <url>
 <loc>https://jlozovei.dev/pt-br/blog/o-problema-com-opinioes/</loc>
 <lastmod>2020-05-25T16:45:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://jlozovei.dev/blog/front-end-the-way-the-industry-does/</loc>
-<lastmod>2020-05-27T13:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://jlozovei.dev/pt-br/blog/front-end-the-way-the-industry-does/</loc>
-<lastmod>2020-05-27T13:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://jlozovei.dev/about</loc>
