@@ -1,6 +1,10 @@
 @import '../index';
 
 .section {
+  &--this {
+    padding: 6rem 0 4rem;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
