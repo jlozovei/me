@@ -14,7 +14,7 @@ google_analytics_key: 'UA-116650364-1'
 title: jlozovei.dev
 logo: /favicon.ico
 description: Front-end development taken seriously.
-lang: en
+language: en
 languages: ["en", "pt-br"]
 author:
   name: Julio Lozovei
@@ -75,6 +75,11 @@ defaults:
     type: posts
   values:
     permalink: /pt-br/blog/:title/
+- scope:
+    path: _portfolio/pt-br
+    type: portfolio
+  values:
+    permalink: /pt-br/portfolio/:title
 
 paginate_multiple:
   - paginate: 4
