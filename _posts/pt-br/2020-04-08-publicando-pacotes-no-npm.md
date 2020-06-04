@@ -8,7 +8,6 @@ image_src: "/img/blog/publishing-packages-to-npm/cover.jpeg"
 image_author: "chuttersnap"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/fyaTq-fIlro"
-lang: "pt-br"
 language: "pt-br"
 ref: "publishing-packages-to-npm"
 ---

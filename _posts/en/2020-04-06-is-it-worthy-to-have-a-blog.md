@@ -8,7 +8,6 @@ image_src: "/img/blog/is-it-worthy-to-have-a-blog/cover.jpeg"
 image_author: "camilo jimenez"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/Pll7AP6NFpY"
-lang: "en"
 language: "en"
 ref: "is-it-worthy-to-have-a-blog"
 ---

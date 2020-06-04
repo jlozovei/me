@@ -8,7 +8,6 @@ image_src: "/img/blog/technology-and-originality-in-2020/cover.jpeg"
 image_author: "Dawid Zawiła"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/T2apDcwWGLA"
-lang: "en"
 language: "en"
 ref: "technology-and-originality-in-2020"
 ---

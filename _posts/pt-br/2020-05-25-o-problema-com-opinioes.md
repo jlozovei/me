@@ -8,7 +8,6 @@ image_src: "/img/blog/the-problem-with-opinions/cover.jpeg"
 image_author: "Ana Flávia"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/kR5VQr3-L9w"
-lang: "pt-br"
 language: "pt-br"
 ref: "the-problem-with-opinions"
 ---

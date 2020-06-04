@@ -8,7 +8,6 @@ image_src: "/img/blog/how-to-use-emojis-in-html/cover.jpeg"
 image_author: "James Lee"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/R9rFKy_AVbw"
-lang: "en"
 language: "en"
 ref: "how-to-use-emojis-in-html"
 ---

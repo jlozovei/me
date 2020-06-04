@@ -8,7 +8,6 @@ image_src: "/img/blog/getting-along-with-communities/cover.jpeg"
 image_author: '"My Life Through A Lens"'
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/bq31L0jQAjU"
-lang: "en"
 language: "en"
 ref: "getting-along-with-communities"
 ---

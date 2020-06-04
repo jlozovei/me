@@ -8,7 +8,6 @@ image_src: "/img/blog/remote-mindset/cover.jpeg"
 image_author: "Charles Deluvio"
 image_from: "Unsplash"
 image_from_url: "https://unsplash.com/photos/3fLywd_jkfU"
-lang: "pt-br"
 language: "pt-br"
 ref: "remote-mindset"
 ---
