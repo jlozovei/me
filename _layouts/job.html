@@ -1,9 +1,8 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.language | default: site.language | default: "en" }}">
 <head>
   {% include meta/head.html %}
   <link rel="stylesheet" href="{{ site.baseurl }}/css/job.css">
@@ -14,7 +13,11 @@ layout: compress
   <div class="page">
     <div class="section section--headline">
       <div class="container">
+        {% if page.language == 'pt-br' %}
+        <a href="/pt-br/portfolio" class="section__backlink">&larr; Ver todo o portfolio</a>
+        {% else %}
         <a href="/portfolio" class="section__backlink">&larr; See all portfolio</a>
+        {% endif %}
       </div>
     </div>
 
@@ -39,7 +42,15 @@ layout: compress
           <aside class="portfolio__meta">
             <ul class="list">
               {% if page.year %}
-                <li><span>Year</span>: {{ page.year }}</li>
+                <li>
+                  <span>
+                  {% if page.language == 'pt-br' %}
+                  Ano
+                  {% else %}
+                  Year
+                  {% endif %}
+                  </span>: {{ page.year }}
+                </li>
               {% endif %}
 
               {% if page.stack %}
@@ -50,13 +61,25 @@ layout: compress
             <ul class="list">
               {% if page.link %}
               <li>
-                <a href="{{ page.link }}" target="_blank" rel="noopener noreferrer">See it live</a>
+                <a href="{{ page.link }}" target="_blank" rel="noopener noreferrer">
+                {% if page.language == 'pt-br' %}
+                Ver projeto
+                {% else %}
+                See it live
+                {% endif %}
+                </a>
               </li>
               {% endif %}
 
               {% if page.github %}
               <li>
-                <a href="{{ page.github }}" target="_blank" rel="noopener noreferrer">See it on GitHub</a>
+                <a href="{{ page.github }}" target="_blank" rel="noopener noreferrer">
+                {% if page.language == 'pt-br' %}
+                Ver no GitHub
+                {% else %}
+                See it on GitHub
+                {% endif %}
+                </a>
               </li>
               {% endif %}
             </ul>

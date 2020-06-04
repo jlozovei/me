@@ -1,9 +1,8 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.language | default: site.language | default: "en" }}">
 <head>
   {% include meta/head.html %}
   <link rel="stylesheet" href="{{ site.baseurl }}/css/post.css">
@@ -72,9 +71,9 @@ layout: compress
 
             <ul class="list">
             {% for post in posts %}
-              {% unless post.lang == page.lang %}
+              {% unless post.language == page.language %}
                 <li>
-                  <a href="{{ site.base-url }}{{ post.url }}" title="View in {{post.lang}}">{{ post.lang }}</a>
+                  <a href="{{ site.base-url }}{{ post.url }}" title="View in {{post.language}}">{{ post.language }}</a>
                 </li>
               {% endunless %}
             {% endfor %}
@@ -116,7 +115,7 @@ layout: compress
 
       {% assign postsList = site.posts | where_exp:"post","post.url != page.url" %}
       {% assign relatedPosts = postsList | where_exp:"post","post.category == page.category" %}
-      {% assign sameLanguagePosts = postsList | where_exp:"post","post.lang == page.lang" %}
+      {% assign sameLanguagePosts = postsList | where_exp:"post","post.language == page.language" %}
 
       {% unless sameLanguagePosts.size == 0 %}
         <div class="section section--related">

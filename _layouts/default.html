@@ -1,9 +1,8 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.language | default: site.language | default: "en" }}">
 <head>
   {% include meta/head.html %}
   <link rel="stylesheet" href="{{ site.url }}/css/{{ page.slug }}.css">
