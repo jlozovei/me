@@ -1,20 +1,28 @@
 <footer class="footer">
   <div class="container">
+    {% unless page.url contains "blog" %}
     <div class="footer__languages">
       <ul class="list">
         <li>
-          <a>EN</a>
+          <a href="{{ page.en }}" {% if page.language == 'en' %} class="active" {% endif %}>EN</a>
         </li>
 
         <li>
-          <a>PT-BR</a>
+          <a href="{{ page.pt-br }}" {% if page.language == 'pt-br' %} class="active" {% endif %}>PT-BR</a>
         </li>
       </ul>
     </div>
+    {% endunless %}
     <div class="footer__copy">
+      {% if page.language == 'pt-br' %}
+      <p>Esse site é feito com <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> e hospedado pelo <a href="https://github.com/jlozovei/me" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+
+      <p>Livre de cookies, bem-vindo | <small>&copy; jlozovei {{ 'now' | date: "%Y" }}</small></p>
+      {% else %}
       <p>This site is built on top of <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> and hosted by <a href="https://github.com/jlozovei/me" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
 
       <p>Cookies free, you're welcome | <small>&copy; jlozovei {{ 'now' | date: "%Y" }}</small></p>
+      {% endif %}
     </div>
   </div>
 </footer>

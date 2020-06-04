@@ -2,23 +2,30 @@
   <ul class="menu list">
     {% for item in site.data.pages %}
       {% assign isActive = '' %}
+      {% assign itemLink = item.en.url %}
+      {% assign itemName = item.en.name %}
+      
+      {% if page.language == 'pt-br' %}
+        {% assign itemLink = item.pt-br.url %}
+        {% assign itemName = item.pt-br.name %}
+      {% endif %}
 
-      {% if item.link == page.url %}
+      {% if itemLink == page.url %}
         {% assign isActive = class | append: 'active' %}
       {% endif %}
 
-      {% if page.url contains '/portfolio' and item.link == '/portfolio' %}
+      {% if page.url contains '/portfolio' and itemLink contains '/portfolio' %}
         {% assign isActive = class | append: 'active' %}
       {% endif %}
 
-      {% if page.url contains '/blog' and item.link == '/blog' %}
+      {% if page.url contains '/blog' and itemLink contains '/blog' %}
         {% assign isActive = class | append: 'active' %}
       {% endif %}
 
       {% assign url = page.url contains '/portfolio' %}
 
       <li>
-        <a class="{{ isActive }}" href="{{ item.link }}">{{ item.name }}</a>
+        <a class="{{ isActive }}" href="{{ itemLink }}">{{ itemName }}</a>
       </li>
     {% endfor %}
   </ul>
