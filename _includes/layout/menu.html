@@ -14,6 +14,14 @@
         {% assign isActive = class | append: 'active' %}
       {% endif %}
 
+      {% if page.url contains '/about' and itemLink contains '/about' %}
+        {% assign isActive = class | append: 'active' %}
+      {% endif %}
+
+      {% if page.url contains '/sobre' and itemLink contains '/sobre' %}
+        {% assign isActive = class | append: 'active' %}
+      {% endif %}
+
       {% if page.url contains '/portfolio' and itemLink contains '/portfolio' %}
         {% assign isActive = class | append: 'active' %}
       {% endif %}
