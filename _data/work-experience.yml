@@ -2,28 +2,51 @@
   role: 'Intern / Web Developer'
   date: '09/2015 - 12/2017'
   img: livetouch
-  text: >-
-    <p>My first job experience, I started at Livetouch as a front-end intern. There I've worked on several projects - from websites, dashboards and digital products - and also helped the team interviewing new interns. After 10 months, and most part of this time as the only front-end developer in the house, I was promoted to a JR front-end developer position.</p>
-    <p>In almost 2,5 years at Livetouch, I worked with jQuery, Angular, React, Vue, Ionic and also learned a little about Android development.</p>
+  text:
+    en: >-
+      <p>Livetouch is a software house which creates awesome digital products.</p>
+      <p>My first job experience, I started at Livetouch as a front-end intern. There I've worked on several projects - from websites, dashboards and digital products - and also helped the team interviewing new interns. After 10 months, and most part of this time as the only front-end developer in the house, I was promoted to a JR front-end developer position.</p>
+      <p>In almost 2,5 years at Livetouch, I worked with jQuery, Angular, React, Vue, Ionic and also learned a little about Android mobile development.</p>
+    pt-br: >-
+      <p>A Livetouch é uma consultoria de tecnologia que cria produtos digitais incríveis.</p>
+      <p>Minha primeira experiência de trabalho, eu comecei na Livetouch como estagiário de front-end. Lá eu trabalhei em diversos projetos - desde sites, dashboards e produtos digitais - e também ajudei o time a entrevistar novos estagiários. Depois de 10 meses, e na maior parte desse tempo como o único desenvolvedor front-end da empresa, eu fui promovido para a posição de desenvolvedor front-end JR.</p>
+      <p>Em quase 2 anos e meio na Livetouch, eu trabalhei com jQuery, Angular, React, Vue, Ionic e também aprendi algumas coisas sobre desenvolvimento mobile com Android.</p>
 - name: EBANX
   role: 'Front-end Developer'
   date: '01/2018 - 07/2019'
   img: ebanx
-  text: >-
-    <p>During my time at EBANX I was the front-end developer inside marketing area. There I helped to develop a new version of the company's business website - as part of Performance team - and also could help a lot of other teams - like Culture, The Shoppers (which has a blog), and the Content team.</p>
-    <p>Besides having to learn how to deal with HubSpot, which required me to use a lot of vanilla JS, there I used Vue to create new hotsites - like the careers page - and WordPress for blogs.</p>
+  text:
+    en: >-
+      <p>The newborn brazilian unicorn, EBANX is a fintech which helps people to buy stuff from around the world using local payment methods.</p>
+      <p>During my time at EBANX I was the front-end developer inside marketing area. There I helped to develop a new version of the company's business website - as part of Performance team - and also could help a lot of other teams - like Culture, The Shoppers (which has a blog about shopping), and the Content team.</p>
+      <p>Besides having to learn how to deal with HubSpot, which required me to use a lot of vanilla JS, there I used Vue to create new hotsites - like the careers page - and WordPress for blogs.</p>
+    pt-br: >-
+      <p>O mais novo unicórnio brasileiro, o EBANX é uma fintech que ajuda as pessoas a comprarem coisas ao redor do mundo utilizando métodos locais de pagamento.</p>
+      <p>Durante meu tempo no EBANX eu fui o desenvolvedor front-end dentro do marketing. Lá eu ajudei no desenvolvimento de uma nova versão do site business da empresa - como parte do time de Performance - e também pude ajudar vários outros times - como Cultura, The Shoppers (que tem um blog sobre compras), e o time de Conteúdo.</p>
+      <p>Além de ter que aprender a lidar com o HubSpot, o que exigiu que eu utilizasse muito vanilla JS, lá eu utilizei muito Vue para criar novos hotsites - como a página de carreiras - e WordPress para os blogs.</p>
 - name: Bcredi
   role: 'Front-end Developer'
   date: '07/2019 - 03/2020'
   img: bcredi
-  text: >-
-    <p>I've joined Bcredi to help them grow their products. After a while working with the product team, I moved to work with Growth team to help solve some technology issues within the marketing.</p>
-    <p>There I helped to develop a new version of the company's design system - using PostCSS and vanilla JS - and developed a lot of new components for the React version; also helped the front-end chapter to standartize some patterns and tools for development.</p>
-    <p>As part of the marketing team, I helped to develop a new interest calculator and rewrote the institutional site, from Gatsby to HubSpot with vanilla JS.</p>
+  text:
+    en: >-
+      <p>Bcredi is a fintech which operates in the real estate credit business.</p>
+      <p>I've joined Bcredi to help them grow their products. After a while working with the product team, I moved to work with Growth team to help solve some technology issues within the marketing.</p>
+      <p>There I helped to develop a new version of the company's design system - using PostCSS and vanilla JS - and developed a lot of new components for the React version; also helped the front-end chapter to standartize some patterns and tools for development.</p>
+      <p>As part of the marketing team, I helped to develop a new interest calculator and rewrote the institutional site, from Gatsby to HubSpot with vanilla JS.</p>
+    pt-br: >-
+      <p>A Bcredi é uma fintech que atua no ramo de crédito imobiliário.</p>
+      <p>Eu entrei na Bcredi para ajudar eles a expandirem seus produtos. Depois de um período trabalhando com o time de produto, eu fui transferido para o time de Growth para ajudar o time de marketing a resolver algums problemas com a tecnologia.</p>
+      <p>Lá eu ajudei a desenvolver uma nova versão do design system da empresa - usando PostCSS e vanilla JS - e também desenvolvi diversos novos componentes para a versão em React; também pude ajudar o capítulo de front-end a adotar alguns padrões e ferramentas para o desenvolvimento.</p>
+      <p>Como parte do time de marketing, eu ajudei a desenvolver uma nova calculadora de juros e reescrevi o site institucional, que estava feito em Gatsby, usando o HubSpot como plataforma e vanilla JS.</p>
 - name: Paraná Banco
   role: 'Front-end Developer'
   date: '04/2020 - now'
   img: pb
-  text: >-
-    <p>My current full-time job, Paraná Banco is a brazilian private bank focused on payroll loans for retirees, state pensioners, civil servants and the armed forces' members.</p>
-    <p>I've joined them in the challenge of creating a new outstanding product to help civil servants get a nice credit with an utterly easy process - using Next, React and styled-components.</p>
+  text:
+    en: >-
+      <p>My current full-time job, Paraná Banco is a brazilian private bank focused on payroll loans for retirees, state pensioners, civil servants and the armed forces' members.</p>
+      <p>I've joined them in the challenge of creating a new outstanding product to help civil servants get a nice credit with an utterly easy process - using Next, React and styled-components.</p>
+    pt-br: >-
+      <p>Meu atual emprego, o Paraná Banco é um banco brasileiro privado focado em empréstimos consignados para aposentados, pensionistas do estado, servidores públicos e integrantes das forças armadas.</p>
+      <p>Eu me juntei ao desafio de criar um novo produto incrível para ajudar os serivdores públicos a conseguirem empréstimos em um processo extremamente simples - utilizando Next, React e styled-components.</p>
