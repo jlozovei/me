@@ -37,7 +37,19 @@ layout: compress
                 
                 {% if page.image_author %}
                 <figcaption>
-                  Photo by {{ page.image_author }} on
+                  {% if page.language == 'pt-br' %}
+                  Foto por
+                  {% else %}
+                  Photo by
+                  {% endif %}
+
+                  {{ page.image_author }}
+
+                  {% if page.language == 'pt-br' %}
+                  no
+                  {% else %}
+                  on
+                  {% endif %}
                   <a href="{{ page.image_from_url }}" target="_blank" rel="noopener noreferrer">{{ page.image_from }}</a>
                 </figcaption>
                 {% endif %}
