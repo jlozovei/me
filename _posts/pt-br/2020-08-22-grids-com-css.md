@@ -5,9 +5,9 @@ date:   2020-08-22 16:00:00 -0300
 category: thoughts
 author: "Julio Lozovei"
 image_src: "/img/blog/grid-layouts-with-css/cover.jpeg"
-image_author: "Timothy Dykes"
+image_author: "Liv Bruce"
 image_from: "Unsplash"
-image_from_url: "https://unsplash.com/photos/LhqLdDPcSV8"
+image_from_url: "https://unsplash.com/photos/fN8FhUoK1pY"
 language: "pt-br"
 ref: "grid-layouts-with-css"
 ---
