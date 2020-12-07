@@ -13,11 +13,6 @@
         en: as host and CI
         pt-br: como host e CI
       link: https://github.com
-    - name: Forestry
-      for:
-        en: as CMS
-        pt-br: como CMS
-      link: https://forestry.io/
     - name: Unsplash
       for:
         en: for cool photos
@@ -31,7 +26,7 @@
     - name: Google Fonts
       for:
         en: as the font CDN
-        pt-br: como CND de fontes
+        pt-br: como CDN de fontes
       link: https://fonts.google.com/
     - name: PrismJS
       for:
