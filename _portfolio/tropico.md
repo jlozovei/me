@@ -3,7 +3,7 @@ layout: job
 title:  "tropico.tv"
 name:   "tropico"
 year:   2019
-stack:  "WordPress, ES5, Sass"
+stack:  "WordPress, ES5, PostCSS"
 link:   "https://tropico.tv"
 language: "en"
 pt-br: /pt-br/portfolio/tropico
@@ -12,7 +12,7 @@ Trópico is an audiovisual agency from Curitiba, Brazil. Their main focus is _re
 
 Alongside my friend [Daniel Koganas](https://koganas.com/), we helped Trópico to modernize their website, helping them to display their work in a fancy way.
 
-Daniel worked on the new UX/UI, and together we developed the new website using WordPress, JavaScript ES5 and Sass. We also used GitHub as our git platform.
+Daniel worked on the new UX/UI, and together we developed the new website using WordPress, JavaScript ES5 and PostCSS. We also used GitHub as our git platform.
 
 This project required a lot of attention on SEO, accessibility and performance - the site must be fast while beautiful, and interaction-rich.
 
