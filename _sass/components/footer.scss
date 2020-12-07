@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  background-color: $woodsmoke;
+  background-color: $black;
 
   &:before {
     position: absolute;
@@ -46,6 +46,10 @@
   p {
     margin-bottom: 0.25rem;
     font-size: 0.875rem;
+  }
+
+  small {
+    color: $white;
   }
 
   @media #{$tablet} {

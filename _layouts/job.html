@@ -45,16 +45,16 @@ layout: compress
                 <li>
                   <span>
                   {% if page.language == 'pt-br' %}
-                  Ano
+                  Ano:
                   {% else %}
-                  Year
+                  Year:
                   {% endif %}
-                  </span>: {{ page.year }}
+                  </span> {{ page.year }}
                 </li>
               {% endif %}
 
               {% if page.stack %}
-                <li><span>Stack</span>: {{ page.stack }}</li>
+                <li><span>Stack:</span> {{ page.stack }}</li>
               {% endif %}
             </ul>
 

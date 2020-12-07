@@ -1,5 +1,5 @@
 body {
-  background-color: $woodsmoke;
+  background-color: $black;
   color: $text;
 
   &,
@@ -23,6 +23,11 @@ a,
 .page {
   position: relative;
   overflow: hidden;
+
+  h1,
+  h2 {
+    color: $white;
+  }
 
   &:after {
     position: absolute;
