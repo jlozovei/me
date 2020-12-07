@@ -1,6 +1,10 @@
 .portfolio {
   position: relative;
 
+  &__title {
+    color: $white;
+  }
+
   &__image {
     img {
       object-fit: cover;
@@ -15,6 +19,7 @@
     ul {
       li {
         list-style: disc inside;
+        color: $white;
 
         span {
           font-family: $font_title;

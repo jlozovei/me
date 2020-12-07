@@ -15,14 +15,11 @@
     {% endunless %}
     <div class="footer__copy">
       {% if page.language == 'pt-br' %}
-      <p>Esse site é feito com <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> e hospedado pelo <a href="https://github.com/jlozovei/me" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
-
-      <p>Livre de cookies, bem-vindo | <small>&copy; jlozovei {{ 'now' | date: "%Y" }}</small></p>
+      <p>Livre de cookies, disponha</p>
       {% else %}
-      <p>This site is built on top of <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> and hosted by <a href="https://github.com/jlozovei/me" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
-
-      <p>Cookies free, you're welcome | <small>&copy; jlozovei {{ 'now' | date: "%Y" }}</small></p>
+      <p>Cookies free, you're welcome</p>
       {% endif %}
+      <small>jlozovei | {{ 'now' | date: "%Y" }}</small>
     </div>
   </div>
 </footer>

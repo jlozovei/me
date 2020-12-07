@@ -1,5 +1,5 @@
 - name: Livetouch
-  role: 'Intern / Web Developer'
+  role: 'Intern / JR Web Developer'
   date: '09/2015 - 12/2017'
   img: livetouch
   text:
@@ -12,7 +12,7 @@
       <p>Minha primeira experiência de trabalho, eu comecei na Livetouch como estagiário de front-end. Lá eu trabalhei em diversos projetos - desde sites, dashboards e produtos digitais - e também ajudei o time a entrevistar novos estagiários. Depois de 10 meses, e na maior parte desse tempo como o único desenvolvedor front-end da empresa, eu fui promovido para a posição de desenvolvedor front-end JR.</p>
       <p>Em quase 2 anos e meio na Livetouch, eu trabalhei com jQuery, Angular, React, Vue, Ionic e também aprendi algumas coisas sobre desenvolvimento mobile com Android.</p>
 - name: EBANX
-  role: 'Front-end Developer'
+  role: 'JR Front-end Developer'
   date: '01/2018 - 07/2019'
   img: ebanx
   text:
@@ -40,13 +40,24 @@
       <p>Lá eu ajudei a desenvolver uma nova versão do design system da empresa - usando PostCSS e vanilla JS - e também desenvolvi diversos novos componentes para a versão em React; também pude ajudar o capítulo de front-end a adotar alguns padrões e ferramentas para o desenvolvimento.</p>
       <p>Como parte do time de marketing, eu ajudei a desenvolver uma nova calculadora de juros e reescrevi o site institucional, que estava feito em Gatsby, usando o HubSpot como plataforma e vanilla JS.</p>
 - name: Paraná Banco
-  role: 'Front-end Developer'
-  date: '04/2020 - now'
+  role: 'SR Front-end Developer'
+  date: '04/2020 - 09/2020'
   img: pb
   text:
     en: >-
-      <p>My current full-time job, Paraná Banco is a brazilian private bank focused on payroll loans for retirees, state pensioners, civil servants and the armed forces' members.</p>
+      <p>Paraná Banco is a brazilian private bank focused on payroll loans for retirees, state pensioners, civil servants and the armed forces' members.</p>
       <p>I've joined them in the challenge of creating a new outstanding product to help civil servants get a nice credit with an utterly easy process - using Next, React and styled-components.</p>
     pt-br: >-
-      <p>Meu atual emprego, o Paraná Banco é um banco brasileiro privado focado em empréstimos consignados para aposentados, pensionistas do estado, servidores públicos e integrantes das forças armadas.</p>
+      <p>O Paraná Banco é um banco brasileiro privado focado em empréstimos consignados para aposentados, pensionistas do estado, servidores públicos e integrantes das forças armadas.</p>
       <p>Eu me juntei ao desafio de criar um novo produto incrível para ajudar os serivdores públicos a conseguirem empréstimos em um processo extremamente simples - utilizando Next, React e styled-components.</p>
+- name: EBANX
+  role: 'Software Developer, Front-end'
+  date: '09/2020 - 12/2020'
+  img: ebanx
+  text:
+    en: >-
+      <p>Once again at EBANX, this turn I was working with the end-user marketing to create a unique acquisition experience and provide the team all the integrations needed.</p>
+      <p>To do so, I've used a lot of WordPress, Adobe Marketing Cloud platform and Customer.io.</p>
+    pt-br: >-
+      <p>Mais uma vez no EBANX, desta vez eu estava trabalhando junto do time de marketing de produto para usuários finais, criando uma única experiência de aquisição e providenciando todas as integrações necessárias para o time.</p>
+      <p>Para realizar tal tarefa, utilizei muito WordPress, a plataforma Adobe Marketing Cloud e também o Customer.io.</p>

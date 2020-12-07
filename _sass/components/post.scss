@@ -1,4 +1,8 @@
 .post {
+  &__title {
+    color: $white;
+  }
+
   &__image {
     img {
       object-fit: cover;
@@ -15,6 +19,15 @@
     max-width: $post_width;
     margin: 0 auto;
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $white;
+    }
+
     p {
       text-align: justify;
     }
@@ -24,7 +37,7 @@
       height: 0.75rem;
       margin: 2rem auto;
       border-radius: 50%;
-      box-shadow: 1.5rem 0 0 $tundora, -1.5rem 0 0 $tundora;
+      box-shadow: 1.5rem 0 0 $sunset, -1.5rem 0 0 $sunset;
     }
   }
 
@@ -38,6 +51,7 @@
       position: relative;
       margin-bottom: 0;
       font-size: 0.875rem;
+      color: $white;
 
       & + p {
         margin-left: 0.5rem;
