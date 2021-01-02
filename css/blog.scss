@@ -2,3 +2,15 @@
 ---
 
 @import 'pages/blog';
+
+.section {
+  &--list {
+    padding-top: 0;
+
+    ul {
+      li:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}

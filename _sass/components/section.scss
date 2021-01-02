@@ -3,14 +3,14 @@
   padding: 4rem 0;
 
   &--headline {
-    padding-top: 8rem;
+    padding-top: 10rem;
 
     &:before {
       position: absolute;
-      top: 0;
-      left: -1rem;
+      top: 2rem;
+      left: 0;
       display: block;
-      width: 18rem;
+      width: 13rem;
       height: 5rem;
       background: url('/img/logo-grey.svg') no-repeat center/contain;
     }
@@ -22,11 +22,11 @@
 
   @media #{$m_tablet} {
     &--headline {
-      padding-top: 16rem;
+      padding-top: 18rem;
 
       &:before {
-        top: 2rem;
-        left: 8rem;
+        top: 4rem;
+        left: 0;
         width: 26rem;
         height: 10rem;
       }
