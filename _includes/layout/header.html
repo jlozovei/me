@@ -1,5 +1,28 @@
 <header class="header">
   <div class="container">
     {% include layout/menu.html %}
+
+    <button id="hamburger" class="header__hamburger">
+      <span></span>
+      {% if page.language == 'pt-br' %}
+      Abrir menu
+      {% else %}
+      Open menu
+      {% endif %}
+    </button>
+
+    {% unless page.layout == "post" %}
+      <div class="header__languages">
+        <ul class="list">
+          <li>
+            <a href="{{ page.en }}" {% if page.language == 'en' %} class="active" {% endif %}>EN</a>
+          </li>
+
+          <li>
+            <a href="{{ page.pt-br }}" {% if page.language == 'pt-br' %} class="active" {% endif %}>PT-BR</a>
+          </li>
+        </ul>
+      </div>
+    {% endunless %}
   </div>
 </header>
