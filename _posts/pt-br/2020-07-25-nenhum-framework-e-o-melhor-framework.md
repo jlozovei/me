@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Nenhum framework é o melhor framework"
 date:   2020-07-25 14:00:00 -0300
 category: opinion

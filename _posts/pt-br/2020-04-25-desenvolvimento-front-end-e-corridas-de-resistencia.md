@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Desenvolvimento front-end e corridas de resistência"
 date:   2020-04-26 00:00:00 -0300
 category: thoughts

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Conselho para novatos em código"
 date:   2020-04-12 22:45:00 -0300
 category: thoughts

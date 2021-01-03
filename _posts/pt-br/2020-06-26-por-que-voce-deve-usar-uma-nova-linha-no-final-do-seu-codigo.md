@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Por que você deve usar uma nova linha no final do seu código"
 date:   2020-06-26 13:30:00 -0300
 category: tutorial

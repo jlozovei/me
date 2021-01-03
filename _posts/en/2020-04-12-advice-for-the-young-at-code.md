@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Advice for the young at code"
 date:   2020-04-12 22:45:00 -0300
 category: thoughts

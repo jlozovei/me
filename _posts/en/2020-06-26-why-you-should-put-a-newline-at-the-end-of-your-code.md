@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Why you should put a newline at the end of your code"
 date:   2020-06-26 13:30:00 -0300
 category: tutorial

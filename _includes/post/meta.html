@@ -1,17 +1,17 @@
-<div class="post__meta">
-  <p class="post__date">
-    {% if page.language != 'pt-br' %}
-    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+<div class="blogpost__meta">
+  <p class="date">
+    {% if page.language == 'pt-br' %}
+      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%d/%m/%Y" -%}
 
-      {{ post.date | date: date_format }}
-    </time>
+        {{ post.date | date: date_format }}
+      </time>
     {% else %}
-    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-      {%- assign date_format = site.minima.date_format | default: "%d/%m/%Y" -%}
+      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-      {{ post.date | date: date_format }}
-    </time>
+        {{ post.date | date: date_format }}
+      </time>
     {% endif %}
   </p>
 
@@ -24,15 +24,12 @@
   {% else %}
     {% assign time=words | plus: 150 | divided_by: 150 %}
   {% endif %}
-  <p class="post__read-time">
-    {% if page.language == 'pt-br' %}
-      leitura de 
-    {% endif %}
-    {{ time }} min
-    {% if page.language != 'pt-br' %}
-       read
-    {% endif %}
+  
+  <p class="readtime">
+    {% if page.language == 'pt-br' %} leitura de {% endif %}
+    {{ time }}min
+    {% if page.language != 'pt-br' %} read {% endif %}
   </p>
 
-  <p class="post__category">{{ post.category | capitalize }}</p>
+  <p class="category">{{ post.category | capitalize }}</p>
 </div>

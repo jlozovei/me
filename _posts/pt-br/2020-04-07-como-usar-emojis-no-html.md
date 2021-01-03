@@ -1,5 +1,5 @@
----
-layout: post
+s---
+layout: blogpost
 title:  "Como usar emojis no HTML?"
 date:   2020-04-07 13:30:00 -0300
 category: tutorial

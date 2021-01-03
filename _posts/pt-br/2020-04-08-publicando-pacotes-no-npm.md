@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Publicando pacotes no npm"
 date:   2020-04-08 19:20:00 -0300
 category: tutorial

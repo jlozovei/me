@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "My developer setup for 2020"
 date:   2020-04-10 13:30:00 -0300
 category: personal

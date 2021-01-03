@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Getting along with communities"
 date:   2020-04-19 19:00:00 -0300
 category: people

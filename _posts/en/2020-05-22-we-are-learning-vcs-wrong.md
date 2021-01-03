@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "We are learning VCS wrong"
 date:   2020-05-22 12:10:00 -0300
 category: thoughts

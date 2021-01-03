@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Grids com CSS"
 date:   2020-08-22 16:00:00 -0300
 category: thoughts
