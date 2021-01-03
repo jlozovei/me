@@ -34,7 +34,7 @@ h6 {
 }
 
 h1 {
-  @include responsive-font-size(3.5rem, 6rem);
+  @include responsive-font-size(3.125rem, 4.875rem);
 }
 
 h2 {
@@ -60,5 +60,6 @@ h6 {
 p,
 li,
 code {
-  @include responsive-font-size(0.875rem, 1.125rem);
+  // @include responsive-font-size(0.875rem, 1.125rem);
+  font-size: 1rem;
 }
