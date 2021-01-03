@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Tecnologia e originalidade em 2020"
 date:   2020-05-06 13:10:00 -0300
 category: thoughts

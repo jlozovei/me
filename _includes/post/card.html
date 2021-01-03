@@ -1,27 +1,23 @@
-<div class="post">
-  <div class="post__image">
+<div class="blogpost">
+  <div class="blogpost__image">
     {% assign post_image = post.image_src | default: "/img/heroes/moleskine.jpg" %}
     <img src="{{ post_image }}" alt="{{ post.title | escape }}" onload="this.classList.add('loaded');">
   </div>
 
-  <div class="post__info">
-    <h3 class="post__title">{{ post.title | escape }}</h3>
-
+  <div class="blogpost__info">
     {% assign postContent=post.content %}
     {% include post/meta.html post=post postContent=postContent %}
 
+    <h3 class="blogpost__title">{{ post.title | escape }}</h3>
+
     {% if site.show_excerpts %}
-    <div class="post__excerpt">
+    <div class="blogpost__excerpt">
       {{ post.excerpt }}
     </div>
     {% endif %}
 
-    <button class="anchor">
-      {% if page.language != 'pt-br' %}
-      Read more
-      {% else %}
-      Leia mais
-      {% endif %}
-    &rarr;</button>
+    <span>
+      {% if page.language == 'pt-br' %} Leia mais {% else %} Read more {% endif %}
+    &rarr;</span>
   </div>
 </div>

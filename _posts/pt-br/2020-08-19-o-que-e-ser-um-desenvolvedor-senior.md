@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "O que é ser um desenvolvedor sênior?"
 date:   2020-08-19 11:00:00 -0300
 category: thoughts

@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding: 4rem 0;
+  padding: 2rem 0;
 
   &--headline {
     padding-top: 10rem;
@@ -12,15 +12,21 @@
       display: block;
       width: 13rem;
       height: 5rem;
-      background: url('/img/logo-grey.svg') no-repeat center/contain;
-    }
-
-    p {
-      max-width: 85%;
+      background: url('/img/brand/logo-grey.svg') no-repeat center/contain;
     }
   }
 
+  &__text {
+    max-width: 95%;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
   @media #{$m_tablet} {
+    padding: 4rem 0;
+
     &--headline {
       padding-top: 18rem;
 
@@ -30,6 +36,10 @@
         width: 26rem;
         height: 10rem;
       }
+    }
+
+    &__text {
+      max-width: 80%;
     }
   }
 }

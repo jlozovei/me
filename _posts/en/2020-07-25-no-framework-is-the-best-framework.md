@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "No framework is the best framework"
 date:   2020-07-25 14:00:00 -0300
 category: opinion
@@ -11,7 +11,7 @@ image_from_url: "https://unsplash.com/photos/IClZBVw5W5A"
 language: "en"
 ref: "no-framework-is-the-best-framework"
 ---
-Set free from the framework's handcuffs.
+Set yourself free from the framework's handcuffs.
 <!--more-->
 It's very common for us to find a new _framework_ inside the JavaScript ecosystem. Almost every day we can spot a new one (for us or a newcomer), which claims to be the solution for all of our problems.
 

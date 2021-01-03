@@ -33,3 +33,8 @@
         en: as the syntax highlighter on blog posts
         pt-br: como <em>syntax highlighter</em> nos artigos do blog
       link: https://prismjs.com/
+    - name: Flaticon
+      for:
+        en: as icon provider
+        pt-br: como fonte de ícones
+      link: https://www.flaticon.com/

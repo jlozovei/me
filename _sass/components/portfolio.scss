@@ -1,35 +1,162 @@
 .portfolio {
   position: relative;
+  height: 100%;
 
-  &__title {
-    color: $white;
-  }
+  &__header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
 
-  &__image {
     img {
-      object-fit: cover;
+      flex-basis: 4rem;
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1rem;
+      border: 1px solid $tundora;
+      border-radius: 2px;
+      object-fit: contain;
+    }
+
+    h3 {
+      margin: 0;
+      @include responsive-font-size(1.5rem, 2rem);
+
+      a {
+        color: $white;
+        text-decoration: none;
+      }
     }
   }
 
-  &__anchor {
-    font-family: $font_title;
+  &__title {
+    flex-basis: calc(100% - 5rem);
   }
 
   &__meta {
-    ul {
-      li {
-        list-style: disc inside;
-        color: $white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 -0.25rem;
+  }
 
-        span {
-          font-family: $font_title;
-          font-weight: bold;
-        }
+  &__tag {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0 0.25rem;
+    border: 1px solid $text;
+    border-radius: 2px;
+    @include responsive-font-size(0.625rem, 0.875rem);
+    font-weight: bold;
+    color: $text;
+
+    &--os {
+      background-color: #3fa751;
+      border-color: #20552a;
+      color: white;
+    }
+
+    &--html {
+      background-color: #e44d26;
+      border-color: white;
+      color: white;
+    }
+
+    &--css {
+      background-color: #3a9adb;
+      border-color: white;
+      color: white;
+    }
+
+    &--sass {
+      background-color: #cf689b;
+      border-color: white;
+      color: white;
+    }
+
+    &--postcss {
+      background-color: #da3c08;
+      border-color: white;
+      color: white;
+    }
+
+    &--styled-components {
+      background-color: #c35779;
+      border-color: #f1c587;
+      color: #f1c587;
+    }
+
+    &--js {
+      background-color: #f7df1c;
+      border-color: black;
+      color: black;
+    }
+
+    &--react {
+      background-color: #06d1f6;
+      border-color: white;
+      color: white;
+    }
+
+    &--vue {
+      background-color: #3fba84;
+      border-color: #30485e;
+      color: #30485e;
+    }
+
+    &--gulp {
+      background-color: #e94a4a;
+      border-color: white;
+      color: white;
+    }
+
+    &--webpack {
+      background-color: #8ed6fb;
+      border-color: #1d78bf;
+      color: #1d78bf;
+    }
+
+    &--jest {
+      background-color: #c21324;
+      border-color: white;
+      color: white;
+    }
+
+    &--wordpress {
+      background-color: #20759a;
+      border-color: white;
+      color: white;
+    }
+  }
+
+  &__year {
+    margin-left: 0.25rem;
+  }
+
+  &__links {
+    margin-top: 1rem;
+
+    a {
+      @extend %anchor;
+    }
+  }
+
+  @media #{$m_tablet} {
+    &__header {
+      img {
+        width: 6rem;
+        height: 6rem;
       }
     }
 
-    a {
-      font-family: $font_title;
+    &__title {
+      flex-basis: calc(100% - 7rem);
+    }
+
+    &__tag {
+      padding: 0.125rem 0.5rem;
     }
   }
 }

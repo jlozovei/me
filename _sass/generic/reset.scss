@@ -101,14 +101,13 @@ table {
 
   tr {
     &:nth-child(even) {
-      background-color: $tundora;
+      background-color: $shark;
     }
   }
 }
 
 hr {
-  margin: 2rem 0;
+  margin: 0;
+  padding: 0;
   border: none;
-  height: 1px;
-  background-color: $sunset;
 }

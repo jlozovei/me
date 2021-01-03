@@ -1,5 +1,5 @@
----
-layout: post
+s---
+layout: blogpost
 title:  "Remote Mindset"
 date:   2020-05-16 23:00:00 -0300
 category: thoughts

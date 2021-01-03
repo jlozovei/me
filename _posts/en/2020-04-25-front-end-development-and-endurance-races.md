@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Front-end development and endurance races"
 date:   2020-04-26 00:00:00 -0300
 category: thoughts

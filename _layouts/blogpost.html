@@ -23,15 +23,18 @@ layout: compress
 
     <div class="section section--content">
       <div class="container">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-          <header class="post__header">
-            <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
-            {% assign post=page %}
-            {% assign postContent=content %}
-            {% include post/meta.html post=post postContent=postContent %}
+        <article class="blogpost" itemscope itemtype="http://schema.org/BlogPosting">
+          <header class="blogpost__header">
+            <div class="blogpost__info">
+              <h1 class="blogpost__title" itemprop="name headline">{{ page.title | escape }}</h1>
+
+              {% assign post = page %}
+              {% assign postContent = content %}
+              {% include post/meta.html post=post postContent=postContent %}
+            </div>
 
             {% if page.image_src %}
-            <div class="post__image">
+            <div class="blogpost__image">
               <figure>
                 <img src="{{ page.image_src }}" alt="{{ page.title | escape }}" onload="this.classList.add('loaded');">
                 
@@ -58,9 +61,51 @@ layout: compress
             {% endif %}
           </header>
 
-          <main class="post__content" itemprop="articleBody">
-            {{ content | remove: page.excerpt }}
-          </main>
+          <div class="blogpost__body" id="blogpost">
+            <main class="blogpost__content" itemprop="articleBody">
+              {{ content | remove: page.excerpt }}
+            </main>
+
+            <div class="blogpost__share">
+              {% assign shareText = "Share on" %}
+              {% if page.language == 'pt-br' %}
+                {% assign shareText = "Compartilhar no" %}
+              {% endif %}
+
+              {% assign post_url = page.url | absolute_url %}
+
+              <ul class="list">
+                <li>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u={{ post_url }}&title={{ page.title }}&description={{ page.excerpt | strip_html }}" target="_blank" rel="noopener noreferrer" title="{{ shareText }} Facebook">
+                    <img src="/img/social/facebook.svg" alt="Facebook">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ post_url }}&related={{ site.twitter.username }}" target="_blank" rel="noopener noreferrer" title="{{ shareText }} Twitter">
+                    <img src="/img/social/twitter.svg" alt="Twitter">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ post_url }}&title={{ page.title }}&summary={{ page.excerpt | strip_html }}" target="_blank" rel="noopener noreferrer" title="{{ shareText }} LinkedIn">
+                    <img src="/img/social/linkedin.svg" alt="LinkedIn">
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@example.com?&subject={{ page.title }}&body={{ post_url }}" target="_blank" rel="noopener noreferrer" title="{{ shareText }} your email">
+                    <img src="/img/social/mail.svg" alt="Mail">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="blogpost__progress">
+            <div class="container">
+              <p>{{ page.title }}</p>
+            </div>
+
+            <span id="progress-indicator"></span>
+          </div>
         </article>
       </div>
     </div>
@@ -85,7 +130,7 @@ layout: compress
             {% for post in posts %}
               {% unless post.language == page.language %}
                 <li>
-                  <a href="{{ site.base-url }}{{ post.url }}" title="View in {{post.language}}">{{ post.language }}</a>
+                  <a href="{{ site.base-url }}{{ post.url }}" title="View in {{ post.language }}">{{ post.language }}</a>
                 </li>
               {% endunless %}
             {% endfor %}
@@ -93,32 +138,6 @@ layout: compress
           </div>
         </div>
       {% endif %}
-
-    <div class="section section--share">
-      <div class="container">
-        <h6>
-        {% if page.language == 'pt-br' %}
-        Compartilhe este artigo:
-        {% else %}
-        Share this article
-        {% endif %}
-        </h6>
-
-        {% assign post_url = page.url | absolute_url %}
-
-        <ul class="list">
-          <li>
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ post_url }}&title={{ page.title }}&description={{ page.excerpt }}" target="_blank" rel="noopener noreferrer">Facebook</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ post_url }}&related={{ site.twitter.username }}" target="_blank" rel="noopener noreferrer">Twitter</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ post_url }}&title={{ page.title }}&summary={{ page.excerpt }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </li>
-        </ul>
-      </div>
-    </div>
 
     {% unless page.category == null %}
       {% capture pageCategory %}
@@ -133,11 +152,7 @@ layout: compress
         <div class="section section--related">
           <div class="container">
             <h2>
-            {% if page.language == 'pt-br' %}
-            Vale a pena ler também
-            {% else %}
-            Worth reading too
-            {% endif %}
+            {% if page.language == 'pt-br' %} Vale a pena ler também {% else %} Worth reading too {% endif %}
             </h2>
 
             <ul class="post-list">
@@ -159,5 +174,6 @@ layout: compress
   {% include layout/footer.html %}
 
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js" defer></script>
+  <script src="/js/index.js"></script>
 </body>
 </html>

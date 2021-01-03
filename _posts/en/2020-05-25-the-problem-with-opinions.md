@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "The problem with opinions"
 date:   2020-05-25 13:45:00 -0300
 category: thoughts

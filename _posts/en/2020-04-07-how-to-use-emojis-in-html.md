@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "How to use emojis in HTML?"
 date:   2020-04-07 13:30:00 -0300
 category: tutorial
