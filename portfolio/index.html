@@ -9,6 +9,7 @@ pt-br: /pt-br/portfolio
 <div class="section section--headline">
   <div class="container">
     <h1>Portfolio.</h1>
+    <p>Those are my latest jobs; take a look on them.</p>
   </div>
 </div>
 
@@ -17,24 +18,41 @@ pt-br: /pt-br/portfolio
     <ul>
       {% for job in site.portfolio %}
         {% if job.language == page.language %}
-        <li>
-          <a href="{{ job.url | relative_url }}">
+          <li>
             <div class="portfolio">
-              <div class="portfolio__image">
-                <img
-                  src="/img/portfolio/{{ job.name }}/cover.jpg"
-                  srcset="/img/portfolio/{{ job.name }}/cover.jpg 1x, /img/portfolio/{{ job.name }}/cover@2x.jpg 2x" 
-                  onload="this.classList.add('loaded');"
-                >
+              <div class="portfolio__header">
+                <img src="/img/portfolio/{{ job.name }}.jpg" alt="{{ job.title }}">
+
+                <div class="portfolio__title">
+                  <h3>
+                    <a href="{{ job.link }}" target="_blank" rel="noopener noreferrer">{{ job.title }}</a>
+                  </h3>
+
+                  {% if job.year %}
+                    <small>{{ job.year }}</small>
+                  {% endif %}
+                </div>
+              </div>
+              
+              <div class="portfolio__description">
+                {{ job.excerpt }}
               </div>
 
-              <div class="portfolio__content">
-                <h4 class="portfolio__name">{{ job.title }}</h4>
-                <p class="portfolio__anchor anchor">See more</p>
+              <div class="portfolio__meta">
+                {% for stack in job.stack %}
+                  <span class="portfolio__tag portfolio__tag--{{ stack | slugify }}">{{ stack }}</span>
+                {% endfor %}
+
+                {% if job.github %}
+                  <span class="portfolio__tag portfolio__tag--os">open source</span>
+                {% endif %}
+              </div>
+
+              <div class="portfolio__links">
+                <a href="{{ job.link }}" target="_blank" rel="noopener noreferrer">See project &rarr;</a>
               </div>
             </div>
-          </a>
-        </li>
+          </li>
         {% endif %}
       {% endfor %}
     </ul>

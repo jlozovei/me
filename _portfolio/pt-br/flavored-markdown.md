@@ -1,14 +1,19 @@
 ---
-layout: job
+layout: portfolio
 title:  "Flavored Markdown"
 name:   "flavored-markdown"
 year:   2019
-stack:  "Vue, Sass"
+stack:
+- vue
+- sass
+- jest
 link:   "https://flavored-markdown.app/"
 github: "https://github.com/jlozovei/flavored-markdown"
 language: "pt-br"
 en: /portfolio/flavored-markdown
 ---
+Editor de markdown para o browser, com sabores.
+<!--more-->
 Um editor de markdown para o navegador, Flavored Markdown mostra como os seus arquivos `.md` vão ser renderizados em diferentes plafatormas: como o GitHub, GitLab, Bitbucket, Azure e várias outras.
 
 Feito utilizando Vue e vuex, a ideia do site veio enquanto eu comparava o estilo de visualização de arquivos markdown entre GitHub e Bitbucket. Como um bom _escritor de readmes_, eu sempre gostei de saber como esses arquivos seriam renderizados, e essa ferramenta me ajudou a visualizar isso.

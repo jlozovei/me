@@ -1,13 +1,19 @@
 ---
-layout: job
+layout: portfolio
 title:  "tropico.tv"
 name:   "tropico"
 year:   2019
-stack:  "WordPress, ES5, PostCSS"
+stack:  
+- wordpress
+- js
+- postcss
+- gulp
 link:   "https://tropico.tv"
 language: "en"
 pt-br: /pt-br/portfolio/tropico
 ---
+Tropico TV's insitutional website.
+<!--more-->
 Trópico is an audiovisual agency from Curitiba, Brazil. Their main focus is _real histories_, and their content are drived for social businesses and causes.
 
 Alongside my friend [Daniel Koganas](https://koganas.com/), we helped Trópico to modernize their website, helping them to display their work in a fancy way.

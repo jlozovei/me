@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "Is it worthy to have a blog in 2020?"
 date:   2020-04-06 19:00:00 -0300
 category: thoughts

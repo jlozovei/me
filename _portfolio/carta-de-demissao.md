@@ -1,14 +1,19 @@
 ---
-layout: job
+layout: portfolio
 title:  "Carta de Demissão"
 name:   "carta-de-demissao"
-year:   2019
-stack:  "React, styled-components, jest"
+year:   2020
+stack:
+- react
+- "styled-components"
+- jest
 link:   "https://cartadedemissao.com/"
 github: "https://github.com/jlozovei/cartadedemissao.com"
 language: "en"
 pt-br: /pt-br/portfolio/carta-de-demissao
 ---
+A cool helper for nice-looking resignation letters.
+<!--more-->
 Carta de Demissão is a website which helps you to create a nice-looking resignation letter for professional uses.
 
 While working at EBANX, I struggled to find a reliable template or guide to follow while creating my resignation letter. So the idea of develop a website to help people during this process came through.
