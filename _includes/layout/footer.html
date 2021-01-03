@@ -1,25 +1,10 @@
 <footer class="footer">
   <div class="container">
-    {% unless page.layout == "post" %}
-    <div class="footer__languages">
-      <ul class="list">
-        <li>
-          <a href="{{ page.en }}" {% if page.language == 'en' %} class="active" {% endif %}>EN</a>
-        </li>
-
-        <li>
-          <a href="{{ page.pt-br }}" {% if page.language == 'pt-br' %} class="active" {% endif %}>PT-BR</a>
-        </li>
-      </ul>
-    </div>
-    {% endunless %}
-    <div class="footer__copy">
-      {% if page.language == 'pt-br' %}
-      <p>Livre de cookies, disponha</p>
-      {% else %}
-      <p>Cookies free, you're welcome</p>
-      {% endif %}
-      <small>jlozovei | {{ 'now' | date: "%Y" }}</small>
-    </div>
+    {% if page.language == 'pt-br' %}
+    <p>Livre de cookies, disponha</p>
+    {% else %}
+    <p>Cookies free, you're welcome</p>
+    {% endif %}
+    <small>By jlozovei | {{ 'now' | date: "%Y" }}</small>
   </div>
 </footer>

@@ -14,7 +14,7 @@
       &:after {
         position: absolute;
         bottom: -0.125rem;
-        left: 0;
+        right: 0;
         display: block;
         width: 0;
         height: 2px;
@@ -24,7 +24,7 @@
 
       &:hover {
         &:after {
-          right: 0;
+          left: 0;
           width: 100%;
         }
       }

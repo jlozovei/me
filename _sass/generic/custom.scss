@@ -37,6 +37,7 @@ a,
     width: 10rem;
     height: 15rem;
     background: url('/img/97.svg') no-repeat 0 0 / contain;
+    z-index: -1;
   }
 
   @media #{$m_tablet} {

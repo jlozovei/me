@@ -8,7 +8,7 @@ layout: compress
   {% assign stylePath = page.slug | prepend: '/css/' | append: '.css' %}
   <link rel="stylesheet" href="{{ stylePath | to_absurl }}">
   
-  <link rel="icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
   {% include layout/header.html %}
@@ -18,5 +18,7 @@ layout: compress
   </div>
 
   {% include layout/footer.html %}
+
+  <script src="/js/index.js"></script>
 </body>
 </html>
