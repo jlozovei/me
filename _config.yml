@@ -78,11 +78,6 @@ defaults:
     type: posts
   values:
     permalink: /pt-br/blog/:title/
-- scope:
-    path: _portfolio/pt-br
-    type: portfolio
-  values:
-    permalink: /pt-br/portfolio/:title
 
 paginate_multiple:
   - paginate: 4
