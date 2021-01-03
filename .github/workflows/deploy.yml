@@ -16,8 +16,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: Build & Deploy to GitHub Pages
-        uses: DavidS/jekyll-deploy@master
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Push to gh-pages
+        uses: crazy-max/ghaction-github-pages@v1.3.0
+        with:
+          build_dir: build
+          keep_history: true
         env:
-          JEKYLL_ENV: production
-          GH_PAGES_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
