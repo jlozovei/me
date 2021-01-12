@@ -18,14 +18,14 @@
     name: Portfolio
   pt-br:
     url: /pt-br/portfolio
-    name: Portfolio
+    name: Portfólio
 - label: uses
   en:
     url: /uses
     name: Uses
   pt-br:
     url: /pt-br/uses
-    name: Uses
+    name: Eu uso
 - label: blog
   en:
     url: /blog
