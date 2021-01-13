@@ -1,6 +1,6 @@
-name: Jekyll Build/Deploy
+name: Jekyll Test Build
 on:
-  push:
+  pull_request:
     branches:
       - master
 jobs:
@@ -24,10 +24,3 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Push to gh-pages
-        uses: crazy-max/ghaction-github-pages@v1.3.0
-        with:
-          build_dir: build
-          keep_history: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
