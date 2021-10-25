@@ -16,6 +16,8 @@ const Seo = ({ info, location }) => {
           siteMetadata {
             title
             description
+            image
+            siteUrl
           }
         }
       }
@@ -39,6 +41,22 @@ const Seo = ({ info, location }) => {
           content: metaDescription
         },
         {
+          name: 'theme-color',
+          content: '#26282b'
+        },
+        {
+          name: 'msapplication-navbutton-color',
+          content: '#26282b'
+        },
+        {
+          name: 'apple-mobile-web-app-status-bar-styl',
+          content: '#26282b'
+        },
+        {
+          name: 'pinterest',
+          content: 'nopin'
+        },
+        {
           property: 'og:title',
           content: title
         },
@@ -49,6 +67,10 @@ const Seo = ({ info, location }) => {
         {
           property: 'og:type',
           content: 'website'
+        },
+        {
+          property: 'og:image',
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
         },
         {
           name: 'twitter:card',
@@ -65,6 +87,10 @@ const Seo = ({ info, location }) => {
         {
           name: 'twitter:description',
           content: metaDescription
+        },
+        {
+          property: 'twitter:image',
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
         }
       ].concat(metatags)}
     />

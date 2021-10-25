@@ -4,11 +4,11 @@ module.exports = {
   siteMetadata: {
     title: 'jlozovei.dev',
     author: {
-      name: 'Julio Lozovei',
-      summary: 'who lives and works in San Francisco building useful things.'
+      name: 'Julio Lozovei'
     },
     description: 'Front-end development taken seriously.',
-    siteUrl: 'https://jlozovei.dev'
+    siteUrl: 'https://jlozovei.dev',
+    image: '/jlozovei.jpg'
   },
   plugins: [
     'gatsby-plugin-styled-components',
