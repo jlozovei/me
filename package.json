@@ -7,7 +7,7 @@
     "build": "gatsby build",
     "postbuild": "cp ./README.md ./public && cp ./CNAME ./public",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,json}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
