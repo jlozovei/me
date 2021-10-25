@@ -10,7 +10,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest --coverage",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -19,10 +19,9 @@
     "gatsby-plugin-feed": "^3.14.0",
     "gatsby-plugin-google-analytics": "^3.14.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-image": "^1.14.1",
+    "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-offline": "^4.14.0",
     "gatsby-plugin-react-helmet": "^4.14.0",
-    "gatsby-plugin-react-redux-persist": "^1.1.0",
     "gatsby-plugin-sharp": "^3.14.1",
     "gatsby-plugin-styled-components": "^4.14.0",
     "gatsby-remark-copy-linked-files": "^4.11.0",
@@ -43,15 +42,23 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.8",
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "babel-jest": "^27.3.1",
+    "babel-preset-gatsby": "^1.14.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "gatsby-plugin-root-import": "^2.0.7",
     "husky": "^7.0.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.3.1",
     "lint-staged": "^11.2.3",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "react-test-renderer": "^17.0.2"
   },
   "repository": {
     "type": "git",
@@ -73,6 +80,38 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "<rootDir>/jest-preprocess.js"
+    },
+    "modulePaths": [
+      "<rootDir>",
+      "<rootDir>/src/"
+    ],
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/file-mock.js"
+    },
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "\\.cache",
+      "<rootDir>.*/public"
+    ],
+    "testEnvironment": "jsdom",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(gatsby)/)"
+    ],
+    "globals": {
+      "__PATH_PREFIX__": ""
+    },
+    "testURL": "http://localhost",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setup-test-env.js"
+    ],
+    "setupFiles": [
+      "<rootDir>/loadershim.js"
     ]
   },
   "prettier": {
