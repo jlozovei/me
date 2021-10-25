@@ -1,0 +1,39 @@
+- title: Developer Titles
+  year: 2019
+  url: https://developertitles.com/
+  image: developer-titles
+  description:
+    en: Awesome developer titles for bios, descriptions and statuses.
+    pt-br: Títulos incríveis de desenvolvedor para descrições, biografias e status.
+
+- title: Flavored Markdown
+  year: 2019
+  url: https://flavored-markdown.app/
+  image: flavored-markdown
+  description:
+    en: In-browser markdown editor with flavors.
+    pt-br: Editor de markdown para o browser, com sabores.
+
+- title: Carta de Demissão
+  year: 2020
+  url: https://cartadedemissao.com/
+  image: 'carta-de-demissao'
+  description:
+    en: A cool helper for nice-looking resignation letters.
+    pt-br: Crie cartas de demissão com apenas alguns cliques.
+
+- title: Cidades do Paraná
+  year: 2020
+  url: https://jlozovei.github.io/cidades-do-parana/
+  image: pr
+  description:
+    en: An online guessing game for Paraná's cities.
+    pt-br: Adivinhe as cidades do estado do Paraná.
+
+- title: What is my viewport?
+  year: 2021
+  url: https://myviewport.com/
+  image: viewport
+  description:
+    en: A nice online tool to discover some useful information about your current viewport, browser and OS.
+    pt-br: Uma ferramenta online com informações relevantes sobre a viewport, navegador e SO do usuário.

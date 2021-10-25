@@ -1,23 +1,32 @@
-name: Jekyll Build/Deploy
+name: Deploy
 on:
   push:
     branches:
       - master
+
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+  release:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - name: Cache gems
-        uses: actions/cache@v1
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
         with:
-          path: vendor/gems
-          key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-      - name: Build & Deploy to GitHub Pages
-        uses: DavidS/jekyll-deploy@master
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Push to gh-pages
+        uses: crazy-max/ghaction-github-pages@v1.3.0
+        with:
+          build_dir: public
+          keep_history: true
         env:
-          JEKYLL_ENV: production
-          GH_PAGES_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

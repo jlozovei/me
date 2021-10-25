@@ -1,0 +1,69 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  display: none;
+  content: '';
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-size: 0.875rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+img.emoji {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+}

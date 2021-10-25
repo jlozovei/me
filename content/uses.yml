@@ -1,0 +1,67 @@
+- key: hard
+  label:
+    en: Hardware
+    pt-br: Hardware
+  items:
+    - name: Apple MacBook Pro 2017, 13-inch, 2,3 GHz Dual-Core Intel Core i5, 8GB RAM
+      description:
+        en: The laptop I've been using since 2018 for daily tasks and personal projects.
+        pt-br: O laptop que eu já utilizo desde 2018 para tarefas diárias e projetos pessoais.
+    - name: Dell P2719H (27")
+      description:
+        en: I've bought this monitor recently and kinda liked.
+        pt-br: Comprei esse monitor recentemente e gostei bastante.
+    - name: Marshall Monitor Bluetooth
+      description:
+        en: One of the bestest headphones I've ever had. Besides beign a bluetooth one, I like to use it wired.
+        pt-br: Um dos melhores headphones que eu já tive. Apesar de ser bluetooth, gosto bastante de usar ele com o cabo.
+
+- key: soft
+  label:
+    en: Software
+    pt-br: Software
+  items:
+    - name: Sublime Text 3
+      description:
+        en: I've been using Sublime since ever, both in my job and my personal projects.
+        pt-br: Já utilizo o Sublime há muito tempo, tanto no meu trabalho quanto em projetos pessoais.
+      extras:
+        - label: Seti_UI theme
+          url: https://packagecontrol.io/packages/Seti_UI
+        - label: Monokai Phoenix color scheme
+          url: https://github.com/Benvie/JavaScriptNext.tmLanguage/blob/master/Monokai%20Phoenix.tmTheme
+        - label: Personal config
+          url: https://gist.github.com/jlozovei/8d70f99f1d745330011c9e553034d644
+    - name: iTerm2
+      description:
+        en: An excellent terminal replacement for MacOS; I'm using it for a while and love it.
+        pt-br: Uma excelente alternativa para terminal no MacOS; já uso faz um tempo e gosto bastante.
+      extras:
+        - label: Oh My Zsh
+          url: https://github.com/ohmyzsh/ohmyzsh
+        - label: robbyrussell theme
+          url: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#robbyrussell
+    - name: Bitwarden
+      description:
+        en: My new password manager. It's open source and very functional, both as a Chrome extension and as an app.
+        pt-br: Meu novo gerenciador de senhas. É open source e muito funcional, tanto como uma extensão do Chrome quanto um app instalado.
+    - name: Notion
+      description:
+        en: My new favourite app, for lists, notes, tasks and databases.
+        pt-br: Meu novo app favorito, para listas, notas, tarefas e bases.
+    - name: Spotify
+      description:
+        en: I'm a little addicted to creating playlists, so it'd be obvious here.
+        pt-br: Sou um pouco viciado em criar playlists, então esse item seria meio óbvio aqui.
+    - name: Google Chrome
+      description:
+        en: In the desktop I use it while browsing and developing; also use Canary a lot
+        pt-br: No desktop eu uso para navegar e desenvolver; uso bastante também o Canary.
+    - name: Apple Safari
+      description:
+        en: For testing stuff and mobile browsing - in fact I haven't Chrome installed on my phone.
+        pt-br: Para testar as coisas e também para navegar pelo mobile - de fato eu não tenho o Chrome instalado no meu telefone.
+    - name: Adobe XD
+      description:
+        en: For designing and propotyping stuff. I like it very much, and it's free.
+        pt-br: Para desenhar e propotipar alguams coisas. Gosto bastante, e é grátis.
