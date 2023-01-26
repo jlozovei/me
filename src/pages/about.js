@@ -31,7 +31,7 @@ const AboutText = () => (
     </p>
     <p>
       My skills also include a basic understanding of the CI/CD process, REST APIs, gitflow and
-      UI/UX.
+      UI/UX. My focus is to solve problems: solve them in a simple, elegant and permanent way.
     </p>
     <p>
       Besides coding, I like very much to write about technology, development and career; and strung

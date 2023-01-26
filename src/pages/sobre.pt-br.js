@@ -37,7 +37,8 @@ const AboutText = () => (
 
     <p>
       Minhas habilidades também envolvem um conhecimento básico sobre o processo de CI/CD, APIs
-      REST, gitflow e UI/UX.
+      REST, gitflow e UI/UX. Meu foco é resolver problemas: resolvê-los de forma simples, elegante e
+      permanente.
     </p>
 
     <p>
