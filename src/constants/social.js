@@ -15,10 +15,6 @@ const SOCIAL_NETWORKS = {
     name: 'LinkedIn',
     url: 'https://linkedin.com/in/jlozovei'
   },
-  twitter: {
-    name: 'Twitter',
-    url: 'https://twitter.com/juliolozovei'
-  },
   devto: {
     name: 'dev.to',
     url: 'https://dev.to/jlozovei'
