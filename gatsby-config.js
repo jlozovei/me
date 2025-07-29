@@ -97,6 +97,7 @@ module.exports = {
         `,
         feeds: [
           {
+            title: 'jlozovei RSS',
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.nodes.map((node) => {
                 return Object.assign({}, node.frontmatter, {
