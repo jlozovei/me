@@ -1,3 +1,11 @@
+- title: Catlendar
+  year: 2024
+  url: https://jlozovei.github.io/catlendar/
+  image: catlendar
+  description:
+    en: A daily calendar with cute cat pics
+    pt-br: Um calendário diário com fotos fofinhas de gato
+
 - title: Developer Titles
   year: 2019
   url: https://developertitles.com/
